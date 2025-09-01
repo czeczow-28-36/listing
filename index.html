@@ -838,30 +838,30 @@
                                         </thead>
                                         <tbody>
                                             <tr class="border-b border-gray-100">
+                                                <td class="py-3 text-gray-700">Korytarz</td>
+                                                <td class="py-3 text-right text-gray-900 font-semibold">4 m²</td>
+                                            </tr>
+                                            <tr class="border-b border-gray-100">
                                                 <td class="py-3 text-gray-700">Salon z aneksem kuchennym</td>
-                                                <td class="py-3 text-right text-gray-900 font-semibold">XX.XX m²</td>
+                                                <td class="py-3 text-right text-gray-900 font-semibold">23 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
                                                 <td class="py-3 text-gray-700">Sypialnia</td>
-                                                <td class="py-3 text-right text-gray-900 font-semibold">XX.XX m²</td>
+                                                <td class="py-3 text-right text-gray-900 font-semibold">11 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
                                                 <td class="py-3 text-gray-700">Łazienka</td>
-                                                <td class="py-3 text-right text-gray-900 font-semibold">XX.XX m²</td>
+                                                <td class="py-3 text-right text-gray-900 font-semibold">3 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
-                                                <td class="py-3 text-gray-700">Korytarz</td>
-                                                <td class="py-3 text-right text-gray-900 font-semibold">XX.XX m²</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-3 text-gray-700">Schowek</td>
-                                                <td class="py-3 text-right text-gray-900 font-semibold">XX.XX m²</td>
+                                                <td class="py-3 text-gray-700">Balkon</td>
+                                                <td class="py-3 text-right text-gray-900 font-semibold">4 m²</td>
                                             </tr>
                                         </tbody>
                                         <tfoot>
                                             <tr class="font-bold text-primary">
                                                 <td class="pt-4">Suma</td>
-                                                <td class="pt-4 text-right">XX.XX m²</td>
+                                                <td class="pt-4 text-right">41 m²</td>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -888,26 +888,26 @@
                                         </thead>
                                         <tbody>
                                             <tr class="border-b border-gray-100">
-                                                <td class="py-3 text-gray-700">Sypialnia główna</td>
-                                                <td class="py-3 text-right text-gray-900 font-semibold">XX.XX m²</td>
+                                                <td class="py-3 text-gray-700">Sypialnia</td>
+                                                <td class="py-3 text-right text-gray-900 font-semibold">12 m²</td>
+                                            </tr>
+                                            <tr class="border-b border-gray-100">
+                                                <td class="py-3 text-gray-700">Pokój przechodni</td>
+                                                <td class="py-3 text-right text-gray-900 font-semibold">19 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
                                                 <td class="py-3 text-gray-700">Garderoba</td>
-                                                <td class="py-3 text-right text-gray-900 font-semibold">XX.XX m²</td>
+                                                <td class="py-3 text-right text-gray-900 font-semibold">7 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
                                                 <td class="py-3 text-gray-700">Łazienka</td>
-                                                <td class="py-3 text-right text-gray-900 font-semibold">XX.XX m²</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-3 text-gray-700">Korytarz</td>
-                                                <td class="py-3 text-right text-gray-900 font-semibold">XX.XX m²</td>
+                                                <td class="py-3 text-right text-gray-900 font-semibold">7 m²</td>
                                             </tr>
                                         </tbody>
                                         <tfoot>
                                             <tr class="font-bold text-primary">
                                                 <td class="pt-4">Suma</td>
-                                                <td class="pt-4 text-right">XX.XX m²</td>
+                                                <td class="pt-4 text-right">45 m²</td>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -1233,6 +1233,67 @@
                             </p>
                             <p class="text-xs text-gray-500 text-center mt-2">
                                 Tel: <span data-phone-placeholder></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Price Calculator Card - Sticky -->
+                    <div class="bg-white rounded-lg p-6 shadow-lg mt-4">
+                        <h3 class="text-lg font-semibold mb-4">Kalkulator Ceny</h3>
+
+                        <div class="space-y-4">
+                            <!-- Apartment Price -->
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <label class="flex items-center">
+                                    <input type="checkbox" checked disabled class="mr-3 text-blue-600 rounded">
+                                    <span class="text-sm font-medium">Mieszkanie</span>
+                                </label>
+                                <span class="font-semibold text-gray-900">979 000 zł</span>
+                            </div>
+
+                            <!-- Parking Spot 1 -->
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="parking1" class="mr-3 text-blue-600 rounded" onchange="updateTotalPrice()">
+                                    <span class="text-sm font-medium">Miejsce #1 (z komórką)</span>
+                                </label>
+                                <span class="font-semibold text-gray-900">70 000 zł</span>
+                            </div>
+
+                            <!-- Parking Spot 14 -->
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="parking14" class="mr-3 text-blue-600 rounded" onchange="updateTotalPrice()">
+                                    <span class="text-sm font-medium">Miejsce #14</span>
+                                </label>
+                                <span class="font-semibold text-gray-900">70 000 zł</span>
+                            </div>
+                        </div>
+
+                        <!-- Discount Info -->
+                        <div id="discount-info" class="hidden mt-4 p-3 bg-green-50 rounded-lg border border-green-200">
+                            <div class="flex items-center text-green-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-sm font-semibold">Rabat 20 000 zł za oba miejsca!</span>
+                            </div>
+                        </div>
+
+                        <!-- Total Price -->
+                        <div class="mt-6 pt-4 border-t border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold text-gray-900">Suma:</span>
+                                <div class="text-right">
+                                    <div id="total-price" class="text-2xl font-bold text-blue-600">979 000 zł</div>
+                                    <div id="original-price" class="hidden text-sm text-gray-500 line-through"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 p-3 bg-blue-50 rounded-lg">
+                            <p class="text-xs text-gray-600">
+                                <strong>Uwaga:</strong> Miejsca parkingowe dostępne wyłącznie przy zakupie mieszkania.
                             </p>
                         </div>
                     </div>

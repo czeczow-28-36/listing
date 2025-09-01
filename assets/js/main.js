@@ -383,6 +383,53 @@ function initParkingPhotoSwipe() {
     }
 }
 
+// Price Calculator Function
+function updateTotalPrice() {
+    const apartmentPrice = 979000;
+    const parkingSpotPrice = 70000;
+    const discount = 20000;
+    
+    const parking1Checked = document.getElementById('parking1')?.checked || false;
+    const parking14Checked = document.getElementById('parking14')?.checked || false;
+    
+    let totalPrice = apartmentPrice;
+    let originalPrice = null;
+    let showDiscount = false;
+    
+    // Calculate parking spots price
+    if (parking1Checked && parking14Checked) {
+        // Both parking spots selected - apply discount
+        totalPrice += (parkingSpotPrice * 2) - discount;
+        originalPrice = apartmentPrice + (parkingSpotPrice * 2);
+        showDiscount = true;
+    } else if (parking1Checked || parking14Checked) {
+        // Only one parking spot selected
+        totalPrice += parkingSpotPrice;
+    }
+    
+    // Update DOM elements
+    const totalPriceElement = document.getElementById('total-price');
+    const originalPriceElement = document.getElementById('original-price');
+    const discountInfoElement = document.getElementById('discount-info');
+    
+    if (totalPriceElement) {
+        totalPriceElement.textContent = totalPrice.toLocaleString('pl-PL') + ' zł';
+    }
+    
+    if (originalPriceElement && showDiscount) {
+        originalPriceElement.textContent = originalPrice.toLocaleString('pl-PL') + ' zł';
+        originalPriceElement.classList.remove('hidden');
+    } else if (originalPriceElement) {
+        originalPriceElement.classList.add('hidden');
+    }
+    
+    if (discountInfoElement && showDiscount) {
+        discountInfoElement.classList.remove('hidden');
+    } else if (discountInfoElement) {
+        discountInfoElement.classList.add('hidden');
+    }
+}
+
 // Optional: Add any Stimulus controllers here
 if (window.Stimulus) {
     // Example controller registration
