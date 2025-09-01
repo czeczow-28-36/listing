@@ -48,6 +48,7 @@
                         <a href="#opis" class="text-gray-700 hover:text-primary transition">Opis</a>
                         <a href="#plan" class="text-gray-700 hover:text-primary transition">Plan Nieruchomości</a>
                         <a href="#miejsca-parkingowe" class="text-gray-700 hover:text-primary transition">Miejsca Parkingowe</a>
+                        <a href="#inspiracje" class="text-gray-700 hover:text-primary transition">Inspiracje</a>
                         <a href="#lokalizacja" class="text-gray-700 hover:text-primary transition">Lokalizacja</a>
                     </div>
                 </div>
@@ -709,6 +710,12 @@
                             <p class="text-sm text-gray-600 mb-1">Parking</p>
                             <p class="font-semibold">Możliwość zakupu 2 miejsc w garażu</p>
                         </div>
+                        <div class="border-b border-gray-200 pb-3">
+                            <p class="text-sm text-gray-600 mb-1">Deweloper</p>
+                            <p class="font-semibold">
+                                <a href="https://develia.pl/pl/mieszkania/krakow/sloneczne-miasteczko/" target="_blank" class="text-primary hover:underline" rel="noopener noreferrer">Develia</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -1146,6 +1153,342 @@
                     </div>
                 </div>
 
+                <!-- Inspiracje -->
+                <div id="inspiracje" class="bg-white rounded-lg p-6 mb-6">
+                    <h2 class="text-2xl font-bold mb-6">Inspiracje</h2>
+
+                    <!-- Tab Navigation -->
+                    <div class="border-b border-gray-200 mb-6">
+                        <nav class="-mb-px flex space-x-4">
+                            <button
+                                _="on click
+                                   add .hidden to #content-krotkoterminowy
+                                   add .hidden to #content-dlugoterminowy
+                                   remove .hidden from #content-pokoj
+                                   remove .border-blue-600 .text-blue-600 .bg-blue-50 from #tab-krotkoterminowy
+                                   add .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 to #tab-krotkoterminowy
+                                   remove .border-blue-600 .text-blue-600 .bg-blue-50 from #tab-dlugoterminowy
+                                   add .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 to #tab-dlugoterminowy
+                                   add .border-blue-600 .text-blue-600 .bg-blue-50 to me
+                                   remove .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 from me"
+                                id="tab-pokoj"
+                                class="px-6 py-3 border-b-3 border-blue-600 font-semibold text-sm text-blue-600 bg-blue-50 transition-all duration-200 cursor-pointer">
+                                Dodatkowy pokój na piętrze
+                            </button>
+                            <button
+                                _="on click
+                                   add .hidden to #content-dlugoterminowy
+                                   add .hidden to #content-pokoj
+                                   remove .hidden from #content-krotkoterminowy
+                                   remove .border-blue-600 .text-blue-600 .bg-blue-50 from #tab-dlugoterminowy
+                                   add .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 to #tab-dlugoterminowy
+                                   remove .border-blue-600 .text-blue-600 .bg-blue-50 from #tab-pokoj
+                                   add .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 to #tab-pokoj
+                                   add .border-blue-600 .text-blue-600 .bg-blue-50 to me
+                                   remove .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 from me"
+                                id="tab-krotkoterminowy"
+                                class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer">
+                                Najem Krótkoterminowy
+                            </button>
+                            <button
+                                _="on click
+                                   add .hidden to #content-krotkoterminowy
+                                   add .hidden to #content-pokoj
+                                   remove .hidden from #content-dlugoterminowy
+                                   remove .border-blue-600 .text-blue-600 .bg-blue-50 from #tab-krotkoterminowy
+                                   add .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 to #tab-krotkoterminowy
+                                   remove .border-blue-600 .text-blue-600 .bg-blue-50 from #tab-pokoj
+                                   add .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 to #tab-pokoj
+                                   add .border-blue-600 .text-blue-600 .bg-blue-50 to me
+                                   remove .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 from me"
+                                id="tab-dlugoterminowy"
+                                class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer">
+                                Najem Długoterminowy
+                            </button>
+                        </nav>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        <!-- Additional Room Tab -->
+                        <div id="content-pokoj" class="tab-pane">
+                            <div class="text-gray-600">
+                                <h3 class="text-lg font-semibold mb-4 text-gray-800">Wydzielenie kolejnego nieprzechodniego pokoju na piętrze</h3>
+                                <p class="mb-4">W łatwy sposób można zamknąć nieprzyległy pokój na piętrze, wstawiając ściankę działową z drzwiami. Ta prosta modyfikacja pozwoli na stworzenie dodatkowego, w pełni funkcjonalnego pomieszczenia mieszkalnego.</p>
+                                <p class="mb-4">Dzięki tej inwestycji można zwiększyć funkcjonalność mieszkania poprzez wydzielenie prywatnej przestrzeni, która może służyć jako sypialnia, gabinet czy pokój gościnny. Rozwiązanie to nie wymaga dużych nakładów finansowych ani czasowych.</p>
+
+                                <!-- Visualization -->
+                                <div class="mt-6 mb-4">
+                                    <div class="cursor-pointer" onclick="window.open('assets/img/source/floor_plan/02_01.png', '_blank')" title="Kliknij aby otworzyć wizualizację w nowym oknie">
+                                        <img src="assets/img/source/floor_plan/02_01.png"
+                                             alt="Wizualizacja możliwości dostawienia ścianki działowej"
+                                             class="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                        <p class="text-center text-sm text-gray-500 mt-2">Kliknij aby otworzyć w nowym oknie</p>
+                                    </div>
+                                </div>
+
+                                <p class="mb-4">Ścianka działowa może być wykonana z różnych materiałów - od lekkich konstrukcji gipsowo-kartonowych po bardziej solidne rozwiązania murowane. Pozostałe ścianki działowe na piętrze zostały wykonane z bloczków Ytong, co zapewnia doskonałą izolację akustyczną i termiczną. Wybór materiału zależy od indywidualnych potrzeb i budżetu inwestycji.</p>
+                            </div>
+                        </div>
+
+                        <!-- Short-term Rental Tab -->
+                        <div id="content-krotkoterminowy" class="tab-pane hidden">
+                            <div class="text-gray-600">
+                                <h3 class="text-lg font-semibold mb-4 text-gray-800">Potencjał Inwestycyjny - Najem Krótkoterminowy</h3>
+                                
+                                <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                                    <h4 class="font-semibold text-gray-800 mb-2">Czym jest najem krótkoterminowy?</h4>
+                                    <p class="text-sm text-gray-700">
+                                        Najem krótkoterminowy to wynajmowanie mieszkania na okresy od jednej nocy do kilku miesięcy, głównie turystom i osobom podróżującym służbowo. Działa podobnie jak hotel, ale w prywatnym mieszkaniu. Popularne platformy to Airbnb, Booking.com czy Noclegi.pl. Właściciel otrzymuje zwykle wyższy czynsz niż przy standardowym najmie, ale wymaga to większego zaangażowania w obsługę gości.
+                                    </p>
+                                </div>
+
+                                <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                                    <p class="text-sm text-blue-800 mb-2">
+                                        <strong>Analiza rynku:</strong> IV kwartał 2024 - Kraków, Bieżanów-Prokocim
+                                    </p>
+                                </div>
+
+                                <h4 class="font-semibold text-gray-800 mb-3">Zalety tej strategii inwestycyjnej:</h4>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-start">
+                                        <span class="text-primary mr-2">✓</span>
+                                        <span><strong>Potencjalnie wyższe przychody:</strong> Rynek krakowski pokazuje możliwość osiągnięcia wyższych przychodów niż przy najmie długoterminowym</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-primary mr-2">✓</span>
+                                        <span><strong>Kontrola nad nieruchomością:</strong> Krótkie pobyty pozwalają na regularne monitorowanie stanu mieszkania</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-primary mr-2">✓</span>
+                                        <span><strong>Elastyczność wykorzystania:</strong> Możliwość korzystania z mieszkania dla własnych potrzeb w dowolnym terminie</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-primary mr-2">✓</span>
+                                        <span><strong>Profesjonalne zarządzanie:</strong> Dostępność sprawdzonych firm oferujących kompleksową obsługę</span>
+                                    </li>
+                                </ul>
+
+                                <h4 class="font-semibold text-gray-800 mb-3">Prognozowane przychody roczne:</h4>
+                                <div class="bg-green-50 p-4 rounded-lg mb-6">
+                                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                        <div class="text-center">
+                                            <div class="text-2xl font-bold text-green-800 mb-1">70.000 zł</div>
+                                            <p class="text-sm text-green-700">Roczny dochód netto właściciela</p>
+                                            <p class="text-xs text-green-600 mt-1">Bazując na przykładzie 10.000 zł/mc brutto</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="text-2xl font-bold text-green-800 mb-1">5.500 zł</div>
+                                            <p class="text-sm text-green-700">Średni miesięczny dochód netto</p>
+                                            <p class="text-xs text-green-600 mt-1">Po pokryciu wszystkich kosztów</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="font-semibold text-gray-800 mb-3">Model współpracy z firmą zarządzającą:</h4>
+                                <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                                    <ul class="space-y-2">
+                                        <li class="flex items-start">
+                                            <span class="text-gray-600 mr-2">•</span>
+                                            <span><strong>Prowizja:</strong> Standardowo 19% od przychodu brutto</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-gray-600 mr-2">•</span>
+                                            <span><strong>Podatek VAT:</strong> 8% w formie podatku VAT</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-gray-600 mr-2">•</span>
+                                            <span><strong>Opłaty za rezerwacje:</strong> 1,5-3,5% prowizji platform rezerwacyjnych</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="text-gray-600 mr-2">•</span>
+                                            <span><strong>Brak kosztów startowych:</strong> Firma pokrywa koszty wyposażenia w pościel, ręczniki oraz sesję fotograficzną</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <h4 class="font-semibold text-gray-800 mb-3">Zarządzanie przychodami:</h4>
+                                <p class="mb-4">
+                                    Profesjonalne firmy wykorzystują dynamiczne zarządzanie cenami (revenue management)
+                                    z dedykowanymi algorytmami, które analizują lokalny rynek, sezonowość i wydarzenia.
+                                    To pozwala na optymalizację obłożenia i maksymalizację przychodów - nawet o 50% więcej
+                                    w porównaniu ze stałymi cenami.
+                                </p>
+
+                                <h4 class="font-semibold text-gray-800 mb-3">Dodatkowe źródła rezerwacji:</h4>
+                                <p class="mb-4">
+                                    Oprócz głównych platform rezerwacyjnych, współpracujące firmy mają dostęp do szerokiej
+                                    sieci portali, w tym międzynarodowych systemów rezerwacyjnych, platform dla biznesu,
+                                    oraz własnych kanałów dystrybucji. Większa widoczność przekłada się na wyższe obłożenie
+                                    mieszkania przez cały rok.
+                                </p>
+
+                                <h4 class="font-semibold text-gray-800 mb-3">Aspekty operacyjne:</h4>
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-start">
+                                        <span class="text-gray-600 mr-2">•</span>
+                                        <span>Całodobowa infolinia dla gości</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-gray-600 mr-2">•</span>
+                                        <span>Regularne sprzątanie po każdym pobycie</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-gray-600 mr-2">•</span>
+                                        <span>Kontrola stanu mieszkania i drobne naprawy</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-gray-600 mr-2">•</span>
+                                        <span>Umowa na czas nieokreślony - elastyczne warunki współpracy</span>
+                                    </li>
+                                </ul>
+
+                                <div class="bg-amber-50 p-4 rounded-lg border border-amber-200">
+                                    <p class="text-sm text-amber-800">
+                                        <strong>Uwaga:</strong> Szczegółowe dane z przeprowadzonej analizy,
+                                        w tym nazwy firm zarządzających, estymacje przychodów dla tej konkretnej
+                                        nieruchomości oraz porównanie ofert, są dostępne na życzenie kupującego.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Long-term Rental Tab -->
+                        <div id="content-dlugoterminowy" class="tab-pane hidden">
+                            <div class="text-gray-600">
+                                <div class="mb-6">
+                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Potencjał Inwestycyjny - Najem Długoterminowy</h3>
+                                    <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                                        <p class="text-sm text-blue-800 mb-2">
+                                            <strong>Analiza rynku:</strong> IV kwartał 2024 - Kraków, Bieżanów-Prokocim
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-4">
+                                        Najem długoterminowy to stabilna strategia inwestycyjna dla właścicieli poszukujących przewidywalnego, regularnego dochodu.
+                                        Oferuje bezpieczeństwo finansowe przy minimalnym zaangażowaniu czasowym właściciela.
+                                    </p>
+
+                                    <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                                        <h4 class="font-semibold text-blue-800 mb-2">Zalety tej strategii inwestycyjnej:</h4>
+                                        <ul class="list-disc list-inside text-sm text-blue-700 space-y-1">
+                                            <li>Przewidywalny miesięczny dochód przez cały rok</li>
+                                            <li>Mniejsze okresy pustostanu nieruchomości</li>
+                                            <li>Niższe koszty rotacji najemców</li>
+                                            <li>Profesjonalne zarządzanie przez sprawdzone firmy</li>
+                                            <li>Minimalne zaangażowanie czasowe właściciela</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="mb-6">
+                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Profesjonalne zarządzanie nieruchomością</h3>
+                                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                        <div class="bg-gray-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold mb-2">Usługi zarządzania obejmują:</h4>
+                                            <ul class="text-sm space-y-1">
+                                                <li>• Wyszukiwanie i weryfikacja najemców</li>
+                                                <li>• Przygotowanie umów najmu</li>
+                                                <li>• Comiesięczne pobieranie czynszu</li>
+                                                <li>• Koordinacja remontów i napraw</li>
+                                                <li>• Regularne przeglądy nieruchomości</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="bg-gray-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold mb-2">Dodatkowe usługi:</h4>
+                                            <ul class="text-sm space-y-1">
+                                                <li>• Rozliczanie mediów</li>
+                                                <li>• Obsługa prawna</li>
+                                                <li>• Sprawozdawczość finansowa</li>
+                                                <li>• Interwencje w sytuacjach awaryjnych</li>
+                                                <li>• Wsparcie przy optymalizacji podatkowej</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-6">
+                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Prognozowane przychody roczne</h3>
+
+                                    <div class="bg-green-50 p-4 rounded-lg mb-6">
+                                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-green-800 mb-1">35.000 - 55.000 zł</div>
+                                                <p class="text-sm text-green-700">Roczny dochód netto właściciela</p>
+                                                <p class="text-xs text-green-600 mt-1">Przy czynszu 3.500-5.500 zł/mc</p>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-green-800 mb-1">3.000 - 5.000 zł</div>
+                                                <p class="text-sm text-green-700">Średni miesięczny dochód netto</p>
+                                                <p class="text-xs text-green-600 mt-1">Po pokryciu kosztów zarządzania</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-xs text-green-600 text-center">
+                                            *Estymacja dla mieszkania 70m2+ w Bieżanowie-Prokocim
+                                        </p>
+                                    </div>
+
+                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Analiza finansowa najmu długoterminowego</h3>
+                                    <p class="mb-4">
+                                        Na podstawie analizy rynku krakowskiego, najem długoterminowy oferuje stabilny zwrot z inwestycji przy umiarkowanym ryzyku.
+                                        Koszty zarządzania są przewidywalne i znacznie niższe niż przy wynajmie krótkoterminowym.
+                                    </p>
+
+                                    <div class="bg-green-50 p-4 rounded-lg mb-4">
+                                        <h4 class="font-semibold text-green-800 mb-2">Struktura kosztów:</h4>
+                                        <div class="text-sm text-green-700 grid md:grid-cols-2 gap-4">
+                                            <div>
+                                                <p class="mb-1"><span class="font-medium">Prowizja za zarządzanie:</span> 15-20% miesięcznego czynszu</p>
+                                                <p class="mb-1"><span class="font-medium">Znalezienie najemcy:</span> 0 zł (bez dodatkowych opłat)</p>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1"><span class="font-medium">Ubezpieczenie:</span> obowiązek właściciela</p>
+                                                <p class="mb-1"><span class="font-medium">Remonty:</span> koordynacja przez firmę, koszt właściciela</p>
+                                                <p><span class="font-medium">Wymogi prawne:</span> obsługa przez firmę zarządzającą</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-6">
+                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Proces rozpoczęcia współpracy</h3>
+                                    <p class="mb-4">
+                                        Uruchomienie najmu długoterminowego to proces składający się z kilku etapów, które zostają w pełni skoordynowane przez wybraną firmę zarządzającą.
+                                    </p>
+
+                                    <div class="grid md:grid-cols-3 gap-4">
+                                        <div class="text-center">
+                                            <div class="bg-blue-100 text-blue-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-2">1</div>
+                                            <h4 class="font-semibold text-sm mb-2">Ocena nieruchomości</h4>
+                                            <p class="text-xs text-gray-600">Wycena czynszu, zalecenia dotyczące przygotowania lokalu</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="bg-blue-100 text-blue-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-2">2</div>
+                                            <h4 class="font-semibold text-sm mb-2">Przygotowanie oferty</h4>
+                                            <p class="text-xs text-gray-600">Sesja fotograficzna, opis, publikacja na portalach</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="bg-blue-100 text-blue-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-2">3</div>
+                                            <h4 class="font-semibold text-sm mb-2">Podpisanie umowy</h4>
+                                            <p class="text-xs text-gray-600">Weryfikacja najemcy, podpisanie umowy, przekazanie kluczy</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="bg-amber-50 p-4 rounded-lg border border-amber-200">
+                                    <p class="text-sm text-amber-800">
+                                        <strong>Uwaga:</strong> Szczegółowe dane z przeprowadzonej analizy,
+                                        w tym nazwy firm zarządzających, estymacje przychodów dla tej konkretnej
+                                        nieruchomości oraz porównanie ofert, są dostępne na życzenie kupującego.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Location -->
                 <div id="lokalizacja" class="bg-white rounded-lg p-6 mb-6">
                     <h2 class="text-2xl font-bold mb-6">Lokalizacja</h2>
@@ -1327,6 +1670,7 @@
                         <li><a href="#opis" class="hover:text-white">Opis</a></li>
                         <li><a href="#plan" class="hover:text-white">Plan Nieruchomości</a></li>
                         <li><a href="#szczegoly" class="hover:text-white">Szczegóły</a></li>
+                        <li><a href="#inspiracje" class="hover:text-white">Inspiracje</a></li>
                         <li><a href="#lokalizacja" class="hover:text-white">Lokalizacja</a></li>
                     </ul>
                 </div>

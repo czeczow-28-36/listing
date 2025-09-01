@@ -4,3 +4,4 @@ tailwindcss.exe
 
 # Logs
 *.log
+.DS_Store
