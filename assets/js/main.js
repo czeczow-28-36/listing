@@ -430,6 +430,7 @@ function updateTotalPrice() {
     }
 }
 
+
 // Optional: Add any Stimulus controllers here
 if (window.Stimulus) {
     // Example controller registration
