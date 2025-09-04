@@ -10,6 +10,6 @@ Jest to prosta statyczna strona html, która docelowo będzie hostowana na serwi
 
 - HTML
 - CSS - Tailwind CSS 
-- JavaScript - HTMX / Stimulus 
+- JavaScript - HTMX / Stimulus / Hypertext 
 
 Nie będzie tutaj żadnej dynamicznej logiki aplikacyjnej, node lub innych technologii.

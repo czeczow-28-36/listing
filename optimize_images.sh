@@ -114,6 +114,30 @@ if [ -d "$SOURCE_DIR/parking" ]; then
     done
 fi
 
+# Process header images for okolica section
+echo -e "\n=== Processing Okolica Header Images ==="
+if [ -d "$SOURCE_DIR/okolica_headers" ]; then
+    for img in "$SOURCE_DIR"/okolica_headers/*.{jpg,jpeg,png}; do
+        if [ -f "$img" ]; then
+            filename=$(basename "$img")
+            base_name="${filename%.*}"
+            
+            echo "Processing header image: $filename"
+            
+            # Full size (1920px max width, high quality for lightbox)
+            ffmpeg -i "$img" -vf "scale='min(1920,iw)':-1" -q:v 2 -y "$OUTPUT_DIR/full/header_${base_name}.jpg" 2>/dev/null
+            
+            # Medium size (1200px max width for desktop headers)
+            ffmpeg -i "$img" -vf "scale='min(1200,iw)':-1" -q:v 3 -y "$OUTPUT_DIR/medium/header_${base_name}.jpg" 2>/dev/null
+            
+            # Small size (800px max width for mobile headers)  
+            ffmpeg -i "$img" -vf "scale='min(800,iw)':-1" -q:v 4 -y "$OUTPUT_DIR/small/header_${base_name}.jpg" 2>/dev/null
+            
+            echo "  Saved as: header_${base_name}.jpg in all sizes"
+        fi
+    done
+fi
+
 echo -e "\n=== Optimization Complete ==="
 echo "Images saved to: $OUTPUT_DIR"
 

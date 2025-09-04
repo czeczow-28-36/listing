@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wyjątkowe dwupoziomowe mieszkanie z klimatyzacją - Kraków, ul. Czeczów 28/36. 73 m², 4 pokoje, 2 łazienki, wysoki standard.">
+    <meta name="description" content="Wyjątkowe dwupoziomowe mieszkanie z klimatyzacją - Kraków, ul. Czeczów 28/36. 73 m², 5 pokoi, 2 łazienki, wysoki standard.">
     <title>Dwupoziomowe mieszkanie, dwie łazienki, klimatyzacja - Kraków Bieżanów-Prokocim</title>
 
     <!-- Tailwind CSS -->
@@ -17,6 +17,10 @@
 
     <!-- Swiper CSS for mobile carousel -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Tippy.js for tooltips -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 
     <!-- PhotoSwipe JS -->
     <script type="module">
@@ -637,15 +641,15 @@
                     </div>
                     <p class="text-gray-600 mb-4">ul. Henryka i Karola Czeczów 28/36, Bieżanów-Prokocim, Kraków</p>
 
-                    <div class="flex items-baseline gap-4 mb-6">
+                    <div class="flex items-baseline gap-4 mb-4">
                         <span class="text-4xl font-bold text-primary">979 000 zł</span>
-                        <span class="text-lg text-gray-600">11 384 zł/m²</span>
+                        <span class="text-lg text-gray-600">10 880 zł/m²</span>
                     </div>
 
                     <!-- Key features pills -->
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">4 pokoje</span>
-                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">86 m²</span>
+                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">5 pokoi</span>
+                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">90 m²</span>
                         <span class="px-3 py-1 bg-secondary rounded-full text-sm">Dwupoziomowe</span>
                         <span class="px-3 py-1 bg-secondary rounded-full text-sm">1 piętro</span>
                         <span class="px-3 py-1 bg-secondary rounded-full text-sm">Klimatyzacja</span>
@@ -660,16 +664,22 @@
                     <h2 class="text-2xl font-bold mb-6">Szczegóły oferty</h2>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="border-b border-gray-200 pb-3">
-                            <p class="text-sm text-gray-600 mb-1">Powierzchnia Całkowita</p>
-                            <p class="font-semibold">86 m²</p>
-                        </div>
-                        <div class="border-b border-gray-200 pb-3">
-                            <p class="text-sm text-gray-600 mb-1">Powierzchnia Użytkowa</p>
+                            <p class="text-sm text-gray-600 mb-1">
+                                <span class="cursor-help border-b border-dotted border-gray-400"
+                                      data-tippy-content="Powierzchnia użytkowa nie uwzględnia ścian, słupów, czy przestrzeni pod skosami do wysokości 1.4m. Od tej wartości naliczany jest czynsz dla administracji. Rzeczywista przestrzeń, którą można wykorzystać jest jedna znacznie większa.">Powierzchnia Użytkowa</span>
+                            </p>
                             <p class="font-semibold">71,8 m²</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
+                            <p class="text-sm text-gray-600 mb-1">
+                                <span class="cursor-help border-b border-dotted border-gray-400"
+                                      data-tippy-content="Powierzchnia całkowita to suma wszystkich powierzchni w mieszkaniu, włączając ściany działowe, balkony, loggie i inne elementy. Jest to powierzchnia liczona w granicach ścian zewnętrznych.">Powierzchnia Całkowita</span>
+                            </p>
+                            <p class="font-semibold">90 m²</p>
+                        </div>
+                        <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">Liczba pokoi</p>
-                            <p class="font-semibold">4</p>
+                            <p class="font-semibold">5</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">Piętro</p>
@@ -725,7 +735,7 @@
                     <h2 class="text-2xl font-bold mb-6">Opis</h2>
                     <div class="prose max-w-none text-gray-700">
                         <p class="mb-4">
-                            Prezentujemy na sprzedaż wyjątkowe dwupoziomowe mieszkanie o powierzchni 86 m² zlokalizowane w cichej części Krakowa, przy ulicy Henryka i Karola Czeczów 28/36.
+                            Prezentujemy na sprzedaż wyjątkowe dwupoziomowe mieszkanie o powierzchni 90 m² zlokalizowane w cichej części Krakowa, przy ulicy Henryka i Karola Czeczów 28/36.
                         </p>
 
                         <h3 class="text-lg font-semibold mt-6 mb-3">Układ mieszkania</h3>
@@ -750,6 +760,21 @@
 
                         <p>
                             Ponad to w okolicy znajdują się liczne sklepy, restauracje oraz tereny rekreacyjne, co czyni tę lokalizację idealną dla rodzin oraz osób ceniących wygodę i komfort życia.
+                        </p>
+
+                        <h3 class="text-lg font-semibold mt-6 mb-3">Klimatyzacja</h3>
+                        <p class="mb-4">
+                            Mieszkanie wyposażone jest w nowoczesną klimatyzację na obydwu piętrach, zapewniającą doskonałe warunki mieszkaniowe przez cały rok.
+                            Wydajny system klimatyzacyjny pozwala na skuteczne schłodzenie mieszkania w gorące letnie dni oraz stanowi doskonałe uzupełnienie
+                            ogrzewania w okresie zimowym. To rozwiązanie gwarantuje komfort termiczny niezależnie od pory roku i warunków atmosferycznych.
+                        </p>
+
+                        <h3 class="text-lg font-semibold mt-6 mb-3">Dwie łazienki</h3>
+                        <p class="mb-4">
+                            Wyjątkowym atutem mieszkania jest posiadanie dwóch w pełni wyposażonych łazienek. Pierwsza, na parterze, to praktyczna łazienka
+                            z nowoczesnym prysznicem, idealna do codziennych porannych rutyn. Druga, na piętrze, to przestronna łazienka z wanną,
+                            gdzie można się zrelaksować po długim dniu. Takie rozwiązanie eliminuje kolejki do łazienki w rodzinie, zapewnia prywatność
+                            i znacznie podnosi komfort codziennego użytkowania mieszkania.
                         </p>
 
                         <p class="mt-6 font-semibold">
@@ -802,7 +827,7 @@
                                     <img src="assets/img/source/floor_plan/01.png"
                                          alt="Plan piętra 1"
                                          class="w-full h-full object-contain cursor-pointer hover:scale-105 transition duration-300"
-                                         onclick="window.open('assets/img/source/floor_plan/01.png', '_blank')">
+                                         _="on click call window.open('assets/img/source/floor_plan/01.png', '_blank')">
                                 </div>
                                 <div>
                                     <table class="w-full text-sm">
@@ -837,7 +862,7 @@
                                         <tfoot>
                                             <tr class="font-bold text-primary">
                                                 <td class="pt-4">Suma</td>
-                                                <td class="pt-4 text-right">41 m²</td>
+                                                <td class="pt-4 text-right">45 m²</td>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -852,7 +877,7 @@
                                     <img src="assets/img/source/floor_plan/02.png"
                                          alt="Plan piętra 2"
                                          class="w-full h-full object-contain cursor-pointer hover:scale-105 transition duration-300"
-                                         onclick="window.open('assets/img/source/floor_plan/02.png', '_blank')">
+                                         _="on click call window.open('assets/img/source/floor_plan/02.png', '_blank')">
                                 </div>
                                 <div>
                                     <table class="w-full text-sm">
@@ -1222,7 +1247,7 @@
 
                                 <!-- Visualization -->
                                 <div class="mt-6 mb-4">
-                                    <div class="cursor-pointer" onclick="window.open('assets/img/source/floor_plan/02_01.png', '_blank')" title="Kliknij aby otworzyć wizualizację w nowym oknie">
+                                    <div class="cursor-pointer" _="on click call window.open('assets/img/source/floor_plan/02_01.png', '_blank')" title="Kliknij aby otworzyć wizualizację w nowym oknie">
                                         <img src="assets/img/source/floor_plan/02_01.png"
                                              alt="Wizualizacja możliwości dostawienia ścianki działowej"
                                              class="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -1393,18 +1418,18 @@
                             <div class="text-gray-600">
                                 <div class="mb-6">
                                     <h3 class="text-lg font-semibold mb-3 text-gray-800">Potencjał Inwestycyjny - Najem Długoterminowy</h3>
-                                    
+
                                     <div class="bg-gray-50 p-4 rounded-lg mb-6">
                                         <h4 class="font-semibold text-gray-800 mb-2">Czym jest najem długoterminowy?</h4>
                                         <p class="text-sm text-gray-700">
-                                            Najem długoterminowy to wynajmowanie mieszkania na okresy minimum kilku miesięcy, zazwyczaj od roku wzwyż. 
-                                            Najemcami są osoby szukające stałego miejsca zamieszkania - rodziny, single, pary czy studenci. 
-                                            Właściciel otrzymuje stały, przewidywalny czynsz co miesiąc, przy minimalnym zaangażowaniu w obsługę. 
-                                            W przeciwieństwie do najmu krótkoterminowego, koszty mediów zazwyczaj pokrywa najemca, a rotacja 
+                                            Najem długoterminowy to wynajmowanie mieszkania na okresy minimum kilku miesięcy, zazwyczaj od roku wzwyż.
+                                            Najemcami są osoby szukające stałego miejsca zamieszkania - rodziny, single, pary czy studenci.
+                                            Właściciel otrzymuje stały, przewidywalny czynsz co miesiąc, przy minimalnym zaangażowaniu w obsługę.
+                                            W przeciwieństwie do najmu krótkoterminowego, koszty mediów zazwyczaj pokrywa najemca, a rotacja
                                             lokatorów jest znacznie niższa.
                                         </p>
                                     </div>
-                                    
+
                                     <div class="bg-blue-50 p-4 rounded-lg mb-6">
                                         <p class="text-sm text-blue-800 mb-2">
                                             <strong>Analiza rynku:</strong> IV kwartał 2024 - Kraków, Bieżanów-Prokocim
@@ -1524,7 +1549,7 @@
                 <!-- Neighborhood -->
                 <div id="okolica" class="bg-white rounded-lg p-6 mb-6">
                     <h2 class="text-2xl font-bold mb-6">Okolica</h2>
-                    
+
                     <!-- Tab Navigation -->
                     <div class="border-b border-gray-200 mb-6">
                         <div class="overflow-x-auto">
@@ -1634,7 +1659,7 @@
                                 class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer">
                                 Bezpieczeństwo
                             </button>
-                        </nav>
+                            </nav>
                         </div>
                     </div>
 
@@ -1642,6 +1667,14 @@
                     <div class="tab-content">
                         <!-- Komunikacja Tab -->
                         <div id="content-komunikacja" class="tab-pane">
+                            <!-- Header Image -->
+                            <div class="mb-6 rounded-lg overflow-hidden">
+                                <img src="assets/img/source/okolica_headers/przystanek.png"
+                                     alt="Przystanek kolejowy SKA - doskonała komunikacja"
+                                     class="w-full h-48 object-cover cursor-pointer"
+                                     _="on click call window.open('assets/img/source/okolica_headers/przystanek.png', '_blank')">
+                            </div>
+
                             <div class="text-gray-600">
                                 <div class="flex items-start gap-3 mb-4">
                                     <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -1651,6 +1684,10 @@
                                     </div>
                                     <div>
                                         <h3 class="text-lg font-semibold mb-2 text-gray-800">🚆 Doskonała komunikacja kolejowa SKA</h3>
+                                        <p class="text-gray-700 mb-4 leading-relaxed">
+                                            Lokalizacja przy węźle kolejowym SKA to gwarancja szybkiego, wygodnego i ekonomicznego dostępu do całego Krakowa.
+                                            Dzięki nowoczesnej kolei aglomeracyjnej osiągniesz centrum w rekordowym czasie, omijając korki uliczne.
+                                        </p>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
                                             <li><strong>Szybkie połączenie z centrum:</strong> Podróż do Kraków Grzegórzki zajmuje jedynie <strong>11 minut</strong> pociągiem SKA</li>
                                             <li><strong>Bezpośrednie połączenie z lotniskiem:</strong> Dojazd na Lotnisko Kraków-Balice w około <strong>30 minut</strong> dzięki linii SKA1</li>
@@ -1665,6 +1702,14 @@
 
                         <!-- Zieleń Tab -->
                         <div id="content-zielen" class="tab-pane hidden">
+                            <!-- Header Image -->
+                            <div class="mb-6 rounded-lg overflow-hidden">
+                                <img src="assets/img/source/okolica_headers/park_zlocien.jpg"
+                                     alt="Park Złocień - pierwszy park w tym rejonie Krakowa"
+                                     class="w-full h-48 object-cover cursor-pointer"
+                                     _="on click call window.open('assets/img/source/okolica_headers/park_zlocien.jpg', '_blank')">
+                            </div>
+
                             <div class="text-gray-600">
                                 <div class="flex items-start gap-3 mb-4">
                                     <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -1674,6 +1719,10 @@
                                     </div>
                                     <div>
                                         <h3 class="text-lg font-semibold mb-2 text-gray-800">🌱 Pierwszy Park Złocień i zielone inwestycje</h3>
+                                        <p class="text-gray-700 mb-4 leading-relaxed">
+                                            Ten rejon Krakowa przechodzi zieloną transformację. Pierwszy w okolicy Park Złocień to dopiero początek - miasto
+                                            inwestuje setki milionów w zieleń, tworząc nowoczesną przestrzeń miejską przyjazną mieszkańcom.
+                                        </p>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
                                             <li><strong>Unikatowy charakter:</strong> Park Złocień to <strong>pierwszy park w tym rejonie Krakowa</strong>, oddany do użytku w 2024 roku</li>
                                             <li><strong>Strategiczna lokalizacja:</strong> Park stanowi bardzo ważny element zwiększania dostępności terenów zieleni dla mieszkańców</li>
@@ -1688,6 +1737,14 @@
 
                         <!-- Edukacja Tab -->
                         <div id="content-edukacja" class="tab-pane hidden">
+                            <!-- Header Image -->
+                            <div class="mb-6 rounded-lg overflow-hidden">
+                                <img src="assets/img/source/okolica_headers/szkola.png"
+                                     alt="Szkoła Podstawowa nr 20 - nowoczesna infrastruktura edukacyjna"
+                                     class="w-full h-48 object-cover cursor-pointer"
+                                     _="on click call window.open('assets/img/source/okolica_headers/szkola.png', '_blank')">
+                            </div>
+
                             <div class="text-gray-600">
                                 <div class="flex items-start gap-3 mb-4">
                                     <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -1697,6 +1754,10 @@
                                     </div>
                                     <div>
                                         <h3 class="text-lg font-semibold mb-2 text-gray-800">🎓 Najnowocześniejsza szkoła w Krakowie</h3>
+                                        <p class="text-gray-700 mb-4 leading-relaxed">
+                                            Rodziny z dziećmi mają dostęp do wyjątkowej infrastruktury edukacyjnej. Nowa szkoła podstawowa to prawdziwa
+                                            perła architektoniczna z innowacyjnymi rozwiązaniami../
+                                        </p>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
                                             <li><strong>Wyjątkowa infrastruktura:</strong> Szkoła Podstawowa nr 20 oddana w 2023 roku to <strong>jeden z najnowocześniejszych obiektów edukacyjnych</strong> w Krakowie</li>
                                             <li><strong>Innowacyjne rozwiązania:</strong> <strong>Boisko sportowe na dachu hali</strong> - unikalne rozwiązanie architektoniczne w skali miasta</li>
@@ -1711,6 +1772,14 @@
 
                         <!-- Środowisko Tab -->
                         <div id="content-srodowisko" class="tab-pane hidden">
+                            <!-- Header Image -->
+                            <div class="mb-6 rounded-lg overflow-hidden">
+                                <img src="assets/img/source/okolica_headers/oczyszczalnia.jpg"
+                                     alt="Modernizacja oczyszczalni ścieków w Płaszowie - wielomilionowa inwestycja środowiskowa"
+                                     class="w-full h-48 object-cover cursor-pointer"
+                                     _="on click call window.open('assets/img/source/okolica_headers/oczyszczalnia.jpg', '_blank')">
+                            </div>
+
                             <div class="text-gray-600">
                                 <div class="flex items-start gap-3 mb-4">
                                     <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -1727,7 +1796,7 @@
                                             <li><strong>Wsparcie zewnętrzne:</strong> Narodowy Fundusz Ochrony Środowiska zapewnia około <strong>100 mln zł</strong> na dalszą deodoryzację</li>
                                             <li><strong>Postęp prac:</strong> W latach 2019-2023 zmodernizowano osadniki pierwotne i zahermetyzowano kolektor Płaszów</li>
                                         </ul>
-                                        
+
                                         <h4 class="text-md font-semibold mt-6 mb-3 text-gray-800">🏠 Wysokie standardy nowych mieszkań zgodnie z normami UE 2024</h4>
                                         <ul class="list-disc list-inside space-y-2">
                                             <li><strong>Standardy UE 2024:</strong> Wszystkie nowe budynki muszą spełniać <strong>najwyższe normy energetyczne</strong> wprowadzone w 2024 roku</li>
@@ -1742,6 +1811,7 @@
 
                         <!-- Bezpieczeństwo Tab -->
                         <div id="content-bezpieczenstwo" class="tab-pane hidden">
+
                             <div class="text-gray-600">
                                 <div class="flex items-start gap-3 mb-4">
                                     <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -1751,7 +1821,11 @@
                                     </div>
                                     <div>
                                         <h3 class="text-lg font-semibold mb-2 text-gray-800">🌊 Kompleksowe zabezpieczenia przeciwpowodziowe od 2017 roku</h3>
-                                        
+                                        <p class="text-gray-700 mb-4 leading-relaxed">
+                                            Dzięki inwestycjom o wartości ponad 130 mln zł okolica jest w pełni zabezpieczona przed powodzią. Nowoczesne
+                                            systemy retencji i zabezpieczeń przeszły pomyślnie testy podczas intensywnych opadów w 2023 roku.
+                                        </p>
+
                                         <h4 class="text-md font-semibold mt-4 mb-3 text-gray-700">Uregulowanie koryta rzeki Serafy (2017-2020)</h4>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
                                             <li><strong>Modernizacja w ramach inwestycji SKA:</strong> Kompleksowe uregulowanie koryta rzeki Serafy połączone z budową przystanku kolejowego za ponad <strong>1 mld zł</strong></li>
@@ -1990,6 +2064,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- Initialize Tippy.js tooltips -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            tippy('[data-tippy-content]', {
+                theme: 'light-border',
+                placement: 'top',
+                animation: 'fade',
+                duration: [200, 150],
+                maxWidth: 300,
+                interactive: false,
+                arrow: true
+            });
+        });
+    </script>
 
 </body>
 </html>
