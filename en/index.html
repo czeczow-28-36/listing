@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wyjątkowe dwupoziomowe mieszkanie z klimatyzacją - Kraków, ul. Czeczów 28/36. 73 m², 5 pokoi, 2 łazienki, wysoki standard.">
-    <title>Dwupoziomowe mieszkanie, dwie łazienki, klimatyzacja - Kraków Bieżanów-Prokocim</title>
+    <meta name="description" content="Exceptional two-level apartment with air conditioning - Kraków, Czeczów 28/36. 73 m², 5 rooms, 2 bathrooms, high standard.">
+    <title>Two-level apartment, two bathrooms, air conditioning - Kraków Bieżanów-Prokocim</title>
 
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="stylesheet" href="../assets/css/output.css">
 
     <!-- Alpine.js for interactivity -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -35,7 +35,7 @@
     <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
 
     <!-- Custom JavaScript -->
-    <script src="assets/js/main.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
 
     <script defer src="https://cloud.umami.is/script.js" data-website-id="c2600674-92ea-4c34-b56b-a8720591fbfd"></script>
 </head>
@@ -47,23 +47,23 @@
                 <div class="flex items-center space-x-8">
                     <a href="/" class="text-2xl font-bold text-primary">Czeczów 28/36</a>
                     <div class="hidden md:flex space-x-6">
-                        <a href="#galeria" class="text-gray-700 hover:text-primary transition">Galeria</a>
-                        <a href="#szczegoly" class="text-gray-700 hover:text-primary transition">Szczegóły</a>
-                        <a href="#opis" class="text-gray-700 hover:text-primary transition">Opis</a>
-                        <a href="#udogodnienia" class="text-gray-700 hover:text-primary transition">Udogodnienia</a>
-                        <a href="#plan" class="text-gray-700 hover:text-primary transition">Plan Nieruchomości</a>
-                        <a href="#miejsca-parkingowe" class="text-gray-700 hover:text-primary transition">Miejsca Parkingowe</a>
-                        <a href="#inspiracje" class="text-gray-700 hover:text-primary transition">Inspiracje</a>
-                        <a href="#okolica" class="text-gray-700 hover:text-primary transition">Okolica</a>
-                        <a href="#lokalizacja" class="text-gray-700 hover:text-primary transition">Lokalizacja</a>
+                        <a href="#gallery" class="text-gray-700 hover:text-primary transition">Gallery</a>
+                        <a href="#details" class="text-gray-700 hover:text-primary transition">Details</a>
+                        <a href="#description" class="text-gray-700 hover:text-primary transition">Description</a>
+                        <a href="#amenities" class="text-gray-700 hover:text-primary transition">Amenities</a>
+                        <a href="#floorplan" class="text-gray-700 hover:text-primary transition">Floor Plan</a>
+                        <a href="#parking" class="text-gray-700 hover:text-primary transition">Parking</a>
+                        <a href="#inspiration" class="text-gray-700 hover:text-primary transition">Inspiration</a>
+                        <a href="#neighborhood" class="text-gray-700 hover:text-primary transition">Neighborhood</a>
+                        <a href="#location" class="text-gray-700 hover:text-primary transition">Location</a>
                     </div>
                 </div>
 
                 <!-- Language switcher -->
                 <div class="flex items-center space-x-4">
                     <div class="flex items-center space-x-2">
-                        <span class="text-sm text-gray-500">PL</span>
-                        <a href="en/index.html" class="text-sm text-gray-700 hover:text-primary transition">EN</a>
+                        <span class="text-sm text-gray-500">EN</span>
+                        <a href="../index.html" class="text-sm text-gray-700 hover:text-primary transition">PL</a>
                     </div>
                 </div>
 
@@ -80,15 +80,15 @@
             <!-- Mobile menu -->
             <div id="mobile-menu" class="md:hidden hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-border">
-                    <a href="#galeria" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Galeria</a>
-                    <a href="#szczegoly" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Szczegóły</a>
-                    <a href="#opis" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Opis</a>
-                    <a href="#udogodnienia" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Udogodnienia</a>
-                    <a href="#plan" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Plan Nieruchomości</a>
-                    <a href="#miejsca-parkingowe" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Miejsca Parkingowe</a>
-                    <a href="#inspiracje" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Inspiracje</a>
-                    <a href="#okolica" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Okolica</a>
-                    <a href="#lokalizacja" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Lokalizacja</a>
+                    <a href="#gallery" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Gallery</a>
+                    <a href="#details" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Details</a>
+                    <a href="#description" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Description</a>
+                    <a href="#amenities" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Amenities</a>
+                    <a href="#floorplan" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Floor Plan</a>
+                    <a href="#parking" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Parking</a>
+                    <a href="#inspiration" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Inspiration</a>
+                    <a href="#neighborhood" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Neighborhood</a>
+                    <a href="#location" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition">Location</a>
                 </div>
             </div>
         </div>
@@ -108,18 +108,18 @@
         </nav>
 
         <!-- Image Gallery Section -->
-        <div id="galeria" class="mb-8">
+        <div id="gallery" class="mb-8">
             <!-- Desktop Gallery Grid -->
             <div id="gallery" class="hidden md:grid grid-cols-4 gap-2 h-[500px]">
                 <!-- Main large image -->
                 <div class="col-span-2 row-span-2 relative overflow-hidden rounded-lg">
                     <a href="#" class="gallery-image block w-full h-full cursor-pointer group"
-                       data-pswp-src="assets/img/source/living_room/02.jpg"
+                       data-pswp-src="/assets/img/source/living_room/02.jpg"
                        data-pswp-width="1920"
                        data-pswp-height="1280"
                        data-alt="Salon z aneksem kuchennym - parter"
                        data-description="">
-                        <img src="assets/img/source/living_room/02.jpg"
+                        <img src="/assets/img/source/living_room/02.jpg"
                              alt="Salon z aneksem kuchennym - parter"
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300 flex items-center justify-center">
@@ -136,13 +136,13 @@
                 <!-- Gallery Images -->
                 <div class="relative overflow-hidden rounded-lg">
                     <a href="#" class="gallery-image block w-full h-full cursor-pointer group"
-                       data-pswp-src="assets/img/source/living_room_floor/03.jpg"
+                       data-pswp-src="/assets/img/source/living_room_floor/03.jpg"
                        data-pswp-width="1920"
                        data-pswp-height="1440"
-                       data-alt="Pokój typu studio - piętro"
+                       data-alt="Studio room - upstairs"
                        data-description="">
-                        <img src="assets/img/source/living_room_floor/03.jpg"
-                             alt="Pokój typu studio - piętro"
+                        <img src="/assets/img/source/living_room_floor/03.jpg"
+                             alt="Studio room - upstairs"
                              class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300 flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -150,20 +150,20 @@
                             </svg>
                         </div>
                         <div class="hidden-caption-content" style="display: none;">
-                            <div class="pswp__caption__center">Pokój typu studio - piętro</div>
+                            <div class="pswp__caption__center">Studio room - upstairs</div>
                         </div>
                     </a>
                 </div>
 
                 <div class="relative overflow-hidden rounded-lg">
                     <a href="#" class="gallery-image block w-full h-full cursor-pointer group"
-                       data-pswp-src="assets/img/source/bedroom_floor/02.jpg"
+                       data-pswp-src="/assets/img/source/bedroom_floor/02.jpg"
                        data-pswp-width="1920"
                        data-pswp-height="1440"
-                       data-alt="Pokój nieprzechodni - Piętro"
+                       data-alt="Non-walk-through room - Upstairs"
                        data-description="">
-                        <img src="assets/img/source/bedroom_floor/02.jpg"
-                             alt="Pokój nieprzechodni - Piętro"
+                        <img src="/assets/img/source/bedroom_floor/02.jpg"
+                             alt="Non-walk-through room - Upstairs"
                              class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300 flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -171,19 +171,19 @@
                             </svg>
                         </div>
                         <div class="hidden-caption-content" style="display: none;">
-                            <div class="pswp__caption__center">Pokój nieprzechodni - Piętro</div>
+                            <div class="pswp__caption__center">Non-walk-through room - Upstairs</div>
                         </div>
                     </a>
                 </div>
 
                 <div class="relative overflow-hidden rounded-lg">
                     <a href="#" class="gallery-image block w-full h-full cursor-pointer group"
-                       data-pswp-src="assets/img/source/bedroom_base/03.jpg"
+                       data-pswp-src="/assets/img/source/bedroom_base/03.jpg"
                        data-pswp-width="1920"
                        data-pswp-height="1280"
-                       data-alt="Pokój nieprzechodni - parter"
+                       data-alt="Non-walk-through room - ground floor"
                        data-description="">
-                        <img src="assets/img/source/bedroom_base/03.jpg"
+                        <img src="/assets/img/source/bedroom_base/03.jpg"
                              alt="Salon - poziom pierwszy"
                              class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300 flex items-center justify-center">
@@ -192,20 +192,20 @@
                             </svg>
                         </div>
                         <div class="hidden-caption-content" style="display: none;">
-                            <div class="pswp__caption__center">Pokój nieprzechodni - parter</div>
+                            <div class="pswp__caption__center">Non-walk-through room - ground floor</div>
                         </div>
                     </a>
                 </div>
 
                 <div class="relative overflow-hidden rounded-lg">
                     <a href="#" class="gallery-image block w-full h-full cursor-pointer group"
-                       data-pswp-src="assets/img/source/bathroom_base/03.jpg"
+                       data-pswp-src="/assets/img/source/bathroom_base/03.jpg"
                        data-pswp-width="1920"
                        data-pswp-height="1440"
-                       data-alt="Łazienka - parter"
+                       data-alt="Bathroom - ground floor"
                        data-description="">
-                        <img src="assets/img/source/bathroom_base/03.jpg"
-                             alt="Łazienka - parter"
+                        <img src="/assets/img/source/bathroom_base/03.jpg"
+                             alt="Bathroom - ground floor"
                              class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300 flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -213,14 +213,14 @@
                             </svg>
                         </div>
                         <div class="hidden-caption-content" style="display: none;">
-                            <div class="pswp__caption__center">Łazienka główna - widok 2</div>
+                            <div class="pswp__caption__center">Main bathroom - view 2</div>
                         </div>
                     </a>
                 </div>
 
                 <!-- Show all photos button on last image -->
                 <div class="relative overflow-hidden rounded-lg">
-                    <img src="assets/img/source/drone/01.jpg"
+                    <img src="/assets/img/source/drone/01.jpg"
                          alt="Widok z drona"
                          class="w-full h-full object-cover">
                     <button id="show-all-photos" class="absolute inset-0 bg-black/60 flex items-center justify-center text-white hover:bg-black/70 transition">
@@ -228,33 +228,33 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
-                            <span class="font-semibold">Zobacz wszystkie zdjęcia</span>
-                            <span class="block text-sm mt-1">+21 więcej</span>
+                            <span class="font-semibold">View all photos</span>
+                            <span class="block text-sm mt-1">+21 more</span>
                         </div>
                     </button>
                 </div>
                 <!-- Hidden images for PhotoSwipe (images 6-26) -->
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/entrance/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/entrance/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/living_room/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/living_room/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/living_room/03.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/bathroom_base/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/bathroom_base/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/bedroom_base/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/bedroom_base/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/bedroom_base/03.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/living_room_floor/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/living_room_floor/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/living_room_floor/03.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/bedroom_floor/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/bedroom_floor/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/bathroom_floor/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/bathroom_floor/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/wardrobe/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/wardrobe/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/bedroom_floor/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
-                <a href="#" class="gallery-image hidden" data-pswp-src="assets/img/source/bedroom_floor/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/entrance/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/entrance/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/living_room/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/living_room/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/living_room/03.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/bathroom_base/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/bathroom_base/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/bedroom_base/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/bedroom_base/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/bedroom_base/03.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/living_room_floor/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/living_room_floor/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/living_room_floor/03.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/bedroom_floor/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/bedroom_floor/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/bathroom_floor/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/bathroom_floor/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/wardrobe/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/wardrobe/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/bedroom_floor/01.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
+                <a href="#" class="gallery-image hidden" data-pswp-src="/assets/img/source/bedroom_floor/02.jpg" data-pswp-width="1920" data-pswp-height="1440" data-alt="" data-description=""></a>
             </div>
 
             <!-- Mobile Swiper Carousel -->
@@ -264,11 +264,11 @@
                         <!-- Slide 1 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/living_room/02.jpg"
+                                <img src="/assets/img/source/living_room/02.jpg"
                                      alt="Salon z aneksem kuchennym - parter"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="0"
-                                     data-pswp-src="assets/img/source/living_room/02.jpg"
+                                     data-pswp-src="/assets/img/source/living_room/02.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1280">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -280,11 +280,11 @@
                         <!-- Slide 2 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/living_room_floor/03.jpg"
-                                     alt="Pokój typu studio - piętro"
+                                <img src="/assets/img/source/living_room_floor/03.jpg"
+                                     alt="Studio room - upstairs"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="1"
-                                     data-pswp-src="assets/img/source/living_room_floor/03.jpg"
+                                     data-pswp-src="/assets/img/source/living_room_floor/03.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -296,11 +296,11 @@
                         <!-- Slide 3 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bedroom_floor/02.jpg"
-                                     alt="Pokój nieprzechodni - Piętro"
+                                <img src="/assets/img/source/bedroom_floor/02.jpg"
+                                     alt="Non-walk-through room - Upstairs"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="2"
-                                     data-pswp-src="assets/img/source/bedroom_floor/02.jpg"
+                                     data-pswp-src="/assets/img/source/bedroom_floor/02.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -312,11 +312,11 @@
                         <!-- Slide 4 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bedroom_base/03.jpg"
-                                     alt="Pokój nieprzechodni - parter"
+                                <img src="/assets/img/source/bedroom_base/03.jpg"
+                                     alt="Non-walk-through room - ground floor"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="3"
-                                     data-pswp-src="assets/img/source/bedroom_base/03.jpg"
+                                     data-pswp-src="/assets/img/source/bedroom_base/03.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1280">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -328,11 +328,11 @@
                         <!-- Slide 5 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bathroom_base/03.jpg"
-                                     alt="Łazienka - parter"
+                                <img src="/assets/img/source/bathroom_base/03.jpg"
+                                     alt="Bathroom - ground floor"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="4"
-                                     data-pswp-src="assets/img/source/bathroom_base/03.jpg"
+                                     data-pswp-src="/assets/img/source/bathroom_base/03.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -344,11 +344,11 @@
                         <!-- Slide 6 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/drone/01.jpg"
+                                <img src="/assets/img/source/drone/01.jpg"
                                      alt="Widok z drona"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="5"
-                                     data-pswp-src="assets/img/source/drone/01.jpg"
+                                     data-pswp-src="/assets/img/source/drone/01.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -360,11 +360,11 @@
                         <!-- Slide 7 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/entrance/01.jpg"
+                                <img src="/assets/img/source/entrance/01.jpg"
                                      alt="Korytarz"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="6"
-                                     data-pswp-src="assets/img/source/entrance/01.jpg"
+                                     data-pswp-src="/assets/img/source/entrance/01.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -376,11 +376,11 @@
                         <!-- Slide 8 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/entrance/02.jpg"
+                                <img src="/assets/img/source/entrance/02.jpg"
                                      alt="Korytarz - widok 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="7"
-                                     data-pswp-src="assets/img/source/entrance/02.jpg"
+                                     data-pswp-src="/assets/img/source/entrance/02.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -392,11 +392,11 @@
                         <!-- Slide 9 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/living_room/01.jpg"
+                                <img src="/assets/img/source/living_room/01.jpg"
                                      alt="Salon z aneksem kuchennym"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="8"
-                                     data-pswp-src="assets/img/source/living_room/01.jpg"
+                                     data-pswp-src="/assets/img/source/living_room/01.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -408,11 +408,11 @@
                         <!-- Slide 10 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/living_room/02.jpg"
+                                <img src="/assets/img/source/living_room/02.jpg"
                                      alt="Salon z aneksem kuchennym - widok 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="9"
-                                     data-pswp-src="assets/img/source/living_room/02.jpg"
+                                     data-pswp-src="/assets/img/source/living_room/02.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -424,11 +424,11 @@
                         <!-- Slide 11 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/living_room/03.jpg"
+                                <img src="/assets/img/source/living_room/03.jpg"
                                      alt="Salon z aneksem kuchennym - widok 3"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="10"
-                                     data-pswp-src="assets/img/source/living_room/03.jpg"
+                                     data-pswp-src="/assets/img/source/living_room/03.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -440,11 +440,11 @@
                         <!-- Slide 12 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bathroom_base/01.jpg"
-                                     alt="Łazienka główna"
+                                <img src="/assets/img/source/bathroom_base/01.jpg"
+                                     alt="Main bathroom"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="11"
-                                     data-pswp-src="assets/img/source/bathroom_base/01.jpg"
+                                     data-pswp-src="/assets/img/source/bathroom_base/01.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -456,11 +456,11 @@
                         <!-- Slide 13 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bathroom_base/02.jpg"
-                                     alt="Łazienka główna - widok 2"
+                                <img src="/assets/img/source/bathroom_base/02.jpg"
+                                     alt="Main bathroom - view 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="12"
-                                     data-pswp-src="assets/img/source/bathroom_base/02.jpg"
+                                     data-pswp-src="/assets/img/source/bathroom_base/02.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -472,11 +472,11 @@
                         <!-- Slide 14 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bedroom_base/01.jpg"
-                                     alt="Sypialnia główna"
+                                <img src="/assets/img/source/bedroom_base/01.jpg"
+                                     alt="Main bedroom"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="13"
-                                     data-pswp-src="assets/img/source/bedroom_base/01.jpg"
+                                     data-pswp-src="/assets/img/source/bedroom_base/01.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -488,11 +488,11 @@
                         <!-- Slide 15 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bedroom_base/02.jpg"
-                                     alt="Sypialnia główna - widok 2"
+                                <img src="/assets/img/source/bedroom_base/02.jpg"
+                                     alt="Main bedroom - widok 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="14"
-                                     data-pswp-src="assets/img/source/bedroom_base/02.jpg"
+                                     data-pswp-src="/assets/img/source/bedroom_base/02.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -504,11 +504,11 @@
                         <!-- Slide 16 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bedroom_base/03.jpg"
-                                     alt="Sypialnia główna - widok 3"
+                                <img src="/assets/img/source/bedroom_base/03.jpg"
+                                     alt="Main bedroom - widok 3"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="15"
-                                     data-pswp-src="assets/img/source/bedroom_base/03.jpg"
+                                     data-pswp-src="/assets/img/source/bedroom_base/03.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -520,11 +520,11 @@
                         <!-- Slide 17 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/living_room_floor/01.jpg"
+                                <img src="/assets/img/source/living_room_floor/01.jpg"
                                      alt="Salon - poziom pierwszy"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="16"
-                                     data-pswp-src="assets/img/source/living_room_floor/01.jpg"
+                                     data-pswp-src="/assets/img/source/living_room_floor/01.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -536,11 +536,11 @@
                         <!-- Slide 18 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/living_room_floor/02.jpg"
+                                <img src="/assets/img/source/living_room_floor/02.jpg"
                                      alt="Salon - poziom pierwszy - widok 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="17"
-                                     data-pswp-src="assets/img/source/living_room_floor/02.jpg"
+                                     data-pswp-src="/assets/img/source/living_room_floor/02.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -552,11 +552,11 @@
                         <!-- Slide 19 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/living_room_floor/03.jpg"
+                                <img src="/assets/img/source/living_room_floor/03.jpg"
                                      alt="Salon - poziom pierwszy - widok 3"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="18"
-                                     data-pswp-src="assets/img/source/living_room_floor/03.jpg"
+                                     data-pswp-src="/assets/img/source/living_room_floor/03.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -568,11 +568,11 @@
                         <!-- Slide 20 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bedroom_floor/01.jpg"
-                                     alt="Sypialnia - piętro"
+                                <img src="/assets/img/source/bedroom_floor/01.jpg"
+                                     alt="Bedroom - upstairs"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="19"
-                                     data-pswp-src="assets/img/source/bedroom_floor/01.jpg"
+                                     data-pswp-src="/assets/img/source/bedroom_floor/01.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -584,11 +584,11 @@
                         <!-- Slide 21 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bedroom_floor/02.jpg"
-                                     alt="Sypialnia - piętro - widok 2"
+                                <img src="/assets/img/source/bedroom_floor/02.jpg"
+                                     alt="Bedroom - upstairs - widok 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="20"
-                                     data-pswp-src="assets/img/source/bedroom_floor/02.jpg"
+                                     data-pswp-src="/assets/img/source/bedroom_floor/02.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -600,11 +600,11 @@
                         <!-- Slide 22 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bathroom_floor/01.jpg"
-                                     alt="Łazienka gościnna"
+                                <img src="/assets/img/source/bathroom_floor/01.jpg"
+                                     alt="Guest bathroom"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="21"
-                                     data-pswp-src="assets/img/source/bathroom_floor/01.jpg"
+                                     data-pswp-src="/assets/img/source/bathroom_floor/01.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -616,11 +616,11 @@
                         <!-- Slide 23 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bathroom_floor/02.jpg"
-                                     alt="Łazienka gościnna - widok 2"
+                                <img src="/assets/img/source/bathroom_floor/02.jpg"
+                                     alt="Guest bathroom - widok 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="22"
-                                     data-pswp-src="assets/img/source/bathroom_floor/02.jpg"
+                                     data-pswp-src="/assets/img/source/bathroom_floor/02.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -632,11 +632,11 @@
                         <!-- Slide 24 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/wardrobe/01.jpg"
+                                <img src="/assets/img/source/wardrobe/01.jpg"
                                      alt="Garderoba"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="23"
-                                     data-pswp-src="assets/img/source/wardrobe/01.jpg"
+                                     data-pswp-src="/assets/img/source/wardrobe/01.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -648,11 +648,11 @@
                         <!-- Slide 25 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/wardrobe/02.jpg"
+                                <img src="/assets/img/source/wardrobe/02.jpg"
                                      alt="Garderoba - widok 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="24"
-                                     data-pswp-src="assets/img/source/wardrobe/02.jpg"
+                                     data-pswp-src="/assets/img/source/wardrobe/02.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -664,11 +664,11 @@
                         <!-- Slide 26 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bedroom_floor/01.jpg"
-                                     alt="Sypialnia - piętro"
+                                <img src="/assets/img/source/bedroom_floor/01.jpg"
+                                     alt="Bedroom - upstairs"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="25"
-                                     data-pswp-src="assets/img/source/bedroom_floor/01.jpg"
+                                     data-pswp-src="/assets/img/source/bedroom_floor/01.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -680,11 +680,11 @@
                         <!-- Slide 27 -->
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
-                                <img src="assets/img/source/bedroom_floor/02.jpg"
-                                     alt="Sypialnia - piętro - widok 2"
+                                <img src="/assets/img/source/bedroom_floor/02.jpg"
+                                     alt="Bedroom - upstairs - widok 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="26"
-                                     data-pswp-src="assets/img/source/bedroom_floor/02.jpg"
+                                     data-pswp-src="/assets/img/source/bedroom_floor/02.jpg"
                                      data-pswp-width="1920"
                                      data-pswp-height="1440">
                                 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-semibold">
@@ -700,7 +700,7 @@
 
                 <!-- Mobile gallery info -->
                 <p class="text-center text-sm text-gray-600 mt-3">
-                    Przesuń palcem aby zobaczyć więcej • Kliknij aby otworzyć zdjęcie
+                    Swipe to see more • Click to open photo
                 </p>
             </div>
         </div>
@@ -711,12 +711,12 @@
             <div class="lg:col-span-2">
                 <!-- Title and Price -->
                 <div class="bg-white rounded-lg p-6 mb-6">
-                    <h1 class="text-3xl font-bold mb-2">Wyjątkowe dwupoziomowe mieszkanie z klimatyzacją</h1>
+                    <h1 class="text-3xl font-bold mb-2">Exceptional two-level apartment with air conditioning</h1>
                     <div class="flex items-center gap-2 mb-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                         </svg>
-                        <span class="text-green-700 font-semibold">Bezpośrednia od właściciela • Bez prowizji dla kupującego</span>
+                        <span class="text-green-700 font-semibold">Direct from owner • No commission for buyer</span>
                     </div>
                     <p class="text-gray-600 mb-4">ul. Henryka i Karola Czeczów 28/36, Bieżanów-Prokocim, Kraków</p>
 
@@ -726,11 +726,11 @@
 
                     <!-- Key features pills -->
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">5 pokoi</span>
+                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">5 rooms</span>
                         <span class="px-3 py-1 bg-secondary rounded-full text-sm">90 m²</span>
-                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">Dwupoziomowe</span>
-                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">1 piętro</span>
-                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">Klimatyzacja</span>
+                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">Two-level</span>
+                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">1st floor</span>
+                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">Air Conditioning</span>
                         <span class="px-3 py-1 bg-secondary rounded-full text-sm">2017 rok</span>
                         <span class="px-3 py-1 bg-secondary rounded-full text-sm">2 Łazienki</span>
                         <span class="px-3 py-1 bg-secondary rounded-full text-sm">Garderoba</span>
@@ -738,25 +738,25 @@
                 </div>
 
                 <!-- Main Details Grid -->
-                <div id="szczegoly" class="bg-white rounded-lg p-6 mb-6">
-                    <h2 class="text-2xl font-bold mb-6">Szczegóły oferty</h2>
+                <div id="details" class="bg-white rounded-lg p-6 mb-6">
+                    <h2 class="text-2xl font-bold mb-6">Property Details</h2>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">
                                 <span class="cursor-help border-b border-dotted border-gray-400"
-                                      data-tippy-content="Powierzchnia użytkowa nie uwzględnia ścian, słupów, czy przestrzeni pod skosami do wysokości 1.4m. Od tej wartości naliczany jest czynsz dla administracji. Rzeczywista przestrzeń, którą można wykorzystać jest jedna znacznie większa.">Powierzchnia Użytkowa</span>
+                                      data-tippy-content="Usable area does not include walls, columns, or spaces under slopes up to 1.4m height. Administrative fees are calculated from this value. The actual space that can be utilized is significantly larger.">Usable Area</span>
                             </p>
                             <p class="font-semibold">71,8 m²</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">
                                 <span class="cursor-help border-b border-dotted border-gray-400"
-                                      data-tippy-content="Powierzchnia całkowita to suma wszystkich powierzchni w mieszkaniu, włączając ściany działowe, balkony, loggie i inne elementy. Jest to powierzchnia liczona w granicach ścian zewnętrznych.">Powierzchnia Całkowita</span>
+                                      data-tippy-content="Total area is the sum of all surfaces in the apartment, including partition walls, balconies, loggias and other elements. This is the area calculated within the outer walls.">Total Area</span>
                             </p>
                             <p class="font-semibold">90 m²</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
-                            <p class="text-sm text-gray-600 mb-1">Liczba pokoi</p>
+                            <p class="text-sm text-gray-600 mb-1">Number of rooms</p>
                             <p class="font-semibold">5</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
@@ -764,20 +764,20 @@
                             <p class="font-semibold">2</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
-                            <p class="text-sm text-gray-600 mb-1">Piętro</p>
+                            <p class="text-sm text-gray-600 mb-1">Floor</p>
                             <p class="font-semibold">1 / 2</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
-                            <p class="text-sm text-gray-600 mb-1">Rok budowy</p>
+                            <p class="text-sm text-gray-600 mb-1">Year built</p>
                             <p class="font-semibold">2017</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
-                            <p class="text-sm text-gray-600 mb-1">Stan wykończenia</p>
-                            <p class="font-semibold">Do zamieszkania</p>
+                            <p class="text-sm text-gray-600 mb-1">Finishing condition</p>
+                            <p class="font-semibold">Move-in ready</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
-                            <p class="text-sm text-gray-600 mb-1">Balkon/Taras</p>
-                            <p class="font-semibold">Balkon</p>
+                            <p class="text-sm text-gray-600 mb-1">Balcony/Terrace</p>
+                            <p class="font-semibold">Balcony</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">Ogrzewanie</p>
@@ -788,7 +788,7 @@
                             <p class="font-semibold">Północ / Południe</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
-                            <p class="text-sm text-gray-600 mb-1">Klimatyzacja</p>
+                            <p class="text-sm text-gray-600 mb-1">Air Conditioning</p>
                             <p class="font-semibold">Tak - obydwa piętra</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
@@ -801,7 +801,7 @@
                         </div>
                         <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">Parking</p>
-                            <p class="font-semibold">Możliwość zakupu 2 miejsc w garażu</p>
+                            <p class="font-semibold">Possibility to purchase 2 spaces in garage</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">Deweloper</p>
@@ -813,66 +813,66 @@
                 </div>
 
                 <!-- Description -->
-                <div id="opis" class="bg-white rounded-lg p-6 mb-6">
-                    <h2 class="text-2xl font-bold mb-6">Opis</h2>
+                <div id="description" class="bg-white rounded-lg p-6 mb-6">
+                    <h2 class="text-2xl font-bold mb-6">Description</h2>
                     <div class="prose max-w-none text-gray-700">
                         <p class="mb-4">
-                            Prezentujemy na sprzedaż wyjątkowe dwupoziomowe mieszkanie o powierzchni 90 m² zlokalizowane w cichej części Krakowa, przy ulicy Henryka i Karola Czeczów 28/36.
+                            We present for sale an exceptional two-level apartment with an area of 90 m² located in a quiet part of Kraków, at Henryka i Karola Czeczów 28/36 street.
                         </p>
 
-                        <h3 class="text-lg font-semibold mt-6 mb-3">Układ mieszkania</h3>
+                        <h3 class="text-lg font-semibold mt-6 mb-3">Apartment Layout</h3>
                         <p class="mb-4">
-                            Mieszkanie rozłożone jest na dwóch poziomach, co nadaje mu unikalnego charakteru i funkcjonalności:
+                            The apartment is spread over two levels, which gives it unique character and functionality:
                         </p>
                         <ul class="list-disc pl-6 mb-4">
-                            <li>Poziom pierwszy: przestronny salon z aneksem kuchennym, łazienka z prysznicem, sypialnia, wyjście na balkon, wiatrołap</li>
-                            <li>Poziom drugi: pokój przechodni, duża łazienka z wanną, garderoba, główna sypialnia</li>
+                            <li>First level: spacious living room with kitchenette, bathroom with shower, bedroom, balcony access, entrance hall</li>
+                            <li>Second level: walk-through room, large bathroom with bathtub, wardrobe, main bedroom</li>
                         </ul>
 
-                        <h3 class="text-lg font-semibold mt-6 mb-3">Lokalizacja</h3>
+                        <h3 class="text-lg font-semibold mt-6 mb-3">Location</h3>
                         <p class="mb-4">
-                            Nieruchomość położona jest w spokojnej i zielonej okolicy, jednocześnie zapewniając doskonały dostęp do centrum miasta. W pobliżu znajdują się:
+                            The property is located in a quiet and green area, while providing excellent access to the city center. Nearby you will find:
                         </p>
                         <ul class="list-disc pl-6 mb-4">
-                            <li>Przystanek autobusowy - 650 metrów</li>
-                            <li>Przystanek kolejki miejskiej - 500 metrów (dojazd do centrum w 15 minut)</li>
-                            <li>Szkoła Podstawowa - 1200 metrów</li>
-                            <li>Żłobek - 800 metrów</li>
+                            <li>Bus stop - 650 meters</li>
+                            <li>City rail stop - 500 meters (15 minutes to city center)</li>
+                            <li>Primary School - 1200 meters</li>
+                            <li>Nursery - 800 meters</li>
                         </ul>
 
                         <p>
-                            Ponad to w okolicy znajdują się liczne sklepy, restauracje oraz tereny rekreacyjne, co czyni tę lokalizację idealną dla rodzin oraz osób ceniących wygodę i komfort życia.
+                            Additionally, the area has numerous shops, restaurants and recreational areas, making this location ideal for families and people who value convenience and comfort of living.
                         </p>
 
-                        <h3 class="text-lg font-semibold mt-6 mb-3">Klimatyzacja</h3>
+                        <h3 class="text-lg font-semibold mt-6 mb-3">Air Conditioning</h3>
                         <p class="mb-4">
-                            Mieszkanie wyposażone jest w nowoczesną klimatyzację na obydwu piętrach, zapewniającą doskonałe warunki mieszkaniowe przez cały rok.
-                            Wydajny system klimatyzacyjny pozwala na skuteczne schłodzenie mieszkania w gorące letnie dni oraz stanowi doskonałe uzupełnienie
-                            ogrzewania w okresie zimowym. To rozwiązanie gwarantuje komfort termiczny niezależnie od pory roku i warunków atmosferycznych.
+                            The apartment is equipped with modern air conditioning on both floors, ensuring excellent living conditions throughout the year.
+                            The efficient air conditioning system allows for effective cooling of the apartment on hot summer days and serves as an excellent supplement
+                            to heating in winter. This solution guarantees thermal comfort regardless of the season and weather conditions.
                         </p>
 
-                        <h3 class="text-lg font-semibold mt-6 mb-3">Dwie łazienki</h3>
+                        <h3 class="text-lg font-semibold mt-6 mb-3">Two Bathrooms</h3>
                         <p class="mb-4">
-                            Wyjątkowym atutem mieszkania jest posiadanie dwóch w pełni wyposażonych łazienek. Pierwsza, na parterze, to praktyczna łazienka
-                            z nowoczesnym prysznicem, idealna do codziennych porannych rutyn. Druga, na piętrze, to przestronna łazienka z wanną,
-                            gdzie można się zrelaksować po długim dniu. Takie rozwiązanie eliminuje kolejki do łazienki w rodzinie, zapewnia prywatność
-                            i znacznie podnosi komfort codziennego użytkowania mieszkania.
+                            An exceptional feature of the apartment is having two fully equipped bathrooms. The first, on the ground floor, is a practical bathroom
+                            with a modern shower, ideal for daily morning routines. The second, upstairs, is a spacious bathroom with a bathtub,
+                            where you can relax after a long day. This solution eliminates bathroom queues in the family, provides privacy
+                            and significantly increases the comfort of daily apartment use.
                         </p>
 
                         <p class="mt-6 font-semibold">
-                            Idealne dla rodzin ceniących komfort i wygodę oraz osób szukających spokojnej lokalizacji z szybkim dostępem do centrum miasta oraz
-                            łatwym dostęp do obwodnicy Krakowa.
+                            Ideal for families who value comfort and convenience, and people looking for a quiet location with quick access to the city center and
+                            easy access to Kraków's ring road.
                         </p>
                     </div>
                 </div>
 
                 <!-- Amenities Section -->
                 <div id="udogodnienia" class="bg-white rounded-lg p-6 mb-6">
-                    <h2 class="text-2xl font-bold mb-6">Udogodnienia</h2>
+                    <h2 class="text-2xl font-bold mb-6">Amenities</h2>
 
                     <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
                         <p class="text-gray-700">
-                            <strong>Nowoczesne udogodnienia:</strong> Mieszkanie wyposażone w zaawansowane systemy zapewniające najwyższy komfort użytkowania przez cały rok.
+                            <strong>Modern amenities:</strong> The apartment is equipped with advanced systems ensuring the highest comfort of use throughout the year.
                         </p>
                     </div>
 
@@ -893,7 +893,7 @@
                                    remove .border-gray-300 from me then remove .text-gray-600 from me then remove .bg-white from me"
                                 id="tab-klimatyzacja"
                                 class="px-6 py-3 border-b-3 border-blue-600 font-semibold text-sm text-blue-600 bg-blue-50 transition-all duration-200 cursor-pointer whitespace-nowrap flex-shrink-0">
-                                Klimatyzacja
+                                Air Conditioning
                             </button>
                             <button
                                 _="on click
@@ -909,7 +909,7 @@
                                    remove .border-gray-300 from me then remove .text-gray-600 from me then remove .bg-white from me"
                                 id="tab-wentylacja"
                                 class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer whitespace-nowrap flex-shrink-0">
-                                Wentylacja
+                                Ventilation
                             </button>
                             <button
                                 _="on click
@@ -941,7 +941,7 @@
                                    remove .border-gray-300 from me then remove .text-gray-600 from me then remove .bg-white from me"
                                 id="tab-komunikacja"
                                 class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer whitespace-nowrap flex-shrink-0">
-                                Komunikacja
+                                Public Transport
                             </button>
                         </nav>
                     </div>
@@ -958,11 +958,11 @@
                                             <!-- Slide 1 -->
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
-                                                    <img src="assets/img/source/amenities/ethernet/01.jpg"
+                                                    <img src="/assets/img/source/amenities/ethernet/01.jpg"
                                                          alt="Instalacja internetowa"
                                                          class="amenity-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="internet"
-                                                         data-pswp-src="assets/img/source/amenities/ethernet/01.jpg"
+                                                         data-pswp-src="/assets/img/source/amenities/ethernet/01.jpg"
                                                          data-pswp-width="1920"
                                                          data-pswp-height="1440">
                                                 </div>
@@ -976,17 +976,17 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold mb-4">Instalacja Internetowa</h3>
+                                    <h3 class="text-xl font-bold mb-4">Internet Installation</h3>
 
                                     <p class="text-gray-700 mb-4">
-                                        Mieszkanie wyposażone jest w profesjonalną instalację strukturalną z okablowaniem Ethernet kategorii 6 (Cat6).
-                                        Każdy pokój posiada dedykowane gniazdko sieciowe, co zapewnia maksymalną elastyczność w organizacji sieci domowej.
+                                        The apartment is equipped with professional structured cabling with Category 6 (Cat6) Ethernet wiring.
+                                        Each room has a dedicated network socket, ensuring maximum flexibility in home network organization.
                                     </p>
 
                                     <p class="text-gray-700 mb-6">
-                                        Instalacja umożliwia swobodny wybór dostawcy światłowodowego spośród kilku dostępnych opcji w budynku.
-                                        Dzięki rozbudowanej sieci Cat6 możliwe jest optymalne rozmieszczenie access pointów WiFi oraz podłączenie
-                                        urządzeń wymagających stabilnego połączenia przewodowego.
+                                        The installation allows free choice of fiber optic provider from several available options in the building.
+                                        Thanks to the extensive Cat6 network, optimal placement of WiFi access points and connection
+                                        of devices requiring stable wired connection is possible.
                                     </p>
 
                                     <h4 class="font-semibold mb-3">Główne zalety:</h4>
@@ -1036,11 +1036,11 @@
                                             <!-- Slide 1 -->
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
-                                                    <img src="assets/img/source/amenities/ventilation/01.png"
+                                                    <img src="/assets/img/source/amenities/ventilation/01.png"
                                                          alt="System wentylacyjny"
                                                          class="amenity-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="wentylacja"
-                                                         data-pswp-src="assets/img/source/amenities/ventilation/01.png"
+                                                         data-pswp-src="/assets/img/source/amenities/ventilation/01.png"
                                                          data-pswp-width="1920"
                                                          data-pswp-height="1440">
                                                 </div>
@@ -1057,8 +1057,8 @@
                                     <h3 class="text-xl font-bold mb-4">System Wentylacyjny</h3>
 
                                     <p class="text-gray-700 mb-4">
-                                        Mieszkanie wyposażone jest w nowoczesny system wentylacji mechanicznej,
-                                        zapewniający stały dopływ świeżego powietrza oraz optymalną wilgotność w pomieszczeniach.
+                                        The apartment is equipped with a modern mechanical ventilation system,
+                                        ensuring constant fresh air supply and optimal humidity in the rooms.
                                     </p>
 
                                     <p class="text-gray-700 mb-6">
@@ -1073,13 +1073,13 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Stały dopływ świeżego powietrza</span>
+                                            <span>Constant fresh air supply</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Filtracja powietrza zewnętrznego</span>
+                                            <span>External air filtration</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1102,11 +1102,11 @@
                                             <!-- Slide 1 -->
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
-                                                    <img src="assets/img/source/living_room/01.jpg"
+                                                    <img src="/assets/img/source/living_room/01.jpg"
                                                          alt="Jednostka klimatyzacji"
                                                          class="amenity-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="klimatyzacja"
-                                                         data-pswp-src="assets/img/source/wardrobe/01.jpg"
+                                                         data-pswp-src="/assets/img/source/wardrobe/01.jpg"
                                                          data-pswp-width="1920"
                                                          data-pswp-height="1440">
                                                 </div>
@@ -1114,11 +1114,11 @@
                                             <!-- Slide 2 -->
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
-                                                    <img src="assets/img/source/living_room_floor/01.jpg"
+                                                    <img src="/assets/img/source/living_room_floor/01.jpg"
                                                          alt="System klimatyzacji w salonie"
                                                          class="amenity-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="klimatyzacja"
-                                                         data-pswp-src="assets/img/source/living_room_floor/01.jpg"
+                                                         data-pswp-src="/assets/img/source/living_room_floor/01.jpg"
                                                          data-pswp-width="1920"
                                                          data-pswp-height="1440">
                                                 </div>
@@ -1132,11 +1132,11 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold mb-4">Klimatyzacja Multi-Split</h3>
+                                    <h3 class="text-xl font-bold mb-4">Multi-Split Air Conditioning</h3>
 
                                     <p class="text-gray-700 mb-4">
-                                        Mieszkanie wyposażone jest w zaawansowany system klimatyzacji typu multi-split.
-                                        System zapewnia doskonałą kontrolę temperatury na obydwu piętrach
+                                        The apartment is equipped with an advanced multi-split air conditioning system.
+                                        The system provides excellent temperature control on both floors
                                     </p>
 
                                     <h4 class="font-semibold mb-3">Funkcje systemu:</h4>
@@ -1186,11 +1186,11 @@
                                             <!-- Slide 1 -->
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
-                                                    <img src="assets/img/source/amenities/public_transportation/01.jpg"
+                                                    <img src="/assets/img/source/amenities/public_transportation/01.jpg"
                                                          alt="Transport publiczny"
                                                          class="amenity-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="komunikacja"
-                                                         data-pswp-src="assets/img/source/amenities/public_transportation/01.jpg"
+                                                         data-pswp-src="/assets/img/source/amenities/public_transportation/01.jpg"
                                                          data-pswp-width="1920"
                                                          data-pswp-height="1440">
                                                 </div>
@@ -1198,11 +1198,11 @@
                                             <!-- Slide 2 -->
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
-                                                    <img src="assets/img/source/amenities/public_transportation/02.jpg"
-                                                         alt="Komunikacja miejska"
+                                                    <img src="/assets/img/source/amenities/public_transportation/02.jpg"
+                                                         alt="Public transport"
                                                          class="amenity-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="komunikacja"
-                                                         data-pswp-src="assets/img/source/amenities/public_transportation/02.jpg"
+                                                         data-pswp-src="/assets/img/source/amenities/public_transportation/02.jpg"
                                                          data-pswp-width="1920"
                                                          data-pswp-height="1440">
                                                 </div>
@@ -1216,16 +1216,16 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold mb-4">Komunikacja Miejska</h3>
+                                    <h3 class="text-xl font-bold mb-4">Public Transport</h3>
 
                                     <p class="text-gray-700 mb-4">
-                                        W odległości zaledwie 5-10 minut spacerem od mieszkania znajduje się przystanek kolejki miejskiej,
-                                        który umożliwia szybkie i wygodne dotarcie do centrum Krakowa w około 15 minut.
+                                        Just a 5-10 minute walk from the apartment is a city rail stop,
+                                        which allows quick and convenient access to Kraków city center in about 15 minutes.
                                     </p>
 
                                     <p class="text-gray-700 mb-6">
-                                        Dodatkowo w pobliżu zlokalizowana jest mała pętla autobusowa, zapewniająca połączenia
-                                        z różnymi częściami miasta oraz dogodny dojazd do innych środków transportu publicznego.
+                                        Additionally, nearby is a small bus loop, providing connections
+                                        to various parts of the city and convenient access to other public transport.
                                     </p>
 
                                     <h4 class="font-semibold mb-3">Zalety lokalizacji:</h4>
@@ -1234,13 +1234,13 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>5-10 minut pieszo do przystanku kolejki miejskiej</span>
+                                            <span>5-10 minutes walk to city rail stop</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>15 minut do centrum Krakowa kolejką miejską</span>
+                                            <span>15 minutes to Kraków city center by city rail</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1252,13 +1252,13 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Doskonałe połączenia z różnymi częściami miasta</span>
+                                            <span>Excellent connections to various parts of the city</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Idealna lokalizacja dla osób pracujących w centrum</span>
+                                            <span>Ideal location for people working in the city center</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -1307,8 +1307,8 @@
                         <div id="content-pietro1" class="tab-pane">
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                                 <div class="relative aspect-[4/3] overflow-hidden">
-                                    <img src="assets/img/source/floor_plan/01.png"
-                                         alt="Plan piętra 1"
+                                    <img src="/assets/img/source/floor_plan/01.png"
+                                         alt="Floor plan 1"
                                          class="w-full h-full object-contain cursor-pointer hover:scale-105 transition duration-300"
                                          _="on click call window.open('assets/img/source/floor_plan/01.png', '_blank')">
                                 </div>
@@ -1357,8 +1357,8 @@
                         <div id="content-pietro2" class="tab-pane hidden">
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                                 <div class="relative aspect-[4/3] overflow-hidden">
-                                    <img src="assets/img/source/floor_plan/02.png"
-                                         alt="Plan piętra 2"
+                                    <img src="/assets/img/source/floor_plan/02.png"
+                                         alt="Floor plan 2"
                                          class="w-full h-full object-contain cursor-pointer hover:scale-105 transition duration-300"
                                          _="on click call window.open('assets/img/source/floor_plan/02.png', '_blank')">
                                 </div>
@@ -1403,12 +1403,12 @@
 
                 <!-- Parking Spots Section -->
                 <div id="miejsca-parkingowe" class="bg-white rounded-lg p-6 mb-6">
-                    <h2 class="text-2xl font-bold mb-6">Miejsca Parkingowe</h2>
+                    <h2 class="text-2xl font-bold mb-6">Parking</h2>
 
                     <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
                         <p class="text-gray-700">
-                            <strong>Dodatkowa opcja:</strong> Dla nabywców mieszkania oferujemy możliwość dokupienia miejsc parkingowych w garażu podziemnym budynku.
-                            Miejsca parkingowe dostępne wyłącznie przy zakupie mieszkania.
+                            <strong>Additional option:</strong> For apartment buyers, we offer the possibility of purchasing parking spaces in the building's underground garage.
+                            Parking spaces available exclusively with apartment purchase.
                         </p>
                     </div>
 
@@ -1454,11 +1454,11 @@
                                             <!-- Slide 1 -->
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
-                                                    <img src="assets/img/source/parking/01/01.jpg"
-                                                         alt="Miejsce parkingowe #1 - widok główny"
+                                                    <img src="/assets/img/source/parking/01/01.jpg"
+                                                         alt="Parking space #1 - main view"
                                                          class="parking-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="parking1"
-                                                         data-pswp-src="assets/img/source/parking/01/01.jpg"
+                                                         data-pswp-src="/assets/img/source/parking/01/01.jpg"
                                                          data-pswp-width="1920"
                                                          data-pswp-height="1440">
                                                 </div>
@@ -1467,11 +1467,11 @@
                                             <!-- Slide 2 -->
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
-                                                    <img src="assets/img/source/parking/01/02.jpg"
-                                                         alt="Komórka lokatorska - widok 1"
+                                                    <img src="/assets/img/source/parking/01/02.jpg"
+                                                         alt="Storage room - widok 1"
                                                          class="parking-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="parking1"
-                                                         data-pswp-src="assets/img/source/parking/01/02.jpg"
+                                                         data-pswp-src="/assets/img/source/parking/01/02.jpg"
                                                          data-pswp-width="1920"
                                                          data-pswp-height="1440">
                                                 </div>
@@ -1480,11 +1480,11 @@
                                             <!-- Slide 3 -->
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
-                                                    <img src="assets/img/source/parking/01/03.jpg"
-                                                         alt="Komórka lokatorska - widok 2"
+                                                    <img src="/assets/img/source/parking/01/03.jpg"
+                                                         alt="Storage room - widok 2"
                                                          class="parking-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="parking1"
-                                                         data-pswp-src="assets/img/source/parking/01/03.jpg"
+                                                         data-pswp-src="/assets/img/source/parking/01/03.jpg"
                                                          data-pswp-width="1920"
                                                          data-pswp-height="1440">
                                                 </div>
@@ -1515,7 +1515,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Komórka lokatorska (ok. 5 m²)</span>
+                                            <span>Storage room (ok. 5 m²)</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1539,13 +1539,13 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Odrębna księga wieczysta</span>
+                                            <span>Separate land registry</span>
                                         </li>
                                     </ul>
 
                                     <div class="mt-6 p-4 bg-gray-50 rounded-lg">
                                         <p class="text-sm text-gray-600">
-                                            <strong>Uwaga:</strong> Miejsce parkingowe dostępne wyłącznie dla nabywców mieszkania.
+                                            <strong>Note:</strong> Parking space available exclusively for apartment buyers.
                                         </p>
                                     </div>
                                 </div>
@@ -1562,11 +1562,11 @@
                                             <!-- Slide 1 -->
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
-                                                    <img src="assets/img/source/parking/14/01.jpg"
+                                                    <img src="/assets/img/source/parking/14/01.jpg"
                                                          alt="Miejsce parkingowe #14"
                                                          class="parking-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="parking14"
-                                                         data-pswp-src="assets/img/source/parking/14/01.jpg"
+                                                         data-pswp-src="/assets/img/source/parking/14/01.jpg"
                                                          data-pswp-width="1920"
                                                          data-pswp-height="1440">
                                                 </div>
@@ -1616,13 +1616,13 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Odrębna księga wieczysta</span>
+                                            <span>Separate land registry</span>
                                         </li>
                                     </ul>
 
                                     <div class="mt-6 p-4 bg-gray-50 rounded-lg">
                                         <p class="text-sm text-gray-600">
-                                            <strong>Uwaga:</strong> Miejsce parkingowe dostępne wyłącznie dla nabywców mieszkania.
+                                            <strong>Note:</strong> Parking space available exclusively for apartment buyers.
                                         </p>
                                     </div>
                                 </div>
@@ -1646,9 +1646,9 @@
 
                         <!-- Two parking spots with discount -->
                         <div class="p-6 bg-green-50 rounded-lg border border-green-200">
-                            <h3 class="font-bold text-lg mb-2 text-green-900">Mieszkanie + 2 miejsca parkingowe</h3>
+                            <h3 class="font-bold text-lg mb-2 text-green-900">Apartment + 2 parking spaces</h3>
                             <p class="text-gray-700 mb-3">
-                                Przy zakupie mieszkania z dwoma miejscami parkingowymi oferujemy rabat 20 000 zł na miejsca parkingowe!
+                                When purchasing an apartment with two parking spaces, we offer a 20,000 PLN discount on parking spaces!
                             </p>
                             <div class="flex items-baseline gap-4">
                                 <span class="text-3xl font-bold text-green-900">1 099 000 zł</span>
@@ -1656,7 +1656,7 @@
                                 <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Oszczędzasz 20 000 zł!</span>
                             </div>
                             <p class="text-sm text-gray-600 mt-3">
-                                (979 000 zł mieszkanie + 120 000 zł za 2 miejsca parkingowe z rabatem)
+                                (979,000 PLN apartment + 120,000 PLN for 2 parking spaces with discount)
                             </p>
                         </div>
                     </div>
@@ -1668,7 +1668,8 @@
 
                     <!-- Tab Navigation -->
                     <div class="border-b border-gray-200 mb-6">
-                        <nav class="-mb-px flex space-x-4 min-w-max overflow-x-auto overflow-y-hidden">
+                        <div class="overflow-x-auto">
+                            <nav class="-mb-px flex space-x-4 min-w-max">
                             <button
                                 _="on click
                                    add .hidden to #content-krotkoterminowy
@@ -1715,6 +1716,7 @@
                                 Najem Długoterminowy
                             </button>
                         </nav>
+                        </div>
                     </div>
 
                     <!-- Tab Content -->
@@ -1722,21 +1724,21 @@
                         <!-- Additional Room Tab -->
                         <div id="content-pokoj" class="tab-pane">
                             <div class="text-gray-600">
-                                <h3 class="text-lg font-semibold mb-4 text-gray-800">Wydzielenie kolejnego nieprzechodniego pokoju na piętrze</h3>
-                                <p class="mb-4">W łatwy sposób można zamknąć nieprzyległy pokój na piętrze, wstawiając ściankę działową z drzwiami. Ta prosta modyfikacja pozwoli na stworzenie dodatkowego, w pełni funkcjonalnego pomieszczenia mieszkalnego.</p>
-                                <p class="mb-4">Dzięki tej inwestycji można zwiększyć funkcjonalność mieszkania poprzez wydzielenie prywatnej przestrzeni, która może służyć jako sypialnia, gabinet czy pokój gościnny. Rozwiązanie to nie wymaga dużych nakładów finansowych ani czasowych.</p>
+                                <h3 class="text-lg font-semibold mb-4 text-gray-800">Creating another non-walk-through room upstairs</h3>
+                                <p class="mb-4">You can easily close off the adjacent room upstairs by installing a partition wall with doors. This simple modification will allow you to create an additional, fully functional living space.</p>
+                                <p class="mb-4">Thanks to this investment, you can increase the apartment's functionality by creating a private space that can serve as a bedroom, office or guest room. This solution does not require large financial or time investments.</p>
 
                                 <!-- Visualization -->
                                 <div class="mt-6 mb-4">
                                     <div class="cursor-pointer" _="on click call window.open('assets/img/source/floor_plan/02_01.png', '_blank')" title="Kliknij aby otworzyć wizualizację w nowym oknie">
-                                        <img src="assets/img/source/floor_plan/02_01.png"
-                                             alt="Wizualizacja możliwości dostawienia ścianki działowej"
+                                        <img src="/assets/img/source/floor_plan/02_01.png"
+                                             alt="Visualization of partition wall addition possibility"
                                              class="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                                         <p class="text-center text-sm text-gray-500 mt-2">Kliknij aby otworzyć w nowym oknie</p>
                                     </div>
                                 </div>
 
-                                <p class="mb-4">Ścianka działowa może być wykonana z różnych materiałów - od lekkich konstrukcji gipsowo-kartonowych po bardziej solidne rozwiązania murowane. Pozostałe ścianki działowe na piętrze zostały wykonane z bloczków Ytong, co zapewnia doskonałą izolację akustyczną i termiczną. Wybór materiału zależy od indywidualnych potrzeb i budżetu inwestycji.</p>
+                                <p class="mb-4">The partition wall can be made from various materials - from lightweight plasterboard constructions to more solid masonry solutions. The remaining partition walls upstairs were made from Ytong blocks, which provide excellent acoustic and thermal insulation. The choice of material depends on individual needs and investment budget.</p>
                             </div>
                         </div>
 
@@ -1746,9 +1748,9 @@
                                 <h3 class="text-lg font-semibold mb-4 text-gray-800">Potencjał Inwestycyjny - Najem Krótkoterminowy</h3>
 
                                 <div class="bg-gray-50 p-4 rounded-lg mb-6">
-                                    <h4 class="font-semibold text-gray-800 mb-2">Czym jest najem krótkoterminowy?</h4>
+                                    <h4 class="font-semibold text-gray-800 mb-2">What is short-term rental?</h4>
                                     <p class="text-sm text-gray-700">
-                                        Najem krótkoterminowy to wynajmowanie mieszkania na okresy od jednej nocy do kilku miesięcy, głównie turystom i osobom podróżującym służbowo. Działa podobnie jak hotel, ale w prywatnym mieszkaniu. Popularne platformy to Airbnb, Booking.com czy Noclegi.pl. Właściciel otrzymuje zwykle wyższy czynsz niż przy standardowym najmie, ale wymaga to większego zaangażowania w obsługę gości.
+                                        Short-term rental is renting an apartment for periods from one night to several months, mainly to tourists and business travelers. It works similarly to a hotel, but in a private apartment. Popular platforms include Airbnb, Booking.com or Noclegi.pl. The owner usually receives higher rent than with standard rental, but it requires greater involvement in guest service.
                                     </p>
                                 </div>
 
@@ -1762,7 +1764,7 @@
                                 <ul class="space-y-2 mb-6">
                                     <li class="flex items-start">
                                         <span class="text-primary mr-2">✓</span>
-                                        <span><strong>Potencjalnie wyższe przychody:</strong> Rynek krakowski pokazuje możliwość osiągnięcia wyższych przychodów niż przy najmie długoterminowym</span>
+                                        <span><strong>Potentially higher income:</strong> The Kraków market shows the possibility of achieving higher income than with long-term rental</span>
                                     </li>
                                     <li class="flex items-start">
                                         <span class="text-primary mr-2">✓</span>
@@ -1774,7 +1776,7 @@
                                     </li>
                                     <li class="flex items-start">
                                         <span class="text-primary mr-2">✓</span>
-                                        <span><strong>Profesjonalne zarządzanie:</strong> Dostępność sprawdzonych firm oferujących kompleksową obsługę</span>
+                                        <span><strong>Professional management:</strong> Availability of proven companies offering comprehensive service</span>
                                     </li>
                                 </ul>
 
@@ -1783,13 +1785,13 @@
                                     <div class="grid md:grid-cols-2 gap-4 mb-4">
                                         <div class="text-center">
                                             <div class="text-2xl font-bold text-green-800 mb-1">70.000 zł</div>
-                                            <p class="text-sm text-green-700">Roczny dochód netto właściciela</p>
-                                            <p class="text-xs text-green-600 mt-1">Bazując na przykładzie 10.000 zł/mc brutto</p>
+                                            <p class="text-sm text-green-700">Annual net income for owner</p>
+                                            <p class="text-xs text-green-600 mt-1">Based on example of 10,000 PLN/month gross</p>
                                         </div>
                                         <div class="text-center">
                                             <div class="text-2xl font-bold text-green-800 mb-1">5.500 zł</div>
-                                            <p class="text-sm text-green-700">Średni miesięczny dochód netto</p>
-                                            <p class="text-xs text-green-600 mt-1">Po pokryciu wszystkich kosztów</p>
+                                            <p class="text-sm text-green-700">Average monthly net income</p>
+                                            <p class="text-xs text-green-600 mt-1">After covering all costs</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1818,8 +1820,8 @@
 
                                 <h4 class="font-semibold text-gray-800 mb-3">Zarządzanie przychodami:</h4>
                                 <p class="mb-4">
-                                    Profesjonalne firmy wykorzystują dynamiczne zarządzanie cenami (revenue management)
-                                    z dedykowanymi algorytmami, które analizują lokalny rynek, sezonowość i wydarzenia.
+                                    Professional companies use dynamic pricing management (revenue management)
+                                    with dedicated algorithms that analyze local market, seasonality and events.
                                     To pozwala na optymalizację obłożenia i maksymalizację przychodów - nawet o 50% więcej
                                     w porównaniu ze stałymi cenami.
                                 </p>
@@ -1844,7 +1846,7 @@
                                     </li>
                                     <li class="flex items-start">
                                         <span class="text-gray-600 mr-2">•</span>
-                                        <span>Kontrola stanu mieszkania i drobne naprawy</span>
+                                        <span>Apartment condition monitoring and minor repairs</span>
                                     </li>
                                     <li class="flex items-start">
                                         <span class="text-gray-600 mr-2">•</span>
@@ -1918,31 +1920,31 @@
                                     </div>
 
                                     <p class="mb-4">
-                                        Najem długoterminowy to stabilna strategia inwestycyjna dla właścicieli poszukujących przewidywalnego, regularnego dochodu.
-                                        Oferuje bezpieczeństwo finansowe przy minimalnym zaangażowaniu czasowym właściciela.
+                                        Long-term rental is a stable investment strategy for owners seeking predictable, regular income.
+                                        It offers financial security with minimal time commitment from the owner.
                                     </p>
 
                                     <div class="bg-blue-50 p-4 rounded-lg mb-4">
                                         <h4 class="font-semibold text-blue-800 mb-2">Zalety tej strategii inwestycyjnej:</h4>
                                         <ul class="list-disc list-inside text-sm text-blue-700 space-y-1">
-                                            <li>Przewidywalny miesięczny dochód przez cały rok</li>
-                                            <li>Mniejsze okresy pustostanu nieruchomości</li>
-                                            <li>Niższe koszty rotacji najemców</li>
-                                            <li>Profesjonalne zarządzanie przez sprawdzone firmy</li>
-                                            <li>Minimalne zaangażowanie czasowe właściciela</li>
+                                            <li>Predictable monthly income throughout the year</li>
+                                            <li>Shorter property vacancy periods</li>
+                                            <li>Lower tenant turnover costs</li>
+                                            <li>Professional management by proven companies</li>
+                                            <li>Minimal time commitment from owner</li>
                                         </ul>
                                     </div>
                                 </div>
 
                                 <div class="mb-6">
-                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Profesjonalne zarządzanie nieruchomością</h3>
+                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Professional property management</h3>
                                     <div class="grid md:grid-cols-2 gap-4 mb-4">
                                         <div class="bg-gray-50 p-4 rounded-lg">
                                             <h4 class="font-semibold mb-2">Usługi zarządzania obejmują:</h4>
                                             <ul class="text-sm space-y-1">
-                                                <li>• Wyszukiwanie i weryfikacja najemców</li>
-                                                <li>• Przygotowanie umów najmu</li>
-                                                <li>• Comiesięczne pobieranie czynszu</li>
+                                                <li>• Tenant search and verification</li>
+                                                <li>• Rental agreement preparation</li>
+                                                <li>• Comiesięczne rent collection</li>
                                                 <li>• Koordinacja remontów i napraw</li>
                                                 <li>• Regularne przeglądy nieruchomości</li>
                                             </ul>
@@ -1968,13 +1970,13 @@
                                         <div class="grid md:grid-cols-2 gap-4 mb-4">
                                             <div class="text-center">
                                                 <div class="text-2xl font-bold text-green-800 mb-1">35.000 - 55.000 zł</div>
-                                                <p class="text-sm text-green-700">Roczny dochód netto właściciela</p>
-                                                <p class="text-xs text-green-600 mt-1">Przy czynszu 3.500-5.500 zł/mc</p>
+                                                <p class="text-sm text-green-700">Annual net income for owner</p>
+                                                <p class="text-xs text-green-600 mt-1">With rent 3,500-5,500 PLN/month</p>
                                             </div>
                                             <div class="text-center">
                                                 <div class="text-2xl font-bold text-green-800 mb-1">3.000 - 5.000 zł</div>
-                                                <p class="text-sm text-green-700">Średni miesięczny dochód netto</p>
-                                                <p class="text-xs text-green-600 mt-1">Po pokryciu kosztów zarządzania</p>
+                                                <p class="text-sm text-green-700">Average monthly net income</p>
+                                                <p class="text-xs text-green-600 mt-1">After covering management costs</p>
                                             </div>
                                         </div>
                                         <p class="text-xs text-green-600 text-center">
@@ -1992,13 +1994,13 @@
                                         <h4 class="font-semibold text-green-800 mb-2">Struktura kosztów:</h4>
                                         <div class="text-sm text-green-700 grid md:grid-cols-2 gap-4">
                                             <div>
-                                                <p class="mb-1"><span class="font-medium">Prowizja za zarządzanie:</span> 15-20% miesięcznego czynszu</p>
-                                                <p class="mb-1"><span class="font-medium">Znalezienie najemcy:</span> 0 zł (bez dodatkowych opłat)</p>
+                                                <p class="mb-1"><span class="font-medium">Management commission:</span> 15-20% monthly rent</p>
+                                                <p class="mb-1"><span class="font-medium">Finding tenant:</span> 0 zł (no additional fees)</p>
                                             </div>
                                             <div>
-                                                <p class="mb-1"><span class="font-medium">Ubezpieczenie:</span> obowiązek właściciela</p>
-                                                <p class="mb-1"><span class="font-medium">Remonty:</span> koordynacja przez firmę, koszt właściciela</p>
-                                                <p><span class="font-medium">Wymogi prawne:</span> obsługa przez firmę zarządzającą</p>
+                                                <p class="mb-1"><span class="font-medium">Insurance:</span> owner's responsibility</p>
+                                                <p class="mb-1"><span class="font-medium">Renovations:</span> coordinated by company, owner's cost</p>
+                                                <p><span class="font-medium">Legal requirements:</span> handled by management company</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2029,11 +2031,12 @@
 
                 <!-- Neighborhood -->
                 <div id="okolica" class="bg-white rounded-lg p-6 mb-6">
-                    <h2 class="text-2xl font-bold mb-6">Okolica</h2>
+                    <h2 class="text-2xl font-bold mb-6">Neighborhood</h2>
 
                     <!-- Tab Navigation -->
                     <div class="border-b border-gray-200 mb-6">
-                        <nav class="-mb-px flex space-x-4 min-w-max overflow-x-auto overflow-y-hidden">
+                        <div class="overflow-x-auto">
+                            <nav class="-mb-px flex space-x-4 min-w-max">
                             <button
                                 _="on click
                                    add .hidden to #content-okolica-zielen then add .hidden to #content-okolica-edukacja then add .hidden to #content-okolica-srodowisko then add .hidden to #content-okolica-bezpieczenstwo
@@ -2122,9 +2125,10 @@
                                    remove .border-gray-300 from me then remove .text-gray-600 from me then remove .bg-white from me"
                                 id="tab-okolica-bezpieczenstwo"
                                 class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer">
-                                Bezpieczeństwo
+                                Safety
                             </button>
                             </nav>
+                        </div>
                     </div>
 
                     <!-- Tab Content -->
@@ -2133,8 +2137,8 @@
                         <div id="content-okolica-komunikacja" class="tab-pane">
                             <!-- Header Image -->
                             <div class="mb-6 rounded-lg overflow-hidden">
-                                <img src="assets/img/source/neighbourhood/train/03.jpg"
-                                     alt="Przystanek kolejowy SKA - doskonała komunikacja"
+                                <img src="/assets/img/source/neighbourhood/train/03.jpg"
+                                     alt="SKA railway station - excellent transport"
                                      class="w-full h-48 object-cover cursor-pointer"
                                      _="on click call window.open('assets/img/source/neighbourhood/train/03.jpg', '_blank')">
                             </div>
@@ -2149,15 +2153,15 @@
                                     <div>
                                         <h3 class="text-lg font-semibold mb-2 text-gray-800">🚆 Doskonała komunikacja kolejowa SKA</h3>
                                         <p class="text-gray-700 mb-4 leading-relaxed">
-                                            Lokalizacja przy węźle kolejowym SKA to gwarancja szybkiego, wygodnego i ekonomicznego dostępu do całego Krakowa.
-                                            Dzięki nowoczesnej kolei aglomeracyjnej osiągniesz centrum w rekordowym czasie, omijając korki uliczne.
+                                            Location near the SKA railway junction guarantees fast, convenient and economical access to all of Kraków.
+                                            Thanks to the modern agglomeration railway, you will reach the city center in record time, avoiding street traffic.
                                         </p>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
-                                            <li><strong>Szybkie połączenie z centrum:</strong> Podróż do Kraków Grzegórzki zajmuje jedynie <strong>11 minut</strong> pociągiem SKA</li>
-                                            <li><strong>Bezpośrednie połączenie z lotniskiem:</strong> Dojazd na Lotnisko Kraków-Balice w około <strong>30 minut</strong> dzięki linii SKA1</li>
+                                            <li><strong>Fast connection to city center:</strong> Journey to Kraków Grzegórzki takes only <strong>11 minutes</strong> by SKA train</li>
+                                            <li><strong>Direct connection to airport:</strong> Access to Kraków-Balice Airport in about <strong>30 minutes</strong> thanks to SKA1 line</li>
                                             <li><strong>Nowoczesny system kolejowy:</strong> SKA to jeden z najnowocześniejszych systemów transportu aglomeracyjnego w Polsce z 120 km tras</li>
-                                            <li><strong>Alternatywa dla korków:</strong> Podczas gdy dojazd samochodem może trwać 25-40 minut, pociąg jedzie stale 11 minut</li>
-                                            <li><strong>Ekonomiczne rozwiązanie:</strong> Koszt przejazdu znacznie niższy niż utrzymanie samochodu w centrum</li>
+                                            <li><strong>Alternative to traffic jams:</strong> While car travel can take 25-40 minutes, the train consistently takes 11 minutes</li>
+                                            <li><strong>Economical solution:</strong> Travel cost significantly lower than maintaining a car in the city center</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2168,8 +2172,8 @@
                         <div id="content-okolica-zielen" class="tab-pane hidden">
                             <!-- Header Image -->
                             <div class="mb-6 rounded-lg overflow-hidden">
-                                <img src="assets/img/source/neighbourhood/park/01.jpg"
-                                     alt="Park Złocień - pierwszy park w tym rejonie Krakowa"
+                                <img src="/assets/img/source/neighbourhood/park/01.jpg"
+                                     alt="Park Złocień - the first park in this area of Kraków"
                                      class="w-full h-48 object-cover cursor-pointer"
                                      _="on click call window.open('assets/img/source/neighbourhood/park/01.jpg', '_blank')">
                             </div>
@@ -2188,11 +2192,11 @@
                                             inwestuje setki milionów w zieleń, tworząc nowoczesną przestrzeń miejską przyjazną mieszkańcom.
                                         </p>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
-                                            <li><strong>Unikatowy charakter:</strong> Park Złocień to <strong>pierwszy park w tym rejonie Krakowa</strong>, oddany do użytku w 2024 roku</li>
-                                            <li><strong>Strategiczna lokalizacja:</strong> Park stanowi bardzo ważny element zwiększania dostępności terenów zieleni dla mieszkańców</li>
-                                            <li><strong>Część większego planu:</strong> Kraków przeznaczył <strong>211 mln zł w 2023 roku</strong> na inwestycje w zieleń miejską</li>
-                                            <li><strong>Parki kieszonkowe:</strong> Planowane utworzenie 5 dodatkowych małych parków z roślinnością oczyszczającą powietrze</li>
-                                            <li><strong>Poprawa jakości życia:</strong> Zieleń obniża temperaturę, poprawia jakość powietrza i zwiększa komfort mieszkańców</li>
+                                            <li><strong>Unique character:</strong> Park Złocień is the <strong>first park in this area of Kraków</strong>, opened in 2024</li>
+                                            <li><strong>Strategic location:</strong> The park is a very important element in increasing the accessibility of green areas for residents</li>
+                                            <li><strong>Part of a larger plan:</strong> Kraków allocated <strong>211 million PLN in 2023</strong> for investments in urban greenery</li>
+                                            <li><strong>Pocket parks:</strong> Planned creation of 5 additional small parks with air-purifying vegetation</li>
+                                            <li><strong>Improving quality of life:</strong> Greenery lowers temperature, improves air quality and increases residents' comfort</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2203,7 +2207,7 @@
                         <div id="content-okolica-edukacja" class="tab-pane hidden">
                             <!-- Header Image -->
                             <div class="mb-6 rounded-lg overflow-hidden">
-                                <img src="assets/img/source/neighbourhood/school/01.png"
+                                <img src="/assets/img/source/neighbourhood/school/01.png"
                                      alt="Szkoła Podstawowa nr 20 - nowoczesna infrastruktura edukacyjna"
                                      class="w-full h-48 object-cover cursor-pointer"
                                      _="on click call window.open('assets/img/source/neighbourhood/school/01.png', '_blank')">
@@ -2238,7 +2242,7 @@
                         <div id="content-okolica-srodowisko" class="tab-pane hidden">
                             <!-- Header Image -->
                             <div class="mb-6 rounded-lg overflow-hidden">
-                                <img src="assets/img/source/neighbourhood/river/01.jpg"
+                                <img src="/assets/img/source/neighbourhood/river/01.jpg"
                                      alt="Modernizacja oczyszczalni ścieków w Płaszowie - wielomilionowa inwestycja środowiskowa"
                                      class="w-full h-48 object-cover cursor-pointer"
                                      _="on click call window.open('assets/img/source/neighbourhood/river/01.jpg', '_blank')">
@@ -2261,12 +2265,12 @@
                                             <li><strong>Postęp prac:</strong> W latach 2019-2023 zmodernizowano osadniki pierwotne i zahermetyzowano kolektor Płaszów</li>
                                         </ul>
 
-                                        <h4 class="text-md font-semibold mt-6 mb-3 text-gray-800">🏠 Wysokie standardy nowych mieszkań zgodnie z normami UE 2024</h4>
+                                        <h4 class="text-md font-semibold mt-6 mb-3 text-gray-800">🏠 High standards of new apartments in accordance with EU 2024 standards</h4>
                                         <ul class="list-disc list-inside space-y-2">
-                                            <li><strong>Standardy UE 2024:</strong> Wszystkie nowe budynki muszą spełniać <strong>najwyższe normy energetyczne</strong> wprowadzone w 2024 roku</li>
-                                            <li><strong>Lepsza izolacja akustyczna:</strong> Nowe przepisy z kwietnia 2024 roku <strong>wymagają wyższych standardów</strong> wyciszenia mieszkań</li>
-                                            <li><strong>Certyfikaty energetyczne:</strong> Wszystkie nowe mieszkania posiadają <strong>obowiązkowe certyfikaty efektywności energetycznej</strong></li>
-                                            <li><strong>Komfort mieszkańców:</strong> Nowoczesne systemy wentylacji, termomodernizacja i zarządzanie energią zapewniają lepszą jakość powietrza</li>
+                                            <li><strong>EU 2024 Standards:</strong> All new buildings must meet <strong>highest energy standards</strong> introduced in 2024</li>
+                                            <li><strong>Better acoustic insulation:</strong> New regulations from April 2024 <strong>require higher standards</strong> for apartment soundproofing</li>
+                                            <li><strong>Energy certificates:</strong> All new apartments have <strong>mandatory energy efficiency certificates</strong></li>
+                                            <li><strong>Resident comfort:</strong> Modern ventilation systems, thermal modernization and energy management ensure better air quality</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2277,7 +2281,7 @@
                         <div id="content-okolica-bezpieczenstwo" class="tab-pane hidden">
 
                             <div class="mb-6 rounded-lg overflow-hidden">
-                                <img src="assets/img/source/neighbourhood/safety/01.jpg"
+                                <img src="/assets/img/source/neighbourhood/safety/01.jpg"
                                      alt="Modernizacja oczyszczalni ścieków w Płaszowie - wielomilionowa inwestycja środowiskowa"
                                      class="w-full h-48 object-cover cursor-pointer"
                                      _="on click call window.open('assets/img/source/neighbourhood/safety/01.jpg', '_blank')">
@@ -2293,15 +2297,15 @@
                                     <div>
                                         <h3 class="text-lg font-semibold mb-2 text-gray-800">🌊 Kompleksowe zabezpieczenia przeciwpowodziowe od 2017 roku</h3>
                                         <p class="text-gray-700 mb-4 leading-relaxed">
-                                            Dzięki inwestycjom o wartości ponad 130 mln zł okolica jest w pełni zabezpieczona przed powodzią. Nowoczesne
-                                            systemy retencji i zabezpieczeń przeszły pomyślnie testy podczas intensywnych opadów w 2023 roku.
+                                            Thanks to investments worth over 130 million PLN, the area is fully protected against flooding. Modern
+                                            retention and safety systems successfully passed tests during heavy rainfall in 2023.
                                         </p>
 
                                         <h4 class="text-md font-semibold mt-4 mb-3 text-gray-700">Uregulowanie koryta rzeki Serafy (2017-2020)</h4>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
                                             <li><strong>Modernizacja w ramach inwestycji SKA:</strong> Kompleksowe uregulowanie koryta rzeki Serafy połączone z budową przystanku kolejowego za ponad <strong>1 mld zł</strong></li>
-                                            <li><strong>Nowy most kolejowy:</strong> Budowa mostu nad rzeką Serafą z jednoczesną korekcją koryta rzeki (2018-2020)</li>
-                                            <li><strong>Umocnienie brzegów:</strong> Uporządkowanie i umocnienie koryta rzeki Serafy powyżej i poniżej nowych konstrukcji</li>
+                                            <li><strong>New railway bridge:</strong> Construction of bridge over Serafa River with simultaneous riverbed correction (2018-2020)</li>
+                                            <li><strong>Bank reinforcement:</strong> Organization and reinforcement of Serafa riverbed above and below new structures</li>
                                         </ul>
 
                                         <h4 class="text-md font-semibold mt-4 mb-3 text-gray-700">Budowa muru ochronnego z grodzic winylowych (2022)</h4>
@@ -2312,12 +2316,12 @@
                                             <li><strong>Trwałość rozwiązania:</strong> Grodzice winylowe są całkowicie odporne na korozję i znacznie tańsze od tradycyjnych metod</li>
                                         </ul>
 
-                                        <h4 class="text-md font-semibold mt-4 mb-3 text-gray-700">System zbiorników retencyjnych w Bieżanowie</h4>
+                                        <h4 class="text-md font-semibold mt-4 mb-3 text-gray-700">Retention reservoir system in Bieżanów</h4>
                                         <ul class="list-disc list-inside space-y-2">
                                             <li><strong>Cztery zbiorniki ochronne:</strong> Serafa I (2015), Malinówka I, Malinówka II oraz Serafa II (do 2023)</li>
                                             <li><strong>Łączna pojemność:</strong> <strong>336 tys. m³</strong> wody retencyjnej chroniącej Złocień i Bieżanów</li>
-                                            <li><strong>Koszt inwestycji:</strong> Prawie <strong>30 mln zł</strong> na budowę trzech nowych zbiorników (Wody Polskie)</li>
-                                            <li><strong>Skuteczność potwierdzona:</strong> System przeszedł pomyślnie test podczas intensywnych opadów w maju 2023</li>
+                                            <li><strong>Investment cost:</strong> Nearly <strong>30 million PLN</strong> for the construction of three new reservoirs (Polish Waters)</li>
+                                            <li><strong>Effectiveness confirmed:</strong> The system successfully passed the test during heavy rainfall in May 2023</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -2328,7 +2332,7 @@
 
                 <!-- Location -->
                 <div id="lokalizacja" class="bg-white rounded-lg p-6 mb-6">
-                    <h2 class="text-2xl font-bold mb-6">Lokalizacja</h2>
+                    <h2 class="text-2xl font-bold mb-6">Location</h2>
                     <div class="h-96 rounded-lg overflow-hidden mb-6">
                         <iframe
                             src="https://maps.google.com/maps?q=Henryka%20i%20Karola%20Czecz%C3%B3w%2028%2F36%2C%2030-798%20Krak%C3%B3w%2C%20Poland&t=&z=17&ie=UTF8&iwloc=&output=embed"
@@ -2338,7 +2342,7 @@
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
-                            title="Lokalizacja nieruchomości na mapie Google">
+                            title="Property location on Google Maps">
                         </iframe>
                     </div>
                     <div class="bg-blue-50 p-4 rounded-lg">
@@ -2346,7 +2350,7 @@
                             <strong>Adres:</strong> ul. Henryka i Karola Czeczów 28/36, 30-798 Kraków, Dzielnica XII Bieżanów-Prokocim
                         </p>
                         <p class="text-sm text-gray-600">
-                            Doskonała lokalizacja w spokojnej części Krakowa z łatwym dostępem do centrum miasta oraz obwodnicy.
+                            Excellent location in a quiet part of Kraków with easy access to the city center and ring road.
                         </p>
                     </div>
 
@@ -2359,7 +2363,7 @@
                 <div class="sticky top-20">
                     <!-- Seller Info Card -->
                     <div class="bg-white rounded-lg p-6 mb-4 shadow-lg">
-                        <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                        <h3 class="text-lg font-semibold mb-4">Contact</h3>
 
                         <div class="mb-6">
                             <p class="text-gray-600 text-sm mb-1">Sprzedający</p>
@@ -2380,7 +2384,7 @@
 
                         <div class="border-t pt-4">
                             <p class="text-xs text-gray-500 text-center">
-                                Kontakt: <span id="email-contact"></span>
+                                Contact: <span id="email-contact"></span>
                             </p>
                             <p class="text-xs text-gray-500 text-center mt-2">
                                 Tel: <span data-phone-placeholder></span>
@@ -2444,7 +2448,7 @@
 
                         <div class="mt-4 p-3 bg-blue-50 rounded-lg">
                             <p class="text-xs text-gray-600">
-                                <strong>Uwaga:</strong> Miejsca parkingowe dostępne wyłącznie przy zakupie mieszkania.
+                                <strong>Note:</strong> Parking spaces available exclusively with apartment purchase.
                             </p>
                         </div>
                     </div>
@@ -2476,10 +2480,10 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-semibold mb-3">Udogodnienia</h3>
+                    <h3 class="font-semibold mb-3">Amenities</h3>
                     <ul class="space-y-1 text-sm text-gray-700">
-                        <li>• Klimatyzacja</li>
-                        <li>• Wentylacja Mechaniczna</li>
+                        <li>• Air Conditioning</li>
+                        <li>• Mechanical Ventilation</li>
                         <li>• Internet</li>
                         <li>• Balkon</li>
                     </ul>
@@ -2491,7 +2495,7 @@
                         <li>• Szkoła</li>
                         <li>• Przedszkole</li>
                         <li>• Sklepy</li>
-                        <li>• Komunikacja miejska</li>
+                        <li>• Public transport</li>
                     </ul>
                 </div>
             </div>
@@ -2504,23 +2508,23 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="font-bold text-lg mb-4">Czeczów 28/36</h3>
-                    <p class="text-gray-400 text-sm">Wyjątkowe mieszkanie na obrzeżach Krakowa</p>
+                    <p class="text-gray-400 text-sm">Exceptional apartment on the outskirts of Kraków</p>
                 </div>
                 <div>
                     <h3 class="font-semibold mb-4">Szybkie linki</h3>
                     <ul class="space-y-2 text-gray-400 text-sm">
                         <li><a href="#galeria" class="hover:text-white">Galeria</a></li>
                         <li><a href="#opis" class="hover:text-white">Opis</a></li>
-                        <li><a href="#udogodnienia" class="hover:text-white">Udogodnienia</a></li>
+                        <li><a href="#amenities" class="hover:text-white">Amenities</a></li>
                         <li><a href="#plan" class="hover:text-white">Plan Nieruchomości</a></li>
                         <li><a href="#szczegoly" class="hover:text-white">Szczegóły</a></li>
                         <li><a href="#inspiracje" class="hover:text-white">Inspiracje</a></li>
-                        <li><a href="#okolica" class="hover:text-white">Okolica</a></li>
-                        <li><a href="#lokalizacja" class="hover:text-white">Lokalizacja</a></li>
+                        <li><a href="#neighborhood" class="hover:text-white">Neighborhood</a></li>
+                        <li><a href="#location" class="hover:text-white">Location</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-semibold mb-4">Kontakt</h3>
+                    <h3 class="font-semibold mb-4">Contact</h3>
                     <ul class="space-y-2 text-gray-400 text-sm">
                         <li>Email: <span id="email-details"></span></li>
                         <li>Tel: <span data-phone-placeholder></span></li>
