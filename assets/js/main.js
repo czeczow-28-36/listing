@@ -6,28 +6,28 @@ function initContactObfuscation() {
     const user = 'kontakt';
     const domain = 'czeczow-28-36.pl';
     const email = user + '@' + domain;
-    
+
     const contactSpan = document.getElementById('email-contact');
     const detailsSpan = document.getElementById('email-details');
-    
+
     if (contactSpan) {
         contactSpan.innerHTML = '<a href="mailto:' + email + '" class="text-blue-400 hover:text-blue-300">' + email + '</a>';
     }
-    
+
     if (detailsSpan) {
         detailsSpan.innerHTML = '<a href="mailto:' + email + '" class="text-blue-400 hover:text-blue-300">' + email + '</a>';
     }
-    
+
     // Phone obfuscation
     const phoneNumbers = ['+48', '534', '382', '146'];
     const phone = phoneNumbers.join(' ');
     const phoneHref = 'tel:' + phoneNumbers.join('');
-    
+
     const phoneElements = document.querySelectorAll('[data-phone-placeholder]');
     phoneElements.forEach(element => {
         element.innerHTML = '<a href="' + phoneHref + '" class="text-blue-400 hover:text-blue-300">' + phone + '</a>';
     });
-    
+
     // Email message button functionality
     const writeMessageBtn = document.getElementById('write-message-btn');
     if (writeMessageBtn) {
@@ -43,12 +43,12 @@ function initContactObfuscation() {
 function initMobileMenu() {
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
-    
+
     if (mobileMenuButton && mobileMenu) {
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        
+
         // Close menu when clicking on a link
         const mobileMenuLinks = mobileMenu.querySelectorAll('a');
         mobileMenuLinks.forEach(link => {
@@ -56,7 +56,7 @@ function initMobileMenu() {
                 mobileMenu.classList.add('hidden');
             });
         });
-        
+
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
@@ -69,7 +69,7 @@ function initMobileMenu() {
 // Scroll to top functionality
 function initScrollToTop() {
     const scrollToTopBtn = document.getElementById('scroll-to-top');
-    
+
     if (scrollToTopBtn) {
         // Show/hide button based on scroll position
         function toggleScrollButton() {
@@ -81,10 +81,10 @@ function initScrollToTop() {
                 scrollToTopBtn.classList.remove('opacity-100', 'translate-y-0');
             }
         }
-        
+
         // Listen for scroll events
         window.addEventListener('scroll', toggleScrollButton);
-        
+
         // Handle button click
         scrollToTopBtn.addEventListener('click', () => {
             window.scrollTo({
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactObfuscation();
     initMobileMenu();
     initScrollToTop();
-    
+
     const anchors = document.querySelectorAll('a[href^="#"]');
 
     anchors.forEach(anchor => {
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initPhotoSwipe() {
     // Get all gallery images from HTML
     const galleryImages = document.querySelectorAll('.gallery-image');
-    
+
     // Build images array from HTML data attributes
     const propertyImages = Array.from(galleryImages).map(link => ({
         src: link.getAttribute('data-pswp-src'),
@@ -172,16 +172,16 @@ function initPhotoSwipe() {
                 lightbox.pswp.on('change', () => {
                     const currSlide = lightbox.pswp.currSlide;
                     let captionHTML = '';
-                    
+
                     if (currSlide && currSlide.data) {
                         // Get the element from the slide data
                         const currSlideElement = currSlide.data.element;
-                        
+
                         if (currSlideElement) {
                             // First check for custom description
                             const description = currSlideElement.getAttribute('data-description');
                             const alt = currSlideElement.getAttribute('data-alt');
-                            
+
                             if (description && alt) {
                                 // If there's a custom description, show both title and description
                                 captionHTML = `
@@ -447,14 +447,14 @@ function updateTotalPrice() {
     const apartmentPrice = 979000;
     const parkingSpotPrice = 70000;
     const discount = 20000;
-    
+
     const parking1Checked = document.getElementById('parking1')?.checked || false;
     const parking14Checked = document.getElementById('parking14')?.checked || false;
-    
+
     let totalPrice = apartmentPrice;
     let originalPrice = null;
     let showDiscount = false;
-    
+
     // Calculate parking spots price
     if (parking1Checked && parking14Checked) {
         // Both parking spots selected - apply discount
@@ -465,23 +465,23 @@ function updateTotalPrice() {
         // Only one parking spot selected
         totalPrice += parkingSpotPrice;
     }
-    
+
     // Update DOM elements
     const totalPriceElement = document.getElementById('total-price');
     const originalPriceElement = document.getElementById('original-price');
     const discountInfoElement = document.getElementById('discount-info');
-    
+
     if (totalPriceElement) {
         totalPriceElement.textContent = totalPrice.toLocaleString('pl-PL') + ' zł';
     }
-    
+
     if (originalPriceElement && showDiscount) {
         originalPriceElement.textContent = originalPrice.toLocaleString('pl-PL') + ' zł';
         originalPriceElement.classList.remove('hidden');
     } else if (originalPriceElement) {
         originalPriceElement.classList.add('hidden');
     }
-    
+
     if (discountInfoElement && showDiscount) {
         discountInfoElement.classList.remove('hidden');
     } else if (discountInfoElement) {
@@ -620,10 +620,4 @@ function initAmenitiesPhotoSwipe() {
     createAmenityLightbox('wentylacja', '.wentylacjaSwiper');
     createAmenityLightbox('klimatyzacja', '.klimatyzacjaSwiper');
     createAmenityLightbox('komunikacja', '.komunikacjaSwiper');
-}
-
-// Optional: Add any Stimulus controllers here
-if (window.Stimulus) {
-    // Example controller registration
-    // Stimulus.register("gallery", GalleryController)
 }

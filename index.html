@@ -59,21 +59,58 @@
                     </div>
                 </div>
 
-                <!-- Language switcher -->
-                <div class="flex items-center space-x-4">
-                    <div class="flex items-center space-x-2">
-                        <span class="text-sm text-gray-500">PL</span>
-                        <a href="en/index.html" class="text-sm text-gray-700 hover:text-primary transition">EN</a>
-                    </div>
-                </div>
+                <!-- Right side: Language switcher + Mobile menu button -->
+                <div class="flex items-center space-x-2">
+                    <!-- Language switcher -->
+                    <a href="en/index.html" class="p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200" title="Switch to English">
+                        <svg class="w-6 h-4" viewBox="0 0 32 24" xmlns="http://www.w3.org/2000/svg">
+                            <!-- American Flag -->
+                            <rect width="32" height="24" fill="#B22234"/>
+                            <rect y="2" width="32" height="2" fill="white"/>
+                            <rect y="6" width="32" height="2" fill="white"/>
+                            <rect y="10" width="32" height="2" fill="white"/>
+                            <rect y="14" width="32" height="2" fill="white"/>
+                            <rect y="18" width="32" height="2" fill="white"/>
+                            <rect y="22" width="32" height="2" fill="white"/>
+                            <rect width="13" height="13" fill="#3C3B6E"/>
+                            <g fill="white">
+                                <circle cx="2.5" cy="2" r="0.5"/>
+                                <circle cx="5.5" cy="2" r="0.5"/>
+                                <circle cx="8.5" cy="2" r="0.5"/>
+                                <circle cx="11.5" cy="2" r="0.5"/>
+                                <circle cx="4" cy="3.5" r="0.5"/>
+                                <circle cx="7" cy="3.5" r="0.5"/>
+                                <circle cx="10" cy="3.5" r="0.5"/>
+                                <circle cx="2.5" cy="5" r="0.5"/>
+                                <circle cx="5.5" cy="5" r="0.5"/>
+                                <circle cx="8.5" cy="5" r="0.5"/>
+                                <circle cx="11.5" cy="5" r="0.5"/>
+                                <circle cx="4" cy="6.5" r="0.5"/>
+                                <circle cx="7" cy="6.5" r="0.5"/>
+                                <circle cx="10" cy="6.5" r="0.5"/>
+                                <circle cx="2.5" cy="8" r="0.5"/>
+                                <circle cx="5.5" cy="8" r="0.5"/>
+                                <circle cx="8.5" cy="8" r="0.5"/>
+                                <circle cx="11.5" cy="8" r="0.5"/>
+                                <circle cx="4" cy="9.5" r="0.5"/>
+                                <circle cx="7" cy="9.5" r="0.5"/>
+                                <circle cx="10" cy="9.5" r="0.5"/>
+                                <circle cx="2.5" cy="11" r="0.5"/>
+                                <circle cx="5.5" cy="11" r="0.5"/>
+                                <circle cx="8.5" cy="11" r="0.5"/>
+                                <circle cx="11.5" cy="11" r="0.5"/>
+                            </g>
+                        </svg>
+                    </a>
 
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none focus:text-primary">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
+                    </div>
                 </div>
             </div>
 
@@ -878,7 +915,8 @@
 
                     <!-- Tab Navigation -->
                     <div class="border-b border-gray-200 mb-6">
-                        <nav class="-mb-px flex space-x-4 md:space-x-4 overflow-x-auto scrollbar-hide pb-1">
+                        <div class="overflow-x-auto">
+                            <nav class="-mb-px flex space-x-4">
                             <button
                                 _="on click
                                    add .hidden to #content-wentylacja then add .hidden to #content-internet then add .hidden to #content-komunikacja
@@ -944,6 +982,7 @@
                                 Komunikacja
                             </button>
                         </nav>
+                        </div>
                     </div>
 
                     <!-- Tab Content -->
@@ -1668,7 +1707,8 @@
 
                     <!-- Tab Navigation -->
                     <div class="border-b border-gray-200 mb-6">
-                        <nav class="-mb-px flex space-x-4 min-w-max overflow-x-auto overflow-y-hidden">
+                        <div class="overflow-x-auto">
+                            <nav class="-mb-px flex space-x-4 min-w-max">
                             <button
                                 _="on click
                                    add .hidden to #content-krotkoterminowy
@@ -1715,6 +1755,7 @@
                                 Najem Długoterminowy
                             </button>
                         </nav>
+                        </div>
                     </div>
 
                     <!-- Tab Content -->
@@ -2033,7 +2074,8 @@
 
                     <!-- Tab Navigation -->
                     <div class="border-b border-gray-200 mb-6">
-                        <nav class="-mb-px flex space-x-4 min-w-max overflow-x-auto overflow-y-hidden">
+                        <div class="overflow-x-auto">
+                            <nav class="-mb-px flex space-x-4 min-w-max">
                             <button
                                 _="on click
                                    add .hidden to #content-okolica-zielen then add .hidden to #content-okolica-edukacja then add .hidden to #content-okolica-srodowisko then add .hidden to #content-okolica-bezpieczenstwo
@@ -2125,6 +2167,7 @@
                                 Bezpieczeństwo
                             </button>
                             </nav>
+                        </div>
                     </div>
 
                     <!-- Tab Content -->

@@ -59,21 +59,25 @@
                     </div>
                 </div>
 
-                <!-- Language switcher -->
-                <div class="flex items-center space-x-4">
-                    <div class="flex items-center space-x-2">
-                        <span class="text-sm text-gray-500">EN</span>
-                        <a href="../index.html" class="text-sm text-gray-700 hover:text-primary transition">PL</a>
-                    </div>
-                </div>
+                <!-- Right side: Language switcher + Mobile menu button -->
+                <div class="flex items-center space-x-2">
+                    <!-- Language switcher -->
+                    <a href="../index.html" class="p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200" title="Przełącz na polski">
+                        <svg class="w-6 h-4" viewBox="0 0 32 24" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Polish Flag -->
+                            <rect width="32" height="12" fill="white"/>
+                            <rect y="12" width="32" height="12" fill="#DC143C"/>
+                        </svg>
+                    </a>
 
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none focus:text-primary">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
+                    </div>
                 </div>
             </div>
 
@@ -117,10 +121,10 @@
                        data-pswp-src="/assets/img/source/living_room/02.jpg"
                        data-pswp-width="1920"
                        data-pswp-height="1280"
-                       data-alt="Salon z aneksem kuchennym - parter"
+                       data-alt="Living room with kitchenette - ground floor"
                        data-description="">
                         <img src="/assets/img/source/living_room/02.jpg"
-                             alt="Salon z aneksem kuchennym - parter"
+                             alt="Living room with kitchenette - ground floor"
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300 flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -128,7 +132,7 @@
                             </svg>
                         </div>
                         <div class="hidden-caption-content" style="display: none;">
-                            <div class="pswp__caption__center">Salon z aneksem kuchennym - parter</div>
+                            <div class="pswp__caption__center">Living room with kitchenette - ground floor</div>
                         </div>
                     </a>
                 </div>
@@ -184,7 +188,7 @@
                        data-alt="Non-walk-through room - ground floor"
                        data-description="">
                         <img src="/assets/img/source/bedroom_base/03.jpg"
-                             alt="Salon - poziom pierwszy"
+                             alt="Living room - first floor"
                              class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300 flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -265,7 +269,7 @@
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
                                 <img src="/assets/img/source/living_room/02.jpg"
-                                     alt="Salon z aneksem kuchennym - parter"
+                                     alt="Living room with kitchenette - ground floor"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="0"
                                      data-pswp-src="/assets/img/source/living_room/02.jpg"
@@ -393,7 +397,7 @@
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
                                 <img src="/assets/img/source/living_room/01.jpg"
-                                     alt="Salon z aneksem kuchennym"
+                                     alt="Living room with kitchenette"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="8"
                                      data-pswp-src="/assets/img/source/living_room/01.jpg"
@@ -409,7 +413,7 @@
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
                                 <img src="/assets/img/source/living_room/02.jpg"
-                                     alt="Salon z aneksem kuchennym - widok 2"
+                                     alt="Living room with kitchenette - view 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="9"
                                      data-pswp-src="/assets/img/source/living_room/02.jpg"
@@ -425,7 +429,7 @@
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
                                 <img src="/assets/img/source/living_room/03.jpg"
-                                     alt="Salon z aneksem kuchennym - widok 3"
+                                     alt="Living room with kitchenette - view 3"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="10"
                                      data-pswp-src="/assets/img/source/living_room/03.jpg"
@@ -521,7 +525,7 @@
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
                                 <img src="/assets/img/source/living_room_floor/01.jpg"
-                                     alt="Salon - poziom pierwszy"
+                                     alt="Living room - first floor"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="16"
                                      data-pswp-src="/assets/img/source/living_room_floor/01.jpg"
@@ -537,7 +541,7 @@
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
                                 <img src="/assets/img/source/living_room_floor/02.jpg"
-                                     alt="Salon - poziom pierwszy - widok 2"
+                                     alt="Living room - first floor - view 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="17"
                                      data-pswp-src="/assets/img/source/living_room_floor/02.jpg"
@@ -553,7 +557,7 @@
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
                                 <img src="/assets/img/source/living_room_floor/03.jpg"
-                                     alt="Salon - poziom pierwszy - widok 3"
+                                     alt="Living room - first floor - view 3"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="18"
                                      data-pswp-src="/assets/img/source/living_room_floor/03.jpg"
@@ -633,7 +637,7 @@
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
                                 <img src="/assets/img/source/wardrobe/01.jpg"
-                                     alt="Garderoba"
+                                     alt="Wardrobe"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="23"
                                      data-pswp-src="/assets/img/source/wardrobe/01.jpg"
@@ -649,7 +653,7 @@
                         <div class="swiper-slide">
                             <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
                                 <img src="/assets/img/source/wardrobe/02.jpg"
-                                     alt="Garderoba - widok 2"
+                                     alt="Wardrobe - view 2"
                                      class="mobile-gallery-image w-full h-full object-cover cursor-pointer"
                                      data-index="24"
                                      data-pswp-src="/assets/img/source/wardrobe/02.jpg"
@@ -732,8 +736,8 @@
                         <span class="px-3 py-1 bg-secondary rounded-full text-sm">1st floor</span>
                         <span class="px-3 py-1 bg-secondary rounded-full text-sm">Air Conditioning</span>
                         <span class="px-3 py-1 bg-secondary rounded-full text-sm">2017 rok</span>
-                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">2 Łazienki</span>
-                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">Garderoba</span>
+                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">2 Bathrooms</span>
+                        <span class="px-3 py-1 bg-secondary rounded-full text-sm">Wardrobe</span>
                     </div>
                 </div>
 
@@ -760,7 +764,7 @@
                             <p class="font-semibold">5</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
-                            <p class="text-sm text-gray-600 mb-1">Liczba łazienek</p>
+                            <p class="text-sm text-gray-600 mb-1">Number of bathrooms</p>
                             <p class="font-semibold">2</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
@@ -781,19 +785,19 @@
                         </div>
                         <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">Ogrzewanie</p>
-                            <p class="font-semibold">Miejskie</p>
+                            <p class="font-semibold">MPEC</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
-                            <p class="text-sm text-gray-600 mb-1">Ekspozycja</p>
-                            <p class="font-semibold">Północ / Południe</p>
+                            <p class="text-sm text-gray-600 mb-1">Orientation</p>
+                            <p class="font-semibold">North / South</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">Air Conditioning</p>
-                            <p class="font-semibold">Tak - obydwa piętra</p>
+                            <p class="font-semibold">Yes - both floors</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
-                            <p class="text-sm text-gray-600 mb-1">Zabezpieczenia</p>
-                            <p class="font-semibold">Domofon, monitoring</p>
+                            <p class="text-sm text-gray-600 mb-1">Security</p>
+                            <p class="font-semibold">Intercom, monitoring</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">Typ zabudowy</p>
@@ -801,7 +805,7 @@
                         </div>
                         <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">Parking</p>
-                            <p class="font-semibold">Possibility to purchase 2 spaces in garage</p>
+                            <p class="font-semibold">Possibility to purchase parking 2 spaces in garage</p>
                         </div>
                         <div class="border-b border-gray-200 pb-3">
                             <p class="text-sm text-gray-600 mb-1">Deweloper</p>
@@ -959,7 +963,7 @@
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
                                                     <img src="/assets/img/source/amenities/ethernet/01.jpg"
-                                                         alt="Instalacja internetowa"
+                                                         alt="Internet installation"
                                                          class="amenity-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="internet"
                                                          data-pswp-src="/assets/img/source/amenities/ethernet/01.jpg"
@@ -989,37 +993,37 @@
                                         of devices requiring stable wired connection is possible.
                                     </p>
 
-                                    <h4 class="font-semibold mb-3">Główne zalety:</h4>
+                                    <h4 class="font-semibold mb-3">Main advantages:</h4>
                                     <ul class="space-y-2 text-gray-700">
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Wybór spośród kilku dostawców światłowodu</span>
+                                            <span>Choice from several fiber optic providers</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Okablowanie Ethernet Cat6 w każdym pokoju</span>
+                                            <span>Cat6 Ethernet wiring in every room</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Optymalne rozmieszczenie access pointów WiFi</span>
+                                            <span>Optimal placement of WiFi access points</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Profesjonalna instalacja strukturalna</span>
+                                            <span>Professional structured installation</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Idealne dla pracy zdalnej i smart home</span>
+                                            <span>Ideal for remote work and smart home</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -1062,12 +1066,12 @@
                                     </p>
 
                                     <p class="text-gray-700 mb-6">
-                                        Ponad to, w łazience na piętrze zainstalowano dodatkowy wentylator pod blatem,
-                                        aktywowany przez ruch. <br/>
-                                        Rozwiązanie pozwala to na umieszczenie tam kociej kuwety bez obawy o uciążliwe zapachy.
+                                        Additionally, in the upstairs bathroom an extra ventilator was installed under the countertop,
+                                        activated by motion. <br/>
+                                        This solution allows placing a cat litter box there without worry about unpleasant odors.
                                     </p>
 
-                                    <h4 class="font-semibold mb-3">Korzyści systemu:</h4>
+                                    <h4 class="font-semibold mb-3">System benefits:</h4>
                                     <ul class="space-y-2 text-gray-700">
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1085,7 +1089,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Neutralizacja uciążliwych zapachów</span>
+                                            <span>Neutralization of unpleasant odors</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -1115,7 +1119,7 @@
                                             <div class="swiper-slide">
                                                 <div class="relative aspect-[4/3]">
                                                     <img src="/assets/img/source/living_room_floor/01.jpg"
-                                                         alt="System klimatyzacji w salonie"
+                                                         alt="Air conditioning system in living room"
                                                          class="amenity-gallery-image w-full h-full object-cover cursor-pointer"
                                                          data-gallery="klimatyzacja"
                                                          data-pswp-src="/assets/img/source/living_room_floor/01.jpg"
@@ -1139,25 +1143,25 @@
                                         The system provides excellent temperature control on both floors
                                     </p>
 
-                                    <h4 class="font-semibold mb-3">Funkcje systemu:</h4>
+                                    <h4 class="font-semibold mb-3">System functions:</h4>
                                     <ul class="space-y-2 text-gray-700">
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Chłodzenie i ogrzewanie (tryb grzewczy)</span>
+                                            <span>Cooling and heating (heating mode)</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Jednostki na obydwu piętrach</span>
+                                            <span>Units on both floors</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Niezależna kontrola temperatury</span>
+                                            <span>Independent temperature control</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1169,19 +1173,19 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Możliwość kontroli zdalnej</span>
+                                            <span>Remote control capability</span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Komunikacja Tab -->
-                        <div id="content-komunikacja" class="tab-pane hidden">
+                        <!-- Public Transport Tab -->
+                        <div id="content-public-transport" class="tab-pane hidden">
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                                 <div class="relative">
                                     <!-- Komunikacja Gallery -->
-                                    <div class="swiper komunikacjaSwiper rounded-lg overflow-hidden">
+                                    <div class="swiper publicTransportSwiper rounded-lg overflow-hidden">
                                         <div class="swiper-wrapper">
                                             <!-- Slide 1 -->
                                             <div class="swiper-slide">
@@ -1246,7 +1250,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Mała pętla autobusowa w okolicy</span>
+                                            <span>Small bus loop in the vicinity</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1269,7 +1273,7 @@
 
                 <!-- Floor Plan -->
                 <div id="plan" class="bg-white rounded-lg p-6 mb-6">
-                    <h2 class="text-2xl font-bold mb-6">Plan Nieruchomości</h2>
+                    <h2 class="text-2xl font-bold mb-6">Property Floor Plan</h2>
 
                     <!-- Tab Navigation -->
                     <div class="border-b border-gray-200 mb-6">
@@ -1284,7 +1288,7 @@
                                    remove .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 from me"
                                 id="tab-pietro1"
                                 class="px-6 py-3 border-b-3 border-blue-600 font-semibold text-sm text-blue-600 bg-blue-50 transition-all duration-200 cursor-pointer">
-                                Piętro 1
+                                Floor 1
                             </button>
                             <button
                                 _="on click
@@ -1296,7 +1300,7 @@
                                    remove .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 from me"
                                 id="tab-pietro2"
                                 class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer">
-                                Piętro 2
+                                Floor 2
                             </button>
                         </nav>
                     </div>
@@ -1316,8 +1320,8 @@
                                     <table class="w-full text-sm">
                                         <thead>
                                             <tr class="border-b border-gray-200">
-                                                <th class="text-left py-3 font-semibold text-gray-800">Pomieszczenie</th>
-                                                <th class="text-right py-3 font-semibold text-gray-800">Powierzchnia</th>
+                                                <th class="text-left py-3 font-semibold text-gray-800">Room</th>
+                                                <th class="text-right py-3 font-semibold text-gray-800">Surface</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1326,15 +1330,15 @@
                                                 <td class="py-3 text-right text-gray-900 font-semibold">4 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
-                                                <td class="py-3 text-gray-700">Salon z aneksem kuchennym</td>
+                                                <td class="py-3 text-gray-700">Living room with kitchenette</td>
                                                 <td class="py-3 text-right text-gray-900 font-semibold">23 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
-                                                <td class="py-3 text-gray-700">Sypialnia</td>
+                                                <td class="py-3 text-gray-700">Bedroom</td>
                                                 <td class="py-3 text-right text-gray-900 font-semibold">11 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
-                                                <td class="py-3 text-gray-700">Łazienka</td>
+                                                <td class="py-3 text-gray-700">Bathroom</td>
                                                 <td class="py-3 text-right text-gray-900 font-semibold">3 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
@@ -1366,25 +1370,25 @@
                                     <table class="w-full text-sm">
                                         <thead>
                                             <tr class="border-b border-gray-200">
-                                                <th class="text-left py-3 font-semibold text-gray-800">Pomieszczenie</th>
-                                                <th class="text-right py-3 font-semibold text-gray-800">Powierzchnia</th>
+                                                <th class="text-left py-3 font-semibold text-gray-800">Room</th>
+                                                <th class="text-right py-3 font-semibold text-gray-800">Surface</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr class="border-b border-gray-100">
-                                                <td class="py-3 text-gray-700">Sypialnia</td>
+                                                <td class="py-3 text-gray-700">Bedroom</td>
                                                 <td class="py-3 text-right text-gray-900 font-semibold">12 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
-                                                <td class="py-3 text-gray-700">Pokój przechodni</td>
+                                                <td class="py-3 text-gray-700">Walk-through room</td>
                                                 <td class="py-3 text-right text-gray-900 font-semibold">19 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
-                                                <td class="py-3 text-gray-700">Garderoba</td>
+                                                <td class="py-3 text-gray-700">Wardrobe</td>
                                                 <td class="py-3 text-right text-gray-900 font-semibold">7 m²</td>
                                             </tr>
                                             <tr class="border-b border-gray-100">
-                                                <td class="py-3 text-gray-700">Łazienka</td>
+                                                <td class="py-3 text-gray-700">Bathroom</td>
                                                 <td class="py-3 text-right text-gray-900 font-semibold">7 m²</td>
                                             </tr>
                                         </tbody>
@@ -1402,7 +1406,7 @@
                 </div>
 
                 <!-- Parking Spots Section -->
-                <div id="miejsca-parkingowe" class="bg-white rounded-lg p-6 mb-6">
+                <div id="parking" class="bg-white rounded-lg p-6 mb-6">
                     <h2 class="text-2xl font-bold mb-6">Parking</h2>
 
                     <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
@@ -1425,7 +1429,7 @@
                                    remove .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 from me"
                                 id="tab-parking1"
                                 class="px-6 py-3 border-b-3 border-blue-600 font-semibold text-sm text-blue-600 bg-blue-50 transition-all duration-200 cursor-pointer">
-                                Miejsce #1 (z komórką lokatorską)
+                                Space #1 (with storage room)
                             </button>
                             <button
                                 _="on click
@@ -1437,7 +1441,7 @@
                                    remove .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 from me"
                                 id="tab-parking2"
                                 class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer">
-                                Miejsce #14
+                                Space #14
                             </button>
                         </nav>
                     </div>
@@ -1500,28 +1504,28 @@
                                 <div>
                                     <div class="bg-green-50 rounded-lg p-6 mb-4">
                                         <h3 class="text-2xl font-bold text-green-800 mb-2">70 000 zł</h3>
-                                        <p class="text-green-700">Miejsce parkingowe nr 1 z komórką lokatorską</p>
+                                        <p class="text-green-700">Parking space #1 with storage room</p>
                                     </div>
 
-                                    <h4 class="font-semibold mb-3">Szczegóły miejsca parkingowego nr 1:</h4>
+                                    <h4 class="font-semibold mb-3">Parking space #1 details:</h4>
                                     <ul class="space-y-2 text-gray-700">
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Garaż podziemny - miejsce nr 1</span>
+                                            <span>Underground garage - space #1</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Storage room (ok. 5 m²)</span>
+                                            <span>Storage room (approx. 5 m²)</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Łatwy dostęp</span>
+                                            <span>Easy access</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1533,7 +1537,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Brama na pilota</span>
+                                            <span>Remote-controlled gate</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1583,22 +1587,22 @@
                                 <div>
                                     <div class="bg-green-50 rounded-lg p-6 mb-4">
                                         <h3 class="text-2xl font-bold text-green-800 mb-2">70 000 zł</h3>
-                                        <p class="text-green-700">Miejsce parkingowe nr 14</p>
+                                        <p class="text-green-700">Parking space #14</p>
                                     </div>
 
-                                    <h4 class="font-semibold mb-3">Szczegóły miejsca parkingowego nr 14:</h4>
+                                    <h4 class="font-semibold mb-3">Parking space #14 details:</h4>
                                     <ul class="space-y-2 text-gray-700">
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Garaż podziemny - miejsce nr 14</span>
+                                            <span>Underground garage - space #14</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Łatwy dostęp</span>
+                                            <span>Easy access</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1610,7 +1614,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span>Brama na pilota</span>
+                                            <span>Remote-controlled gate</span>
                                         </li>
                                         <li class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1634,9 +1638,9 @@
                     <div class="mt-6 space-y-4">
                         <!-- Single parking spot option -->
                         <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
-                            <h3 class="font-bold text-lg mb-2 text-gray-900">Mieszkanie + 1 miejsce parkingowe</h3>
+                            <h3 class="font-bold text-lg mb-2 text-gray-900">Apartment + 1 parking space</h3>
                             <p class="text-gray-700 mb-3">
-                                Mieszkanie z jednym miejscem parkingowym.
+                                Apartment with one parking space.
                             </p>
                             <div class="flex items-baseline gap-4">
                                 <span class="text-3xl font-bold text-gray-900">1 049 000 zł</span>
@@ -1653,7 +1657,7 @@
                             <div class="flex items-baseline gap-4">
                                 <span class="text-3xl font-bold text-green-900">1 099 000 zł</span>
                                 <span class="text-lg text-gray-600 line-through">1 119 000 zł</span>
-                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Oszczędzasz 20 000 zł!</span>
+                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">You save 20,000 PLN!</span>
                             </div>
                             <p class="text-sm text-gray-600 mt-3">
                                 (979,000 PLN apartment + 120,000 PLN for 2 parking spaces with discount)
@@ -1664,7 +1668,7 @@
 
                 <!-- Inspiracje -->
                 <div id="inspiracje" class="bg-white rounded-lg p-6 mb-6">
-                    <h2 class="text-2xl font-bold mb-6">Inspiracje</h2>
+                    <h2 class="text-2xl font-bold mb-6">Inspirations</h2>
 
                     <!-- Tab Navigation -->
                     <div class="border-b border-gray-200 mb-6">
@@ -1683,7 +1687,7 @@
                                    remove .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 from me"
                                 id="tab-pokoj"
                                 class="px-6 py-3 border-b-3 border-blue-600 font-semibold text-sm text-blue-600 bg-blue-50 transition-all duration-200 cursor-pointer">
-                                Dodatkowy pokój na piętrze
+                                Additional room upstairs
                             </button>
                             <button
                                 _="on click
@@ -1698,7 +1702,7 @@
                                    remove .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 from me"
                                 id="tab-krotkoterminowy"
                                 class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer">
-                                Najem Krótkoterminowy
+                                Short-term Rental
                             </button>
                             <button
                                 _="on click
@@ -1713,7 +1717,7 @@
                                    remove .border-gray-300 .text-gray-600 .bg-white .hover:bg-gray-50 from me"
                                 id="tab-dlugoterminowy"
                                 class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer">
-                                Najem Długoterminowy
+                                Long-term Rental
                             </button>
                         </nav>
                         </div>
@@ -1730,11 +1734,11 @@
 
                                 <!-- Visualization -->
                                 <div class="mt-6 mb-4">
-                                    <div class="cursor-pointer" _="on click call window.open('assets/img/source/floor_plan/02_01.png', '_blank')" title="Kliknij aby otworzyć wizualizację w nowym oknie">
+                                    <div class="cursor-pointer" _="on click call window.open('assets/img/source/floor_plan/02_01.png', '_blank')" title="Click to open visualization in new window">
                                         <img src="/assets/img/source/floor_plan/02_01.png"
                                              alt="Visualization of partition wall addition possibility"
                                              class="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                        <p class="text-center text-sm text-gray-500 mt-2">Kliknij aby otworzyć w nowym oknie</p>
+                                        <p class="text-center text-sm text-gray-500 mt-2">Click to open in new window</p>
                                     </div>
                                 </div>
 
@@ -1745,7 +1749,7 @@
                         <!-- Short-term Rental Tab -->
                         <div id="content-krotkoterminowy" class="tab-pane hidden">
                             <div class="text-gray-600">
-                                <h3 class="text-lg font-semibold mb-4 text-gray-800">Potencjał Inwestycyjny - Najem Krótkoterminowy</h3>
+                                <h3 class="text-lg font-semibold mb-4 text-gray-800">Investment Potential - Short-term Rental</h3>
 
                                 <div class="bg-gray-50 p-4 rounded-lg mb-6">
                                     <h4 class="font-semibold text-gray-800 mb-2">What is short-term rental?</h4>
@@ -1756,11 +1760,11 @@
 
                                 <div class="bg-blue-50 p-4 rounded-lg mb-6">
                                     <p class="text-sm text-blue-800 mb-2">
-                                        <strong>Analiza rynku:</strong> IV kwartał 2024 - Kraków, Bieżanów-Prokocim
+                                        <strong>Market analysis:</strong> Q4 2024 - Kraków, Bieżanów-Prokocim
                                     </p>
                                 </div>
 
-                                <h4 class="font-semibold text-gray-800 mb-3">Zalety tej strategii inwestycyjnej:</h4>
+                                <h4 class="font-semibold text-gray-800 mb-3">Advantages of this investment strategy:</h4>
                                 <ul class="space-y-2 mb-6">
                                     <li class="flex items-start">
                                         <span class="text-primary mr-2">✓</span>
@@ -1768,11 +1772,11 @@
                                     </li>
                                     <li class="flex items-start">
                                         <span class="text-primary mr-2">✓</span>
-                                        <span><strong>Kontrola nad nieruchomością:</strong> Krótkie pobyty pozwalają na regularne monitorowanie stanu mieszkania</span>
+                                        <span><strong>Property control:</strong> Short stays allow regular monitoring of apartment condition</span>
                                     </li>
                                     <li class="flex items-start">
                                         <span class="text-primary mr-2">✓</span>
-                                        <span><strong>Elastyczność wykorzystania:</strong> Możliwość korzystania z mieszkania dla własnych potrzeb w dowolnym terminie</span>
+                                        <span><strong>Usage flexibility:</strong> Possibility to use the apartment for personal needs at any time</span>
                                     </li>
                                     <li class="flex items-start">
                                         <span class="text-primary mr-2">✓</span>
@@ -1780,7 +1784,7 @@
                                     </li>
                                 </ul>
 
-                                <h4 class="font-semibold text-gray-800 mb-3">Prognozowane przychody roczne:</h4>
+                                <h4 class="font-semibold text-gray-800 mb-3">Projected annual income:</h4>
                                 <div class="bg-green-50 p-4 rounded-lg mb-6">
                                     <div class="grid md:grid-cols-2 gap-4 mb-4">
                                         <div class="text-center">
@@ -1796,53 +1800,53 @@
                                     </div>
                                 </div>
 
-                                <h4 class="font-semibold text-gray-800 mb-3">Model współpracy z firmą zarządzającą:</h4>
+                                <h4 class="font-semibold text-gray-800 mb-3">Cooperation model with management company:</h4>
                                 <div class="bg-gray-50 p-4 rounded-lg mb-6">
                                     <ul class="space-y-2">
                                         <li class="flex items-start">
                                             <span class="text-gray-600 mr-2">•</span>
-                                            <span><strong>Prowizja:</strong> Standardowo 19% od przychodu brutto</span>
+                                            <span><strong>Commission:</strong> Standard 19% of gross income</span>
                                         </li>
                                         <li class="flex items-start">
                                             <span class="text-gray-600 mr-2">•</span>
-                                            <span><strong>Podatek VAT:</strong> 8% w formie podatku VAT</span>
+                                            <span><strong>VAT tax:</strong> 8% as VAT tax</span>
                                         </li>
                                         <li class="flex items-start">
                                             <span class="text-gray-600 mr-2">•</span>
-                                            <span><strong>Opłaty za rezerwacje:</strong> 1,5-3,5% prowizji platform rezerwacyjnych</span>
+                                            <span><strong>Booking fees:</strong> 1.5-3.5% commission from booking platforms</span>
                                         </li>
                                         <li class="flex items-start">
                                             <span class="text-gray-600 mr-2">•</span>
-                                            <span><strong>Brak kosztów startowych:</strong> Firma pokrywa koszty wyposażenia w pościel, ręczniki oraz sesję fotograficzną</span>
+                                            <span><strong>No startup costs:</strong> Company covers costs of bedding, towels and photo session equipment</span>
                                         </li>
                                     </ul>
                                 </div>
 
-                                <h4 class="font-semibold text-gray-800 mb-3">Zarządzanie przychodami:</h4>
+                                <h4 class="font-semibold text-gray-800 mb-3">Revenue management:</h4>
                                 <p class="mb-4">
                                     Professional companies use dynamic pricing management (revenue management)
                                     with dedicated algorithms that analyze local market, seasonality and events.
-                                    To pozwala na optymalizację obłożenia i maksymalizację przychodów - nawet o 50% więcej
-                                    w porównaniu ze stałymi cenami.
+                                    This allows for occupancy optimization and revenue maximization - even 50% more
+                                    compared to fixed prices.
                                 </p>
 
-                                <h4 class="font-semibold text-gray-800 mb-3">Dodatkowe źródła rezerwacji:</h4>
+                                <h4 class="font-semibold text-gray-800 mb-3">Additional booking sources:</h4>
                                 <p class="mb-4">
-                                    Oprócz głównych platform rezerwacyjnych, współpracujące firmy mają dostęp do szerokiej
-                                    sieci portali, w tym międzynarodowych systemów rezerwacyjnych, platform dla biznesu,
-                                    oraz własnych kanałów dystrybucji. Większa widoczność przekłada się na wyższe obłożenie
-                                    mieszkania przez cały rok.
+                                    Besides main booking platforms, cooperating companies have access to a wide
+                                    network of portals, including international booking systems, business platforms,
+                                    and their own distribution channels. Greater visibility translates to higher occupancy
+                                    of the apartment throughout the year.
                                 </p>
 
                                 <h4 class="font-semibold text-gray-800 mb-3">Aspekty operacyjne:</h4>
                                 <ul class="space-y-2 mb-6">
                                     <li class="flex items-start">
                                         <span class="text-gray-600 mr-2">•</span>
-                                        <span>Całodobowa infolinia dla gości</span>
+                                        <span>24/7 helpline for guests</span>
                                     </li>
                                     <li class="flex items-start">
                                         <span class="text-gray-600 mr-2">•</span>
-                                        <span>Regularne sprzątanie po każdym pobycie</span>
+                                        <span>Regular cleaning after each stay</span>
                                     </li>
                                     <li class="flex items-start">
                                         <span class="text-gray-600 mr-2">•</span>
@@ -1850,7 +1854,7 @@
                                     </li>
                                     <li class="flex items-start">
                                         <span class="text-gray-600 mr-2">•</span>
-                                        <span>Umowa na czas nieokreślony - elastyczne warunki współpracy</span>
+                                        <span>Indefinite contract - flexible cooperation terms</span>
                                     </li>
                                 </ul>
 
@@ -1859,38 +1863,38 @@
                                     <ul class="space-y-2 text-sm text-orange-800">
                                         <li class="flex items-start">
                                             <span class="text-orange-600 mr-2">⚠️</span>
-                                            <span><strong>Sezonowość przychodów:</strong> Najem krótkoterminowy może charakteryzować się znacznymi wahaniami sezonowymi. Po okresie wakacyjnym/urlopowym możliwe są spadki obłożenia i przychodów</span>
+                                            <span><strong>Revenue seasonality:</strong> Short-term rental may be characterized by significant seasonal fluctuations. After vacation/holiday periods, drops in occupancy and revenue are possible</span>
                                         </li>
                                         <li class="flex items-start">
                                             <span class="text-orange-600 mr-2">⚠️</span>
-                                            <span><strong>Zmienność rynku:</strong> Przychody zależą od warunków ekonomicznych, konkurencji i wydarzeń lokalnych</span>
+                                            <span><strong>Market volatility:</strong> Revenue depends on economic conditions, competition and local events</span>
                                         </li>
                                         <li class="flex items-start">
                                             <span class="text-orange-600 mr-2">⚠️</span>
-                                            <span><strong>Większe zaangażowanie:</strong> Wymaga aktywniejszego zarządzania niż najem długoterminowy</span>
+                                            <span><strong>Greater involvement:</strong> Requires more active management than long-term rental</span>
                                         </li>
                                         <li class="flex items-start">
                                             <span class="text-orange-600 mr-2">⚠️</span>
-                                            <span><strong>Regulacje prawne:</strong> Możliwe zmiany przepisów dotyczących najmu krótkoterminowego</span>
+                                            <span><strong>Legal regulations:</strong> Possible changes in short-term rental regulations</span>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div class="bg-amber-50 p-4 rounded-lg border border-amber-200">
                                     <p class="text-sm text-amber-800">
-                                        <strong>Uwaga:</strong> Szczegółowe dane z przeprowadzonej analizy,
-                                        w tym nazwy firm zarządzających, estymacje przychodów dla tej konkretnej
-                                        nieruchomości oraz porównanie ofert, są dostępne na życzenie kupującego.
+                                        <strong>Note:</strong> Detailed data from the conducted analysis,
+                                        including management company names, revenue estimates for this specific
+                                        property and offer comparison, are available upon buyer's request.
                                     </p>
                                 </div>
 
                                 <div class="bg-red-50 p-4 rounded-lg border border-red-200 mt-4">
                                     <p class="text-xs text-red-800">
-                                        <strong>Disclaimer:</strong> Przedstawione informacje mają charakter edukacyjny i analityczny.
-                                        Nie stanowią one porady inwestycyjnej, prawnej ani finansowej. Każda decyzja inwestycyjna
-                                        powinna być poprzedzona indywidualną analizą i konsultacją z odpowiednimi specjalistami.
-                                        Przychody z najmu mogą się różnić od przedstawionych szacunków ze względu na warunki rynkowe,
-                                        sezonowość i inne czynniki zewnętrzne.
+                                        <strong>Disclaimer:</strong> The presented information is educational and analytical in nature.
+                                        It does not constitute investment, legal or financial advice. Every investment decision
+                                        should be preceded by individual analysis and consultation with appropriate specialists.
+                                        Rental income may differ from the presented estimates due to market conditions,
+                                        seasonality and other external factors.
                                     </p>
                                 </div>
                             </div>
@@ -1900,22 +1904,22 @@
                         <div id="content-dlugoterminowy" class="tab-pane hidden">
                             <div class="text-gray-600">
                                 <div class="mb-6">
-                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Potencjał Inwestycyjny - Najem Długoterminowy</h3>
+                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Investment Potential - Long-term Rental</h3>
 
                                     <div class="bg-gray-50 p-4 rounded-lg mb-6">
-                                        <h4 class="font-semibold text-gray-800 mb-2">Czym jest najem długoterminowy?</h4>
+                                        <h4 class="font-semibold text-gray-800 mb-2">What is long-term rental?</h4>
                                         <p class="text-sm text-gray-700">
-                                            Najem długoterminowy to wynajmowanie mieszkania na okresy minimum kilku miesięcy, zazwyczaj od roku wzwyż.
-                                            Najemcami są osoby szukające stałego miejsca zamieszkania - rodziny, single, pary czy studenci.
-                                            Właściciel otrzymuje stały, przewidywalny czynsz co miesiąc, przy minimalnym zaangażowaniu w obsługę.
-                                            W przeciwieństwie do najmu krótkoterminowego, koszty mediów zazwyczaj pokrywa najemca, a rotacja
-                                            lokatorów jest znacznie niższa.
+                                            Long-term rental is renting an apartment for periods of at least several months, usually from a year up.
+                                            Tenants are people looking for permanent residence - families, singles, couples or students.
+                                            The owner receives stable, predictable rent every month, with minimal involvement in service.
+                                            Unlike short-term rental, utility costs are usually covered by the tenant, and tenant
+                                            rotation is significantly lower.
                                         </p>
                                     </div>
 
                                     <div class="bg-blue-50 p-4 rounded-lg mb-6">
                                         <p class="text-sm text-blue-800 mb-2">
-                                            <strong>Analiza rynku:</strong> IV kwartał 2024 - Kraków, Bieżanów-Prokocim
+                                            <strong>Market analysis:</strong> Q4 2024 - Kraków, Bieżanów-Prokocim
                                         </p>
                                     </div>
 
@@ -1940,31 +1944,31 @@
                                     <h3 class="text-lg font-semibold mb-3 text-gray-800">Professional property management</h3>
                                     <div class="grid md:grid-cols-2 gap-4 mb-4">
                                         <div class="bg-gray-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold mb-2">Usługi zarządzania obejmują:</h4>
+                                            <h4 class="font-semibold mb-2">Management services include:</h4>
                                             <ul class="text-sm space-y-1">
                                                 <li>• Tenant search and verification</li>
                                                 <li>• Rental agreement preparation</li>
-                                                <li>• Comiesięczne rent collection</li>
-                                                <li>• Koordinacja remontów i napraw</li>
-                                                <li>• Regularne przeglądy nieruchomości</li>
+                                                <li>• Monthly rent collection</li>
+                                                <li>• Coordination of renovations and repairs</li>
+                                                <li>• Regular property inspections</li>
                                             </ul>
                                         </div>
 
                                         <div class="bg-gray-50 p-4 rounded-lg">
-                                            <h4 class="font-semibold mb-2">Dodatkowe usługi:</h4>
+                                            <h4 class="font-semibold mb-2">Additional services:</h4>
                                             <ul class="text-sm space-y-1">
-                                                <li>• Rozliczanie mediów</li>
-                                                <li>• Obsługa prawna</li>
-                                                <li>• Sprawozdawczość finansowa</li>
-                                                <li>• Interwencje w sytuacjach awaryjnych</li>
-                                                <li>• Wsparcie przy optymalizacji podatkowej</li>
+                                                <li>• Utility billing</li>
+                                                <li>• Legal support</li>
+                                                <li>• Financial reporting</li>
+                                                <li>• Emergency intervention</li>
+                                                <li>• Tax optimization support</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="mb-6">
-                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Prognozowane przychody roczne</h3>
+                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Projected annual income</h3>
 
                                     <div class="bg-green-50 p-4 rounded-lg mb-6">
                                         <div class="grid md:grid-cols-2 gap-4 mb-4">
@@ -1980,18 +1984,18 @@
                                             </div>
                                         </div>
                                         <p class="text-xs text-green-600 text-center">
-                                            *Estymacja dla mieszkania 70m2+ w Bieżanowie-Prokocim
+                                            *Estimate for 70m²+ apartment in Bieżanów-Prokocim
                                         </p>
                                     </div>
 
-                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Analiza finansowa najmu długoterminowego</h3>
+                                    <h3 class="text-lg font-semibold mb-3 text-gray-800">Financial analysis of long-term rental</h3>
                                     <p class="mb-4">
-                                        Na podstawie analizy rynku krakowskiego, najem długoterminowy oferuje stabilny zwrot z inwestycji przy umiarkowanym ryzyku.
-                                        Koszty zarządzania są przewidywalne i znacznie niższe niż przy wynajmie krótkoterminowym.
+                                        Based on Kraków market analysis, long-term rental offers stable investment return with moderate risk.
+                                        Management costs are predictable and significantly lower than with short-term rental.
                                     </p>
 
                                     <div class="bg-green-50 p-4 rounded-lg mb-4">
-                                        <h4 class="font-semibold text-green-800 mb-2">Struktura kosztów:</h4>
+                                        <h4 class="font-semibold text-green-800 mb-2">Cost structure:</h4>
                                         <div class="text-sm text-green-700 grid md:grid-cols-2 gap-4">
                                             <div>
                                                 <p class="mb-1"><span class="font-medium">Management commission:</span> 15-20% monthly rent</p>
@@ -2009,19 +2013,19 @@
 
                                 <div class="bg-amber-50 p-4 rounded-lg border border-amber-200">
                                     <p class="text-sm text-amber-800">
-                                        <strong>Uwaga:</strong> Szczegółowe dane z przeprowadzonej analizy,
-                                        w tym nazwy firm zarządzających, estymacje przychodów dla tej konkretnej
-                                        nieruchomości oraz porównanie ofert, są dostępne na życzenie kupującego.
+                                        <strong>Note:</strong> Detailed data from the conducted analysis,
+                                        including management company names, revenue estimates for this specific
+                                        property and offer comparison, are available upon buyer's request.
                                     </p>
                                 </div>
 
                                 <div class="bg-red-50 p-4 rounded-lg border border-red-200 mt-4">
                                     <p class="text-xs text-red-800">
-                                        <strong>Disclaimer:</strong> Przedstawione informacje mają charakter edukacyjny i analityczny.
-                                        Nie stanowią one porady inwestycyjnej, prawnej ani finansowej. Każda decyzja inwestycyjna
-                                        powinna być poprzedzona indywidualną analizą i konsultacją z odpowiednimi specjalistami.
-                                        Przychody z najmu mogą się różnić od przedstawionych szacunków ze względu na warunki rynkowe
-                                        i inne czynniki zewnętrzne.
+                                        <strong>Disclaimer:</strong> The presented information is educational and analytical in nature.
+                                        It does not constitute investment, legal or financial advice. Every investment decision
+                                        should be preceded by individual analysis and consultation with appropriate specialists.
+                                        Rental income may differ from the presented estimates due to market conditions
+                                        and other external factors.
                                     </p>
                                 </div>
                             </div>
@@ -2053,7 +2057,7 @@
                                    remove .border-gray-300 from me then remove .text-gray-600 from me then remove .bg-white from me"
                                 id="tab-okolica-komunikacja"
                                 class="px-6 py-3 border-b-3 border-blue-600 font-semibold text-sm text-blue-600 bg-blue-50 transition-all duration-200 cursor-pointer">
-                                Komunikacja
+                                Public Transport
                             </button>
                             <button
                                 _="on click
@@ -2071,7 +2075,7 @@
                                    remove .border-gray-300 from me then remove .text-gray-600 from me then remove .bg-white from me"
                                 id="tab-okolica-zielen"
                                 class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer">
-                                Zieleń
+                                Green Areas
                             </button>
                             <button
                                 _="on click
@@ -2089,7 +2093,7 @@
                                    remove .border-gray-300 from me then remove .text-gray-600 from me then remove .bg-white from me"
                                 id="tab-okolica-edukacja"
                                 class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer">
-                                Edukacja
+                                Education
                             </button>
                             <button
                                 _="on click
@@ -2107,7 +2111,7 @@
                                    remove .border-gray-300 from me then remove .text-gray-600 from me then remove .bg-white from me"
                                 id="tab-okolica-srodowisko"
                                 class="px-6 py-3 border-b-3 border-gray-300 font-semibold text-sm text-gray-600 bg-white hover:bg-gray-50 transition-all duration-200 cursor-pointer">
-                                Środowisko
+                                Environment
                             </button>
                             <button
                                 _="on click
@@ -2133,7 +2137,7 @@
 
                     <!-- Tab Content -->
                     <div class="tab-content">
-                        <!-- Komunikacja Tab -->
+                        <!-- Public Transport Tab -->
                         <div id="content-okolica-komunikacja" class="tab-pane">
                             <!-- Header Image -->
                             <div class="mb-6 rounded-lg overflow-hidden">
@@ -2151,7 +2155,7 @@
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 class="text-lg font-semibold mb-2 text-gray-800">🚆 Doskonała komunikacja kolejowa SKA</h3>
+                                        <h3 class="text-lg font-semibold mb-2 text-gray-800">🚆 Excellent SKA railway connection</h3>
                                         <p class="text-gray-700 mb-4 leading-relaxed">
                                             Location near the SKA railway junction guarantees fast, convenient and economical access to all of Kraków.
                                             Thanks to the modern agglomeration railway, you will reach the city center in record time, avoiding street traffic.
@@ -2159,7 +2163,7 @@
                                         <ul class="list-disc list-inside space-y-2 mb-4">
                                             <li><strong>Fast connection to city center:</strong> Journey to Kraków Grzegórzki takes only <strong>11 minutes</strong> by SKA train</li>
                                             <li><strong>Direct connection to airport:</strong> Access to Kraków-Balice Airport in about <strong>30 minutes</strong> thanks to SKA1 line</li>
-                                            <li><strong>Nowoczesny system kolejowy:</strong> SKA to jeden z najnowocześniejszych systemów transportu aglomeracyjnego w Polsce z 120 km tras</li>
+                                            <li><strong>Modern railway system:</strong> SKA is one of the most modern agglomeration transport systems in Poland with 120 km of routes</li>
                                             <li><strong>Alternative to traffic jams:</strong> While car travel can take 25-40 minutes, the train consistently takes 11 minutes</li>
                                             <li><strong>Economical solution:</strong> Travel cost significantly lower than maintaining a car in the city center</li>
                                         </ul>
@@ -2168,7 +2172,7 @@
                             </div>
                         </div>
 
-                        <!-- Zieleń Tab -->
+                        <!-- Green Areas Tab -->
                         <div id="content-okolica-zielen" class="tab-pane hidden">
                             <!-- Header Image -->
                             <div class="mb-6 rounded-lg overflow-hidden">
@@ -2186,10 +2190,10 @@
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 class="text-lg font-semibold mb-2 text-gray-800">🌱 Pierwszy Park Złocień i zielone inwestycje</h3>
+                                        <h3 class="text-lg font-semibold mb-2 text-gray-800">🌱 First Złocień Park and green investments</h3>
                                         <p class="text-gray-700 mb-4 leading-relaxed">
-                                            Ten rejon Krakowa przechodzi zieloną transformację. Pierwszy w okolicy Park Złocień to dopiero początek - miasto
-                                            inwestuje setki milionów w zieleń, tworząc nowoczesną przestrzeń miejską przyjazną mieszkańcom.
+                                            This area of Kraków is undergoing a green transformation. The first Złocień Park in the area is just the beginning - the city
+                                            invests hundreds of millions in greenery, creating modern urban space friendly to residents.
                                         </p>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
                                             <li><strong>Unique character:</strong> Park Złocień is the <strong>first park in this area of Kraków</strong>, opened in 2024</li>
@@ -2203,12 +2207,12 @@
                             </div>
                         </div>
 
-                        <!-- Edukacja Tab -->
+                        <!-- Education Tab -->
                         <div id="content-okolica-edukacja" class="tab-pane hidden">
                             <!-- Header Image -->
                             <div class="mb-6 rounded-lg overflow-hidden">
                                 <img src="/assets/img/source/neighbourhood/school/01.png"
-                                     alt="Szkoła Podstawowa nr 20 - nowoczesna infrastruktura edukacyjna"
+                                     alt="Primary School No. 20 - modern educational infrastructure"
                                      class="w-full h-48 object-cover cursor-pointer"
                                      _="on click call window.open('assets/img/source/neighbourhood/school/01.png', '_blank')">
                             </div>
@@ -2221,29 +2225,29 @@
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 class="text-lg font-semibold mb-2 text-gray-800">🎓 Najnowocześniejsza szkoła w Krakowie</h3>
+                                        <h3 class="text-lg font-semibold mb-2 text-gray-800">🎓 The most modern school in Kraków</h3>
                                         <p class="text-gray-700 mb-4 leading-relaxed">
-                                            Rodziny z dziećmi mają dostęp do wyjątkowej infrastruktury edukacyjnej. Nowa szkoła podstawowa to prawdziwa
-                                            perła architektoniczna z innowacyjnymi rozwiązaniami../
+                                            Families with children have access to exceptional educational infrastructure. The new primary school is a true
+                                            architectural gem with innovative solutions../
                                         </p>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
-                                            <li><strong>Wyjątkowa infrastruktura:</strong> Szkoła Podstawowa nr 20 oddana w 2023 roku to <strong>jeden z najnowocześniejszych obiektów edukacyjnych</strong> w Krakowie</li>
-                                            <li><strong>Innowacyjne rozwiązania:</strong> <strong>Boisko sportowe na dachu hali</strong> - unikalne rozwiązanie architektoniczne w skali miasta</li>
-                                            <li><strong>Kompletne wyposażenie:</strong> 24 sale lekcyjne, 4 nowoczesne pracownie przedmiotowe, hala sportowa z trybunami na 180 miejsc</li>
-                                            <li><strong>Wysoki standard:</strong> Budynek przystosowany do potrzeb osób niepełnosprawnych, koszt inwestycji: 51,4 mln zł</li>
-                                            <li><strong>Przestrzeń dla 600 uczniów:</strong> System jednozmianowy zapewniający optymalne warunki nauki</li>
+                                            <li><strong>Exceptional infrastructure:</strong> Primary School No. 20 opened in 2023 is <strong>one of the most modern educational facilities</strong> in Kraków</li>
+                                            <li><strong>Innovative solutions:</strong> <strong>Sports field on the hall roof</strong> - unique architectural solution on the city scale</li>
+                                            <li><strong>Complete equipment:</strong> 24 classrooms, 4 modern subject workshops, sports hall with stands for 180 seats</li>
+                                            <li><strong>High standard:</strong> Building adapted for disabled persons, investment cost: PLN 51.4 million</li>
+                                            <li><strong>Space for 600 students:</strong> Single-shift system ensuring optimal learning conditions</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Środowisko Tab -->
+                        <!-- Environment Tab -->
                         <div id="content-okolica-srodowisko" class="tab-pane hidden">
                             <!-- Header Image -->
                             <div class="mb-6 rounded-lg overflow-hidden">
                                 <img src="/assets/img/source/neighbourhood/river/01.jpg"
-                                     alt="Modernizacja oczyszczalni ścieków w Płaszowie - wielomilionowa inwestycja środowiskowa"
+                                     alt="Modernization of sewage treatment plant in Płaszów - multi-million environmental investment"
                                      class="w-full h-48 object-cover cursor-pointer"
                                      _="on click call window.open('assets/img/source/neighbourhood/river/01.jpg', '_blank')">
                             </div>
@@ -2256,13 +2260,13 @@
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 class="text-lg font-semibold mb-2 text-gray-800">💨 Intensywne działania w walce z uciążliwościami</h3>
+                                        <h3 class="text-lg font-semibold mb-2 text-gray-800">💨 Intensive efforts to combat nuisances</h3>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
-                                            <li><strong>Kompleksowa modernizacja:</strong> Miasto realizuje <strong>Program ograniczania uciążliwości zapachowych</strong> z budżetem przekraczającym 100 mln zł</li>
-                                            <li><strong>Nowoczesne technologie:</strong> Instalacja wielostopniowego systemu usuwania zapachów w kolektorze Bieżanów (2023)</li>
-                                            <li><strong>Hermetyzacja obiektów:</strong> Zakończono prace przy głównych źródłach odoru - osadnikach pierwotnych i stacji przepompowych</li>
-                                            <li><strong>Wsparcie zewnętrzne:</strong> Narodowy Fundusz Ochrony Środowiska zapewnia około <strong>100 mln zł</strong> na dalszą deodoryzację</li>
-                                            <li><strong>Postęp prac:</strong> W latach 2019-2023 zmodernizowano osadniki pierwotne i zahermetyzowano kolektor Płaszów</li>
+                                            <li><strong>Comprehensive modernization:</strong> The city implements <strong>Odor Nuisance Reduction Program</strong> with budget exceeding PLN 100 million</li>
+                                            <li><strong>Modern technologies:</strong> Installation of multi-stage odor removal system in Bieżanów collector (2023)</li>
+                                            <li><strong>Facility sealing:</strong> Completed work on main odor sources - primary settling tanks and pumping stations</li>
+                                            <li><strong>External support:</strong> National Environmental Protection Fund provides approximately <strong>PLN 100 million</strong> for further deodorization</li>
+                                            <li><strong>Work progress:</strong> In 2019-2023, primary settling tanks were modernized and the Płaszów collector was sealed</li>
                                         </ul>
 
                                         <h4 class="text-md font-semibold mt-6 mb-3 text-gray-800">🏠 High standards of new apartments in accordance with EU 2024 standards</h4>
@@ -2277,12 +2281,12 @@
                             </div>
                         </div>
 
-                        <!-- Bezpieczeństwo Tab -->
+                        <!-- Safety Tab -->
                         <div id="content-okolica-bezpieczenstwo" class="tab-pane hidden">
 
                             <div class="mb-6 rounded-lg overflow-hidden">
                                 <img src="/assets/img/source/neighbourhood/safety/01.jpg"
-                                     alt="Modernizacja oczyszczalni ścieków w Płaszowie - wielomilionowa inwestycja środowiskowa"
+                                     alt="Modernization of sewage treatment plant in Płaszów - multi-million environmental investment"
                                      class="w-full h-48 object-cover cursor-pointer"
                                      _="on click call window.open('assets/img/source/neighbourhood/safety/01.jpg', '_blank')">
                             </div>
@@ -2295,31 +2299,31 @@
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 class="text-lg font-semibold mb-2 text-gray-800">🌊 Kompleksowe zabezpieczenia przeciwpowodziowe od 2017 roku</h3>
+                                        <h3 class="text-lg font-semibold mb-2 text-gray-800">🌊 Comprehensive flood protection since 2017</h3>
                                         <p class="text-gray-700 mb-4 leading-relaxed">
                                             Thanks to investments worth over 130 million PLN, the area is fully protected against flooding. Modern
                                             retention and safety systems successfully passed tests during heavy rainfall in 2023.
                                         </p>
 
-                                        <h4 class="text-md font-semibold mt-4 mb-3 text-gray-700">Uregulowanie koryta rzeki Serafy (2017-2020)</h4>
+                                        <h4 class="text-md font-semibold mt-4 mb-3 text-gray-700">Serafa River bed regulation (2017-2020)</h4>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
-                                            <li><strong>Modernizacja w ramach inwestycji SKA:</strong> Kompleksowe uregulowanie koryta rzeki Serafy połączone z budową przystanku kolejowego za ponad <strong>1 mld zł</strong></li>
+                                            <li><strong>Modernization within SKA investment:</strong> Comprehensive regulation of the Serafa riverbed combined with railway station construction for over <strong>1 billion PLN</strong></li>
                                             <li><strong>New railway bridge:</strong> Construction of bridge over Serafa River with simultaneous riverbed correction (2018-2020)</li>
                                             <li><strong>Bank reinforcement:</strong> Organization and reinforcement of Serafa riverbed above and below new structures</li>
                                         </ul>
 
-                                        <h4 class="text-md font-semibold mt-4 mb-3 text-gray-700">Budowa muru ochronnego z grodzic winylowych (2022)</h4>
+                                        <h4 class="text-md font-semibold mt-4 mb-3 text-gray-700">Construction of protective wall with vinyl sheet piles (2022)</h4>
                                         <ul class="list-disc list-inside space-y-2 mb-4">
-                                            <li><strong>Nowoczesna technologia:</strong> Zainstalowanie <strong>2 km ścian przeciwpowodziowych</strong> z grodzic winylowych na obu brzegach Serafy</li>
-                                            <li><strong>Ochrona osiedla Złocień:</strong> Winylowa ściana o długości ponad 1 km na prawym brzegu rzeki za <strong>2 mln zł</strong> (PGW Wody Polskie, 2022)</li>
-                                            <li><strong>Wysokość zabezpieczeń:</strong> Mury o wysokości od 50 cm do 1 metra zapewniające bezpieczny przepływ wód powodziowych</li>
-                                            <li><strong>Trwałość rozwiązania:</strong> Grodzice winylowe są całkowicie odporne na korozję i znacznie tańsze od tradycyjnych metod</li>
+                                            <li><strong>Modern technology:</strong> Installation of <strong>2 km of flood protection walls</strong> made of vinyl sheet piles on both banks of the Serafa</li>
+                                            <li><strong>Protection of Złocień estate:</strong> Vinyl wall over 1 km long on the right bank of the river for <strong>2 million PLN</strong> (PGW Polish Waters, 2022)</li>
+                                            <li><strong>Protection height:</strong> Walls ranging from 50 cm to 1 meter in height ensuring safe flood water flow</li>
+                                            <li><strong>Solution durability:</strong> Vinyl sheet piles are completely corrosion-resistant and significantly cheaper than traditional methods</li>
                                         </ul>
 
                                         <h4 class="text-md font-semibold mt-4 mb-3 text-gray-700">Retention reservoir system in Bieżanów</h4>
                                         <ul class="list-disc list-inside space-y-2">
-                                            <li><strong>Cztery zbiorniki ochronne:</strong> Serafa I (2015), Malinówka I, Malinówka II oraz Serafa II (do 2023)</li>
-                                            <li><strong>Łączna pojemność:</strong> <strong>336 tys. m³</strong> wody retencyjnej chroniącej Złocień i Bieżanów</li>
+                                            <li><strong>Four protective reservoirs:</strong> Serafa I (2015), Malinówka I, Malinówka II and Serafa II (until 2023)</li>
+                                            <li><strong>Total capacity:</strong> <strong>336 thousand m³</strong> of retention water protecting Złocień and Bieżanów</li>
                                             <li><strong>Investment cost:</strong> Nearly <strong>30 million PLN</strong> for the construction of three new reservoirs (Polish Waters)</li>
                                             <li><strong>Effectiveness confirmed:</strong> The system successfully passed the test during heavy rainfall in May 2023</li>
                                         </ul>
@@ -2347,7 +2351,7 @@
                     </div>
                     <div class="bg-blue-50 p-4 rounded-lg">
                         <p class="text-sm text-gray-700 mb-2">
-                            <strong>Adres:</strong> ul. Henryka i Karola Czeczów 28/36, 30-798 Kraków, Dzielnica XII Bieżanów-Prokocim
+                            <strong>Address:</strong> ul. Henryka i Karola Czeczów 28/36, 30-798 Kraków, Dzielnica XII Bieżanów-Prokocim
                         </p>
                         <p class="text-sm text-gray-600">
                             Excellent location in a quiet part of Kraków with easy access to the city center and ring road.
@@ -2366,8 +2370,8 @@
                         <h3 class="text-lg font-semibold mb-4">Contact</h3>
 
                         <div class="mb-6">
-                            <p class="text-gray-600 text-sm mb-1">Sprzedający</p>
-                            <p class="font-semibold">Osoba prywatna</p>
+                            <p class="text-gray-600 text-sm mb-1">Seller</p>
+                            <p class="font-semibold">Private person</p>
                         </div>
 
                         <div class="space-y-3 mb-6">
@@ -2375,10 +2379,10 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                                <span>Napisz wiadomość</span>
+                                <span>Send message</span>
                             </button>
                             <p class="text-xs text-primary font-medium text-center mt-3">
-                                Sprzedaż bezpośrednia - bez pośrednictwa agencji
+                                Direct sale - without agency mediation
                             </p>
                         </div>
 
@@ -2394,14 +2398,14 @@
 
                     <!-- Price Calculator Card - Sticky -->
                     <div class="bg-white rounded-lg p-6 shadow-lg mt-4">
-                        <h3 class="text-lg font-semibold mb-4">Kalkulator Ceny</h3>
+                        <h3 class="text-lg font-semibold mb-4">Price Calculator</h3>
 
                         <div class="space-y-4">
                             <!-- Apartment Price -->
                             <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                                 <label class="flex items-center">
                                     <input type="checkbox" checked disabled class="mr-3 text-blue-600 rounded">
-                                    <span class="text-sm font-medium">Mieszkanie</span>
+                                    <span class="text-sm font-medium">Apartment</span>
                                 </label>
                                 <span class="font-semibold text-gray-900">979 000 zł</span>
                             </div>
@@ -2410,7 +2414,7 @@
                             <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                                 <label class="flex items-center">
                                     <input type="checkbox" id="parking1" class="mr-3 text-blue-600 rounded" onchange="updateTotalPrice()">
-                                    <span class="text-sm font-medium">Miejsce #1 (z komórką)</span>
+                                    <span class="text-sm font-medium">Parking #1 (with storage)</span>
                                 </label>
                                 <span class="font-semibold text-gray-900">70 000 zł</span>
                             </div>
@@ -2419,7 +2423,7 @@
                             <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                                 <label class="flex items-center">
                                     <input type="checkbox" id="parking14" class="mr-3 text-blue-600 rounded" onchange="updateTotalPrice()">
-                                    <span class="text-sm font-medium">Miejsce #14</span>
+                                    <span class="text-sm font-medium">Parking #14</span>
                                 </label>
                                 <span class="font-semibold text-gray-900">70 000 zł</span>
                             </div>
@@ -2431,14 +2435,14 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span class="text-sm font-semibold">Rabat 20 000 zł za oba miejsca!</span>
+                                <span class="text-sm font-semibold">PLN 20,000 discount for both spaces!</span>
                             </div>
                         </div>
 
                         <!-- Total Price -->
                         <div class="mt-6 pt-4 border-t border-gray-200">
                             <div class="flex items-center justify-between">
-                                <span class="text-lg font-semibold text-gray-900">Suma:</span>
+                                <span class="text-lg font-semibold text-gray-900">Total:</span>
                                 <div class="text-right">
                                     <div id="total-price" class="text-2xl font-bold text-blue-600">979 000 zł</div>
                                     <div id="original-price" class="hidden text-sm text-gray-500 line-through"></div>
@@ -2458,25 +2462,25 @@
 
         <!-- Additional Information -->
         <div class="bg-white rounded-lg p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-6">Informacje dodatkowe</h2>
+            <h2 class="text-2xl font-bold mb-6">Additional Information</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div>
-                    <h3 class="font-semibold mb-3">Media</h3>
+                    <h3 class="font-semibold mb-3">Utilities</h3>
                     <ul class="space-y-1 text-sm text-gray-700">
-                        <li>• Prąd</li>
-                        <li>• Woda miejska</li>
-                        <li>• Kanalizacja</li>
-                        <li>• Ogrzewanie miejskie</li>
+                        <li>• Electricity</li>
+                        <li>• City water</li>
+                        <li>• Sewage</li>
+                        <li>• District heating</li>
                         <li>• Internet</li>
-                        <li>• Telewizja kablowa</li>
+                        <li>• Cable TV</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-semibold mb-3">Zabezpieczenia</h3>
+                    <h3 class="font-semibold mb-3">Security</h3>
                     <ul class="space-y-1 text-sm text-gray-700">
-                        <li>• Domofon</li>
+                        <li>• Intercom</li>
                         <li>• Monitoring</li>
-                        <li>• Teren zamknięty</li>
+                        <li>• Closed area</li>
                     </ul>
                 </div>
                 <div>
@@ -2489,12 +2493,12 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-semibold mb-3">W okolicy</h3>
+                    <h3 class="font-semibold mb-3">In the area</h3>
                     <ul class="space-y-1 text-sm text-gray-700">
                         <li>• Park</li>
-                        <li>• Szkoła</li>
-                        <li>• Przedszkole</li>
-                        <li>• Sklepy</li>
+                        <li>• School</li>
+                        <li>• Kindergarten</li>
+                        <li>• Shops</li>
                         <li>• Public transport</li>
                     </ul>
                 </div>
@@ -2511,14 +2515,14 @@
                     <p class="text-gray-400 text-sm">Exceptional apartment on the outskirts of Kraków</p>
                 </div>
                 <div>
-                    <h3 class="font-semibold mb-4">Szybkie linki</h3>
+                    <h3 class="font-semibold mb-4">Quick links</h3>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#galeria" class="hover:text-white">Galeria</a></li>
-                        <li><a href="#opis" class="hover:text-white">Opis</a></li>
+                        <li><a href="#gallery" class="hover:text-white">Gallery</a></li>
+                        <li><a href="#opis" class="hover:text-white">Description</a></li>
                         <li><a href="#amenities" class="hover:text-white">Amenities</a></li>
-                        <li><a href="#plan" class="hover:text-white">Plan Nieruchomości</a></li>
-                        <li><a href="#szczegoly" class="hover:text-white">Szczegóły</a></li>
-                        <li><a href="#inspiracje" class="hover:text-white">Inspiracje</a></li>
+                        <li><a href="#plan" class="hover:text-white">Property Plan</a></li>
+                        <li><a href="#szczegoly" class="hover:text-white">Details</a></li>
+                        <li><a href="#inspiracje" class="hover:text-white">Inspiration</a></li>
                         <li><a href="#neighborhood" class="hover:text-white">Neighborhood</a></li>
                         <li><a href="#location" class="hover:text-white">Location</a></li>
                     </ul>
@@ -2532,7 +2536,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-                <p>© 2025 Czeczów 28/36. Wszelkie prawa zastrzeżone.</p>
+                <p>© 2025 Czeczów 28/36. All rights reserved.</p>
             </div>
         </div>
     </footer>
