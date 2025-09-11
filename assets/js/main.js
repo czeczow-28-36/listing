@@ -39,9 +39,67 @@ function initContactObfuscation() {
     }
 }
 
+// Mobile menu functionality
+function initMobileMenu() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    }
+}
+
+// Scroll to top functionality
+function initScrollToTop() {
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    
+    if (scrollToTopBtn) {
+        // Show/hide button based on scroll position
+        function toggleScrollButton() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                scrollToTopBtn.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+                scrollToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+            }
+        }
+        
+        // Listen for scroll events
+        window.addEventListener('scroll', toggleScrollButton);
+        
+        // Handle button click
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+}
+
 // Smooth scroll for anchor links
 document.addEventListener('DOMContentLoaded', () => {
     initContactObfuscation();
+    initMobileMenu();
+    initScrollToTop();
     
     const anchors = document.querySelectorAll('a[href^="#"]');
 
@@ -76,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initMobileSwiper();
     initParkingGalleries();
+    initAmenitiesGalleries();
 });
 
 // PhotoSwipe Gallery Initialization
@@ -430,6 +489,138 @@ function updateTotalPrice() {
     }
 }
 
+
+// Initialize amenities galleries
+function initAmenitiesGalleries() {
+    // Check if Swiper is loaded
+    if (typeof Swiper === 'undefined') {
+        // Wait for Swiper to load
+        setTimeout(initAmenitiesGalleries, 100);
+        return;
+    }
+
+    // Initialize Internet swiper
+    const internetSwiper = new Swiper('.internetSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: false, // Changed to false since we have only 2 slides
+        pagination: {
+            el: '.internetSwiper .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.internetSwiper .swiper-button-next',
+            prevEl: '.internetSwiper .swiper-button-prev',
+        },
+        grabCursor: true,
+    });
+
+    // Initialize Wentylacja swiper
+    const wentylacjaSwiper = new Swiper('.wentylacjaSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: false, // Changed to false since we have only 2 slides
+        pagination: {
+            el: '.wentylacjaSwiper .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.wentylacjaSwiper .swiper-button-next',
+            prevEl: '.wentylacjaSwiper .swiper-button-prev',
+        },
+        grabCursor: true,
+    });
+
+    // Initialize Klimatyzacja swiper
+    const klimatyzacjaSwiper = new Swiper('.klimatyzacjaSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: false, // Changed to false since we have only 2 slides
+        pagination: {
+            el: '.klimatyzacjaSwiper .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.klimatyzacjaSwiper .swiper-button-next',
+            prevEl: '.klimatyzacjaSwiper .swiper-button-prev',
+        },
+        grabCursor: true,
+    });
+
+    // Initialize Komunikacja swiper
+    const komunikacjaSwiper = new Swiper('.komunikacjaSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: false, // Only 2 slides
+        pagination: {
+            el: '.komunikacjaSwiper .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.komunikacjaSwiper .swiper-button-next',
+            prevEl: '.komunikacjaSwiper .swiper-button-prev',
+        },
+        grabCursor: true,
+    });
+
+    // Initialize PhotoSwipe for amenities galleries
+    if (window.PhotoSwipeLightbox) {
+        initAmenitiesPhotoSwipe();
+    } else {
+        // Wait for PhotoSwipe to load
+        const checkPhotoSwipe = setInterval(() => {
+            if (window.PhotoSwipeLightbox) {
+                clearInterval(checkPhotoSwipe);
+                initAmenitiesPhotoSwipe();
+            }
+        }, 100);
+    }
+}
+
+// Initialize PhotoSwipe for amenities images
+function initAmenitiesPhotoSwipe() {
+    // Helper function to create PhotoSwipe for a specific amenity gallery
+    function createAmenityLightbox(galleryClass, gallerySelector) {
+        const images = document.querySelectorAll(`.amenity-gallery-image[data-gallery="${galleryClass}"]`);
+        if (images.length > 0) {
+            const lightbox = new window.PhotoSwipeLightbox({
+                gallery: gallerySelector,
+                children: `.amenity-gallery-image[data-gallery="${galleryClass}"]`,
+                pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.4.2/dist/photoswipe.esm.js'),
+                padding: { top: 20, bottom: 40, left: 100, right: 100 },
+                bgOpacity: 0.9,
+            });
+
+            lightbox.addFilter('itemData', (itemData, index) => {
+                const element = images[index];
+                if (element) {
+                    return {
+                        src: element.getAttribute('data-pswp-src'),
+                        width: parseInt(element.getAttribute('data-pswp-width')) || 1920,
+                        height: parseInt(element.getAttribute('data-pswp-height')) || 1440,
+                        alt: element.getAttribute('alt') || '',
+                    };
+                }
+                return itemData;
+            });
+
+            lightbox.init();
+
+            images.forEach((img, index) => {
+                img.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    lightbox.loadAndOpen(index);
+                });
+            });
+        }
+    }
+
+    // Initialize PhotoSwipe for each amenity gallery
+    createAmenityLightbox('internet', '.internetSwiper');
+    createAmenityLightbox('wentylacja', '.wentylacjaSwiper');
+    createAmenityLightbox('klimatyzacja', '.klimatyzacjaSwiper');
+    createAmenityLightbox('komunikacja', '.komunikacjaSwiper');
+}
 
 // Optional: Add any Stimulus controllers here
 if (window.Stimulus) {
