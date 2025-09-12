@@ -563,6 +563,22 @@ function initAmenitiesGalleries() {
         grabCursor: true,
     });
 
+    // Initialize Wyposazenie swiper
+    const wyposazenieSwiper = new Swiper('.wyposazenieSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: false, // Only 1 slide
+        pagination: {
+            el: '.wyposazenieSwiper .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.wyposazenieSwiper .swiper-button-next',
+            prevEl: '.wyposazenieSwiper .swiper-button-prev',
+        },
+        grabCursor: true,
+    });
+
     // Initialize PhotoSwipe for amenities galleries
     if (window.PhotoSwipeLightbox) {
         initAmenitiesPhotoSwipe();
@@ -620,4 +636,5 @@ function initAmenitiesPhotoSwipe() {
     createAmenityLightbox('wentylacja', '.wentylacjaSwiper');
     createAmenityLightbox('klimatyzacja', '.klimatyzacjaSwiper');
     createAmenityLightbox('komunikacja', '.komunikacjaSwiper');
+    createAmenityLightbox('wyposazenie', '.wyposazenieSwiper');
 }
