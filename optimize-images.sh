@@ -1,10 +1,12 @@
 #!/bin/bash
 
-# Optimize images script using ffmpeg
+# Optimize images script using ffmpeg with watermark
 # Converts images from assets/img/source to optimized versions in assets/img/output
+# Adds watermark with website domain
 
 SOURCE_DIR="assets/img/source"
 OUTPUT_DIR="assets/img/output"
+WATERMARK_TEXT="czeczow-28-36.pl"
 
 # Create output directory if it doesn't exist
 mkdir -p "$OUTPUT_DIR"
@@ -25,22 +27,37 @@ optimize_image() {
     
     echo "Processing: $relative_path"
     
+    # Create multiple semi-transparent watermarks in random positions
+    # Uses system-ui font family (similar to website) with varied positions to make stealing difficult
+    local fontsize="h/60"
+    local opacity="0.4"
+    local color="white"
+
+    # Generate random offsets for each watermark position
+    local rand1=$((RANDOM % 21 - 10))
+    local rand2=$((RANDOM % 21 - 10))
+    local rand3=$((RANDOM % 21 - 10))
+    local rand4=$((RANDOM % 21 - 10))
+
+    # Multiple watermark positions with randomization to make stealing more difficult
+    local watermark_filter="drawtext=text='$WATERMARK_TEXT':fontfile=/System/Library/Fonts/SFNS.ttf:fontsize=$fontsize:fontcolor=$color@$opacity:x=w*0.85-tw+$rand1:y=h*0.9-th+$rand1,drawtext=text='$WATERMARK_TEXT':fontfile=/System/Library/Fonts/SFNS.ttf:fontsize=$fontsize:fontcolor=$color@$opacity:x=w*0.15+$rand2:y=h*0.25+$rand2,drawtext=text='$WATERMARK_TEXT':fontfile=/System/Library/Fonts/SFNS.ttf:fontsize=$fontsize:fontcolor=$color@$opacity:x=w*0.7+$rand3:y=h*0.15+$rand3,drawtext=text='$WATERMARK_TEXT':fontfile=/System/Library/Fonts/SFNS.ttf:fontsize=$fontsize:fontcolor=$color@$opacity:x=w*0.05+$rand4:y=h*0.75+$rand4"
+
     # Optimize based on file type
     case "$extension_lower" in
         jpg|jpeg)
-            # JPEG optimization: quality 85, progressive encoding, strip metadata
-            ffmpeg -i "$input_file" -q:v 2 -vf "scale='min(2048,iw)':'-1'" -y "$output_file" 2>/dev/null
+            # JPEG optimization with watermark
+            ffmpeg -i "$input_file" -q:v 2 -vf "scale='min(2048,iw)':'-1',$watermark_filter" -y "$output_file" 2>/dev/null
             ;;
         png)
-            # PNG optimization: compression level 9, strip metadata
-            ffmpeg -i "$input_file" -compression_level 9 -vf "scale='min(2048,iw)':'-1'" -y "$output_file" 2>/dev/null
+            # PNG optimization with watermark
+            ffmpeg -i "$input_file" -compression_level 9 -vf "scale='min(2048,iw)':'-1',$watermark_filter" -y "$output_file" 2>/dev/null
             ;;
         webp)
-            # WebP optimization: quality 85
-            ffmpeg -i "$input_file" -quality 85 -vf "scale='min(2048,iw)':'-1'" -y "$output_file" 2>/dev/null
+            # WebP optimization with watermark
+            ffmpeg -i "$input_file" -quality 85 -vf "scale='min(2048,iw)':'-1',$watermark_filter" -y "$output_file" 2>/dev/null
             ;;
         gif)
-            # GIF optimization: keep as is but limit size
+            # GIF optimization: keep as is but limit size (no watermark for animated GIFs)
             ffmpeg -i "$input_file" -vf "scale='min(1024,iw)':'-1':flags=lanczos" -y "$output_file" 2>/dev/null
             ;;
         *)
@@ -54,7 +71,7 @@ optimize_image() {
         local input_size=$(stat -f%z "$input_file" 2>/dev/null || stat -c%s "$input_file" 2>/dev/null)
         local output_size=$(stat -f%z "$output_file" 2>/dev/null || stat -c%s "$output_file" 2>/dev/null)
         local reduction=$((100 - (output_size * 100 / input_size)))
-        echo "  ✓ Reduced by ${reduction}% ($(numfmt --to=iec $input_size) → $(numfmt --to=iec $output_size))"
+        echo "  ✓ Reduced by ${reduction}% ($input_size → $output_size bytes)"
     else
         echo "  ✗ Failed to optimize"
     fi
