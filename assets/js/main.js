@@ -19,7 +19,7 @@ function initContactObfuscation() {
     }
 
     // Phone obfuscation
-    const phoneNumbers = ['+48', '534', '382', '146'];
+    const phoneNumbers = ['+48', '792', '011', '470'];
     const phone = phoneNumbers.join(' ');
     const phoneHref = 'tel:' + phoneNumbers.join('');
 
