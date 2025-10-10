@@ -28,6 +28,26 @@ function initContactObfuscation() {
         element.innerHTML = '<a href="' + phoneHref + '" class="text-blue-400 hover:text-blue-300">' + phone + '</a>';
     });
 
+    // CTA buttons obfuscation
+    const phoneCta = document.querySelector('[data-phone-cta]');
+    const phoneCtaText = document.querySelector('[data-phone-cta-text]');
+    const phoneCtaMobile = document.querySelector('[data-phone-cta-mobile]');
+
+    // Detect language (check if we're on English version)
+    const isEnglish = document.documentElement.lang === 'en';
+    const ctaText = isEnglish
+        ? phone + ' - Call now (owner)'
+        : phone + ' - Zadzwoń teraz (właściciel)';
+
+    if (phoneCta && phoneCtaText) {
+        phoneCta.href = phoneHref;
+        phoneCtaText.textContent = ctaText;
+    }
+
+    if (phoneCtaMobile) {
+        phoneCtaMobile.href = phoneHref;
+    }
+
     // Email message button functionality
     const writeMessageBtn = document.getElementById('write-message-btn');
     if (writeMessageBtn) {
