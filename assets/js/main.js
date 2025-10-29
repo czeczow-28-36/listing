@@ -42,16 +42,68 @@ function initContactObfuscation() {
     if (phoneCta && phoneCtaText) {
         phoneCta.href = phoneHref;
         phoneCtaText.textContent = ctaText;
+
+        // Facebook Pixel: Track desktop phone button clicks
+        phoneCta.addEventListener('click', function() {
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Contact', {
+                    content_name: 'Desktop Phone Button',
+                    contact_method: 'phone'
+                });
+            }
+
+            // Umami: Track desktop phone button clicks
+            if (typeof umami !== 'undefined') {
+                umami.track('contact', {
+                    type: 'phone',
+                    device: 'desktop'
+                });
+            }
+        });
     }
 
     if (phoneCtaMobile) {
         phoneCtaMobile.href = phoneHref;
+
+        // Facebook Pixel: Track mobile phone button clicks
+        phoneCtaMobile.addEventListener('click', function() {
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Contact', {
+                    content_name: 'Mobile Phone Button',
+                    contact_method: 'phone'
+                });
+            }
+
+            // Umami: Track mobile phone button clicks
+            if (typeof umami !== 'undefined') {
+                umami.track('contact', {
+                    type: 'phone',
+                    device: 'mobile'
+                });
+            }
+        });
     }
 
     // Email message button functionality
     const writeMessageBtn = document.getElementById('write-message-btn');
     if (writeMessageBtn) {
         writeMessageBtn.addEventListener('click', function() {
+            // Facebook Pixel: Track email contact intent
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', {
+                    content_name: 'Email Message Button',
+                    contact_method: 'email'
+                });
+            }
+
+            // Umami: Track email contact intent
+            if (typeof umami !== 'undefined') {
+                umami.track('contact', {
+                    type: 'email',
+                    action: 'lead'
+                });
+            }
+
             const subject = encodeURIComponent('Zapytanie odnośnie oferty Czeczów 28/36');
             const mailtoLink = 'mailto:' + email + '?subject=' + subject;
             window.location.href = mailtoLink;
@@ -84,6 +136,165 @@ function initMobileMenu() {
             }
         });
     }
+}
+
+// Tab tracking for amenities and parking
+function initTabTracking() {
+    // Track amenities tab clicks
+    const amenitiesTabs = [
+        { id: 'tab-klimatyzacja', name: 'Klimatyzacja' },
+        { id: 'tab-wentylacja', name: 'Wentylacja' },
+        { id: 'tab-internet', name: 'Internet' },
+        { id: 'tab-komunikacja', name: 'Komunikacja' },
+        { id: 'tab-wyposazenie', name: 'Wyposażenie' }
+    ];
+
+    amenitiesTabs.forEach(tab => {
+        const tabElement = document.getElementById(tab.id);
+        if (tabElement) {
+            tabElement.addEventListener('click', function() {
+                // Facebook Pixel: Track amenities tab view
+                if (typeof fbq !== 'undefined') {
+                    fbq('trackCustom', 'TabView', {
+                        content_name: tab.name + ' Tab',
+                        content_category: 'Amenities',
+                        tab_type: 'amenity'
+                    });
+                }
+
+                // Umami: Track amenities tab view
+                if (typeof umami !== 'undefined') {
+                    umami.track('tab-view', {
+                        category: 'amenities',
+                        tab: tab.name.toLowerCase()
+                    });
+                }
+            });
+        }
+    });
+
+    // Track parking tabs
+    const parkingTab1 = document.getElementById('tab-parking1');
+    if (parkingTab1) {
+        parkingTab1.addEventListener('click', function() {
+            // Facebook Pixel: Track parking tab view
+            if (typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'TabView', {
+                    content_name: 'Parking Spot 1 Tab',
+                    content_category: 'Parking',
+                    tab_type: 'parking'
+                });
+            }
+
+            // Umami: Track parking tab view
+            if (typeof umami !== 'undefined') {
+                umami.track('tab-view', {
+                    category: 'parking',
+                    spot: '1'
+                });
+            }
+        });
+    }
+
+    const parkingTab14 = document.getElementById('tab-parking14');
+    if (parkingTab14) {
+        parkingTab14.addEventListener('click', function() {
+            // Facebook Pixel: Track parking tab view
+            if (typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'TabView', {
+                    content_name: 'Parking Spot 14 Tab',
+                    content_category: 'Parking',
+                    tab_type: 'parking'
+                });
+            }
+
+            // Umami: Track parking tab view
+            if (typeof umami !== 'undefined') {
+                umami.track('tab-view', {
+                    category: 'parking',
+                    spot: '14'
+                });
+            }
+        });
+    }
+}
+
+// External links tracking
+function initExternalLinksTracking() {
+    // Track Otodom links
+    const otodomLinks = document.querySelectorAll('a[href*="otodom.pl"]');
+    otodomLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Facebook Pixel: Track Otodom listing click
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'InitiateCheckout', {
+                    content_name: 'Otodom Listing',
+                    content_category: 'External Listing',
+                    external_site: 'Otodom'
+                });
+            }
+
+            // Umami: Track Otodom listing click
+            if (typeof umami !== 'undefined') {
+                umami.track('external-link', {
+                    site: 'otodom',
+                    action: 'checkout'
+                });
+            }
+        });
+    });
+
+    // Track Develia link
+    const develiaLinks = document.querySelectorAll('a[href*="develia.pl"]');
+    develiaLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Facebook Pixel: Track Develia developer link click
+            if (typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'OutboundClick', {
+                    content_name: 'Develia Developer',
+                    content_category: 'Developer Info',
+                    external_site: 'Develia'
+                });
+            }
+
+            // Umami: Track Develia developer link click
+            if (typeof umami !== 'undefined') {
+                umami.track('external-link', {
+                    site: 'develia',
+                    action: 'developer-info'
+                });
+            }
+        });
+    });
+}
+
+// Navigation tracking
+function initNavigationTracking() {
+    // Track main navigation section clicks
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const sectionName = this.textContent.trim();
+            const sectionId = this.getAttribute('href');
+
+            // Facebook Pixel: Track navigation clicks
+            if (typeof fbq !== 'undefined' && sectionId && sectionId !== '#') {
+                fbq('trackCustom', 'Navigation', {
+                    content_name: sectionName,
+                    section_id: sectionId.replace('#', ''),
+                    navigation_type: 'main_menu'
+                });
+            }
+
+            // Umami: Track navigation clicks
+            if (typeof umami !== 'undefined' && sectionId && sectionId !== '#') {
+                umami.track('navigation', {
+                    section: sectionId.replace('#', ''),
+                    name: sectionName
+                });
+            }
+        });
+    });
 }
 
 // Scroll to top functionality
@@ -120,6 +331,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactObfuscation();
     initMobileMenu();
     initScrollToTop();
+    initTabTracking();
+    initExternalLinksTracking();
+    initNavigationTracking();
 
     const anchors = document.querySelectorAll('a[href^="#"]');
 
@@ -244,6 +458,24 @@ function initPhotoSwipe() {
     galleryImages.forEach((link, index) => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
+
+            // Facebook Pixel: Track gallery image view
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'ViewContent', {
+                    content_name: 'Main Gallery Image',
+                    content_category: 'Gallery',
+                    content_ids: ['gallery_image_' + (index + 1)]
+                });
+            }
+
+            // Umami: Track gallery image view
+            if (typeof umami !== 'undefined') {
+                umami.track('gallery-view', {
+                    type: 'main',
+                    image: index + 1
+                });
+            }
+
             lightbox.loadAndOpen(index);
         });
     });
@@ -253,6 +485,23 @@ function initPhotoSwipe() {
     if (showAllBtn) {
         showAllBtn.addEventListener('click', (e) => {
             e.preventDefault();
+
+            // Facebook Pixel: Track "Show All Photos" button click
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'ViewContent', {
+                    content_name: 'Show All Photos Button',
+                    content_category: 'Gallery',
+                    content_type: 'button_click'
+                });
+            }
+
+            // Umami: Track "Show All Photos" button click
+            if (typeof umami !== 'undefined') {
+                umami.track('gallery-view', {
+                    type: 'show-all-button'
+                });
+            }
+
             lightbox.loadAndOpen(0);
         });
     }
@@ -422,6 +671,25 @@ function initParkingPhotoSwipe() {
         parking1Images.forEach((img, index) => {
             img.addEventListener('click', (e) => {
                 e.preventDefault();
+
+                // Facebook Pixel: Track parking spot 1 gallery view
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'ViewContent', {
+                        content_name: 'Parking Spot 1 Gallery',
+                        content_category: 'Parking Gallery',
+                        content_ids: ['parking1_image_' + (index + 1)]
+                    });
+                }
+
+                // Umami: Track parking spot 1 gallery view
+                if (typeof umami !== 'undefined') {
+                    umami.track('gallery-view', {
+                        type: 'parking',
+                        spot: '1',
+                        image: index + 1
+                    });
+                }
+
                 parking1Lightbox.loadAndOpen(index);
             });
         });
@@ -456,6 +724,25 @@ function initParkingPhotoSwipe() {
         parking14Images.forEach((img, index) => {
             img.addEventListener('click', (e) => {
                 e.preventDefault();
+
+                // Facebook Pixel: Track parking spot 14 gallery view
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'ViewContent', {
+                        content_name: 'Parking Spot 14 Gallery',
+                        content_category: 'Parking Gallery',
+                        content_ids: ['parking14_image_' + (index + 1)]
+                    });
+                }
+
+                // Umami: Track parking spot 14 gallery view
+                if (typeof umami !== 'undefined') {
+                    umami.track('gallery-view', {
+                        type: 'parking',
+                        spot: '14',
+                        image: index + 1
+                    });
+                }
+
                 parking14Lightbox.loadAndOpen(index);
             });
         });
@@ -481,9 +768,49 @@ function updateTotalPrice() {
         totalPrice += (parkingSpotPrice * 2) - discount;
         originalPrice = apartmentPrice + (parkingSpotPrice * 2);
         showDiscount = true;
+
+        // Facebook Pixel: Track both parking spots selected with discount
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'CustomizeProduct', {
+                content_name: 'Both Parking Spots Selected',
+                content_category: 'Parking Configuration',
+                value: totalPrice,
+                currency: 'PLN',
+                discount_amount: discount
+            });
+        }
+
+        // Umami: Track both parking spots selected
+        if (typeof umami !== 'undefined') {
+            umami.track('parking-configuration', {
+                spots: 'both',
+                price: totalPrice,
+                discount: discount
+            });
+        }
     } else if (parking1Checked || parking14Checked) {
         // Only one parking spot selected
         totalPrice += parkingSpotPrice;
+
+        // Facebook Pixel: Track single parking spot selection
+        if (typeof fbq !== 'undefined') {
+            const spotName = parking1Checked ? 'Parking Spot 1' : 'Parking Spot 14';
+            fbq('track', 'AddToCart', {
+                content_name: spotName,
+                content_category: 'Parking Spot',
+                value: parkingSpotPrice,
+                currency: 'PLN'
+            });
+        }
+
+        // Umami: Track single parking spot selection
+        if (typeof umami !== 'undefined') {
+            const spotNumber = parking1Checked ? '1' : '14';
+            umami.track('parking-add', {
+                spot: spotNumber,
+                price: parkingSpotPrice
+            });
+        }
     }
 
     // Update DOM elements
@@ -645,6 +972,25 @@ function initAmenitiesPhotoSwipe() {
             images.forEach((img, index) => {
                 img.addEventListener('click', (e) => {
                     e.preventDefault();
+
+                    // Facebook Pixel: Track amenity gallery view
+                    if (typeof fbq !== 'undefined') {
+                        fbq('track', 'ViewContent', {
+                            content_name: galleryClass.charAt(0).toUpperCase() + galleryClass.slice(1) + ' Gallery',
+                            content_category: 'Amenities Gallery',
+                            content_ids: [galleryClass + '_image_' + (index + 1)]
+                        });
+                    }
+
+                    // Umami: Track amenity gallery view
+                    if (typeof umami !== 'undefined') {
+                        umami.track('gallery-view', {
+                            type: 'amenity',
+                            amenity: galleryClass,
+                            image: index + 1
+                        });
+                    }
+
                     lightbox.loadAndOpen(index);
                 });
             });
