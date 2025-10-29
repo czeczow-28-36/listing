@@ -464,7 +464,7 @@ function initParkingPhotoSwipe() {
 
 // Price Calculator Function
 function updateTotalPrice() {
-    const apartmentPrice = 979000;
+    const apartmentPrice = 929000;
     const parkingSpotPrice = 70000;
     const discount = 20000;
 
